@@ -4,7 +4,7 @@ import AutoSlider from "../components/homeComponents/AutoSlider";
 import MenuItemsNav from "../components/menuComponents/MenuItemsNav";
 import SLIDER_OPTIONS from "../data/sliderOptions";
 import AUTO_SLIDER_TITLES from "../data/autoSliderTitles";
-import home from "../styles/HomeStyles/home.module.css";
+import home from "../styles/HomeStyles/Home.module.css";
 export default function MenuLayout() {
   return (
     <div className="layout">
