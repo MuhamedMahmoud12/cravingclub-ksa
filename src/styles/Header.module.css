@@ -140,7 +140,7 @@ header nav.navbar .nav-links ul.nav-links-ul li a.nav-lang-link img {
   height: 0;
   left: 0;
   top: 90px;
-  background: url("../assets/main-bg/header-bg.png") no-repeat;
+  background: url("/assets/main-bg/header-bg.png") no-repeat;
   transition: 200ms;
   overflow: hidden;
 }

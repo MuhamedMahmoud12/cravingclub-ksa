@@ -24,7 +24,7 @@ section.slider-section {
 /************* Menu Section **********************/
 
 .menu {
-  background: url("../../assets/main-bg/light_bg.png") no-repeat center center;
+  background: url("/assets/main-bg/light_bg.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -32,7 +32,7 @@ section.slider-section {
 
 /************* Appetizers Section **********************/
 .item-section {
-  background: url("../../assets/main-bg/light_bg.png");
+  background: url("/assets/main-bg/light_bg.png");
   background-size: cover;
   background-attachment: fixed;
 }

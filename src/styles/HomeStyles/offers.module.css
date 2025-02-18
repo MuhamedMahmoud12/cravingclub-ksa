@@ -1,6 +1,6 @@
 .offers-section {
   padding: 100px 0;
-  background: url("../../assets/main-bg/light_bg.png");
+  background: url("/assets/main-bg/light_bg.png");
   background-attachment: fixed;
   font-family: var(--font-bebas);
 }
@@ -15,7 +15,7 @@
   width: 95%;
   height: 450px;
   margin: 0 auto;
-  background: url("../../assets/main-bg/header-bg.png");
+  background: url("/assets/main-bg/header-bg.png");
   display: flex;
   justify-content: center;
   border-radius: 15px;

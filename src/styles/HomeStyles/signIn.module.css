@@ -1,5 +1,5 @@
 section.prime-club {
-  background: url("../../assets/prime-club.jpg") no-repeat fixed center center;
+  background: url("/assets/prime-club.jpg") no-repeat fixed center center;
   background-size: cover;
   position: relative;
   font-family: var(--font-bebas);
@@ -11,7 +11,7 @@ section.prime-club .overlay {
   background: rgb(0, 0, 0, 0.7);
 }
 section.prime-club .prime-club-container {
-  background: url("../../assets/main-bg/header-bg.png") no-repeat center;
+  background: url("/assets/main-bg/header-bg.png") no-repeat center;
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 400px;

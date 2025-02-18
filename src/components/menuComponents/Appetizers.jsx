@@ -10,7 +10,7 @@ export default function Appetizers({ categoryStyle }) {
   return (
     <>
       <div
-        className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
+        className={`${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
         <AutoSlider

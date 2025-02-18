@@ -20,7 +20,7 @@
   color: var(--secondary-color);
 }
 .testimonials .testimonials-container {
-  background: url("../../assets/main-bg/dark_bg.jpg");
+  background: url("/assets/main-bg/dark_bg.jpg");
   width: 100%;
   margin: 40px auto;
   border-radius: 15px;

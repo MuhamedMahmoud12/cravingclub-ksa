@@ -1,5 +1,5 @@
 .user-profile {
-  background: url("../../../assets/main-bg/header-bg.png");
+  background: url("/assets/main-bg/header-bg.png");
   background-size: cover;
   font-family: var(--font-bebas);
   padding: 50px;
@@ -7,7 +7,7 @@
 .terms-conditions {
   width: 50%;
   margin: 10px auto;
-  background: url("../../../assets/main-bg/light_bg.png");
+  background: url("/assets/main-bg/light_bg.png");
   border: 2px solid var(--primary-color);
   text-align: center;
   color: var(--secondary-color);
@@ -16,7 +16,7 @@
   border-radius: 10px;
 }
 .info-container {
-  background: url("../../../assets/main-bg/light_bg.png");
+  background: url("/assets/main-bg/light_bg.png");
   padding: 20px;
   border: 2px solid var(--primary-color);
   border-radius: 10px;

@@ -1,6 +1,6 @@
 .who-we-are {
   padding: 70px 0;
-  background: url("../../assets/main-bg/dark_bg.jpg");
+  background: url("/assets/main-bg/dark_bg.jpg");
   background-attachment: fixed;
   font-family: var(--font-bebas);
   color: var(--white-color);

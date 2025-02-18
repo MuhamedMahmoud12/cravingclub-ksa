@@ -21,18 +21,15 @@
   color: var(--white-color);
 }
 .main-img-slider .item1 {
-  background: url("../../assets/slider-imgs/slider-img1.jpg") no-repeat center
-    center;
+  background: url("/assets/slider-imgs/slider-img1.jpg") no-repeat center center;
   background-size: cover;
 }
 .main-img-slider .item2 {
-  background: url("../../assets/slider-imgs/slider-img2.jpg") no-repeat center
-    center;
+  background: url("/assets/slider-imgs/slider-img2.jpg") no-repeat center center;
   background-size: cover;
 }
 .main-img-slider .item3 {
-  background: url("../../assets/slider-imgs/slider-img3.jpg") no-repeat center
-    center;
+  background: url("/assets/slider-imgs/slider-img3.jpg") no-repeat center center;
   background-size: cover;
 }
 .main-img-slider .slider-content {

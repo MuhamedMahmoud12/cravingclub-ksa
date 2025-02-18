@@ -1,7 +1,7 @@
 section.slider-section {
   min-height: 900px;
   padding: 50px 0 0 0;
-  background: url("../../assets/main-bg/header-bg.png") no-repeat fixed center;
+  background: url("/assets/main-bg/header-bg.png") no-repeat fixed center;
   background-size: cover;
   position: relative;
   font-family: var(--font-bebas);
