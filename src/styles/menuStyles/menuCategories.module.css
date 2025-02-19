@@ -6,7 +6,7 @@
 }
 .fixed-ul {
   position: fixed;
-  background: url("../imgs/main-bg/header-bg.png") no-repeat center center;
+  background: url("/assets/main-bg/header-bg.png") no-repeat center center;
 }
 .active-menu-link {
   color: var(--primary-color) !important;
