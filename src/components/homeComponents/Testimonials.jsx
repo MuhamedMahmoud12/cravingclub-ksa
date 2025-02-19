@@ -1,24 +1,24 @@
 import testimonials from "../../styles/HomeStyles/testimonials.module.css";
 import TestimonialItem from "./TestimonialItem";
-import OwlCarousel from "react-owl-carousel";
+import Slider from "react-slick";
 export default function Testimonials() {
-  const options = {
-    loop: true,
-    items: 1,
-    margin: 0,
-    nav: true,
-    dots: false,
+  const settings = {
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
-    autoplayTimeout: 5000,
+    speed: 1500,
+    autoplaySpeed: 3000,
+    dots: false,
   };
+
   return (
     <section className={testimonials["testimonials"]}>
       <div className="container">
         <span className="prev-title">Tasty Words</span>
         <h2>What they Say?</h2>
         <div className={testimonials["testimonials-container"]}>
-          <OwlCarousel className="owl-carousel" {...options}>
+          <Slider {...settings}>
             <TestimonialItem
               imgPath="slider-img1.jpg"
               reviewDes="Amazing ambience, great food, very courteous staff. Overall very
@@ -47,7 +47,7 @@ export default function Testimonials() {
               reviewOwner="Raed Mokhtar"
               reviewSrc="Google Reviews"
             />
-          </OwlCarousel>
+          </Slider>
         </div>
       </div>
     </section>

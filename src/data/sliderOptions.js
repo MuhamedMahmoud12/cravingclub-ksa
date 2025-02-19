@@ -2,51 +2,66 @@ const SLIDER_OPTIONS = [
   {
     // HOME PAGE AUTOSLIDER OPTIONS
     homeAutoSlider: {
+      infinite: true,
       loop: true,
-      margin: 0,
-      nav: false,
-      dots: false,
-      center: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       autoplay: true,
-      slidetransition: "linear",
-      autoplayTimeout: 4000,
-      autoplaySpeed: 4000,
-      autoWidth: true,
-      responsive: {
-        0: {
-          items: 2,
+      speed: 4000,
+      cssEase: "linear",
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 1,
+          },
         },
-        600: {
-          items: 3,
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          },
         },
-        1000: {
-          items: 4,
+        {
+          breakpoint: 0,
+          settings: {
+            slidesToShow: 1,
+          },
         },
-      },
+      ],
     },
+
     // MENU PAGE AUTOSLIDER OPTIONS
     menuAutoSlider: {
+      infinite: true,
       loop: true,
-      margin: 0,
-      nav: false,
-      dots: false,
-      center: true,
-      autoplay: false,
-      slidetransition: "linear",
-      autoplayTimeout: 4000,
-      autoplaySpeed: 4000,
-      autoWidth: true,
-      responsive: {
-        0: {
-          items: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 4000,
+      cssEase: "linear",
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 1,
+          },
         },
-        600: {
-          items: 3,
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          },
         },
-        1000: {
-          items: 4,
+        {
+          breakpoint: 0,
+          settings: {
+            slidesToShow: 1,
+          },
         },
-      },
+      ],
     },
   },
 ];

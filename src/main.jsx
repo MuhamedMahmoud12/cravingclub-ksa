@@ -4,8 +4,8 @@ import "./styles/index.css";
 import "./styles/containers.css";
 import "./styles/globalClasses.css";
 import App from "./App";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { AuthProvider } from "./context/AuthContext";
 import { UserDataProvider } from "./context/UserContext";
 createRoot(document.getElementById("root")).render(

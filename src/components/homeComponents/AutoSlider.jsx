@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
 import autoSlider from "../../styles/HomeStyles/AutoSlider.module.css";
 import AutoSliderItem from "./AutoSliderItem";
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 export default function AutoSlider({ properties, titles }) {
   return (
     <div className={autoSlider["menu-select"]}>
-      <OwlCarousel className="owl-carousel" {...properties}>
+      <Slider {...properties}>
         <AutoSliderItem title={titles[0]} />
         <AutoSliderItem title={titles[1]} />
         <AutoSliderItem title={titles[2]} />
@@ -20,7 +23,7 @@ export default function AutoSlider({ properties, titles }) {
         <AutoSliderItem title={titles[11]} />
         <AutoSliderItem title={titles[12]} />
         <AutoSliderItem title={titles[13]} />
-      </OwlCarousel>
+      </Slider>
     </div>
   );
 }

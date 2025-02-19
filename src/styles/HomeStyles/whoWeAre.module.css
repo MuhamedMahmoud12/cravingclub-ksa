@@ -24,10 +24,11 @@
 }
 .who-we-are .who-we-are-carousel {
   margin-top: 40px;
+  overflow: hidden;
 }
 div.img-container {
-  width: 350px;
-  height: 250px;
+  width: 350px !important;
+  height: 250px !important;
 }
 div.img-container > img {
   width: 100%;

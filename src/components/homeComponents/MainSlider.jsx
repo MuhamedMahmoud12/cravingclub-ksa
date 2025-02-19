@@ -1,27 +1,41 @@
 import mainSlider from "../../styles/HomeStyles/MainSlider.module.css";
 import SliderItem from "./SldierItem";
-import OwlCarousel from "react-owl-carousel";
+import Slider from "react-slick";
 export default function MainSlider() {
-  const options = {
-    items: 1,
-    margin: 0,
-    stagePadding: 0,
-    smartSpeed: 450,
-    loop: true,
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
     autoplay: true,
-    lazyLoad: true,
-    nav: false,
+    speed: 1000,
+    lazyLoad: "ondemand",
+    arrows: false,
     dots: false,
-    responsive: {
-      0: {
-        items: 1,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+        },
       },
-    },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <>
       <div className={`${mainSlider["main-img-slider"]}`}>
-        <OwlCarousel className="owl-theme" {...options}>
+        <Slider {...settings}>
           <SliderItem
             className={`${mainSlider["item"]} ${mainSlider["item1"]} item`}
             prevTitle="Welcome to Craving Club"
@@ -40,7 +54,7 @@ export default function MainSlider() {
             title="Discover our customized offers"
             description="Whatever you need, you will find it here"
           />
-        </OwlCarousel>
+        </Slider>
       </div>
     </>
   );

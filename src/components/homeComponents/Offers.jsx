@@ -1,21 +1,22 @@
 import offers from "../../styles/HomeStyles/offers.module.css";
-import OwlCarousel from "react-owl-carousel";
+import Slider from "react-slick";
 export default function Offers() {
   const OFFERS_PATH = "../../assets/offers-imgs/";
-  const options = {
-    items: 1,
-    margin: 40,
-    stagePadding: 30,
-    smartSpeed: 450,
-    loop: true,
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
     autoplay: true,
-    lazyLoad: true,
+    speed: 1000,
+    lazyLoad: "ondemand",
+    arrows: false,
+    dots: false,
   };
   return (
     <div className="container">
       <span className="prev-title">Our Offers</span>
       <h2>Explore Our Exclusive Offers</h2>
-      <OwlCarousel className="owl-carousel" {...options}>
+      <Slider {...settings}>
         <div>
           <div className={offers["offer-grid"]}>
             <div className={offers["text"]}>
@@ -70,7 +71,7 @@ export default function Offers() {
             </div>
           </div>
         </div>
-      </OwlCarousel>
+      </Slider>
     </div>
   );
 }

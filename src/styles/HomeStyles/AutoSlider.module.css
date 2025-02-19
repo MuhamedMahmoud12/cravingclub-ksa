@@ -4,6 +4,7 @@
   color: var(--white-color);
   width: 100%;
   z-index: 998;
+  overflow: hidden;
 }
 .item {
   height: 80px;

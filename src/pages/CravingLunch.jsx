@@ -1,26 +1,59 @@
-import lunchStyles from "../styles/LunchStyles/cravingLunch.module.css";
-const dishes = [
-  "../../assets/craving-lunch/main-49-1.png",
-  "../../assets/craving-lunch/salad-1.png",
-  "../../assets/craving-lunch/drink-1.png",
-];
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import autoSlider from "../styles/HomeStyles/autoSlider.module.css";
+import AutoSliderItem from "../components/homeComponents/AutoSliderItem";
+import AUTO_SLIDER_TITLES from "../data/autoSliderTitles";
 export default function CravingLunch() {
+  const settings = {
+    infinite: true,
+    loop: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 4000,
+    cssEase: "linear",
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  };
   return (
-    <div className={lunchStyles["container-div"]}>
-      <div className={lunchStyles["inner-div"]}>
-        <div className={lunchStyles["text-container"]}>
-          <h1>Craving Lunch</h1>
-        </div>
-        <p>Main Course + soup or salad + drink</p>
-        <div className={`${lunchStyles["img"]} ${lunchStyles["left-img"]}`}>
-          <img src={dishes[0]} alt="dish-1" />
-        </div>
-        <div className={`${lunchStyles["img"]} ${lunchStyles["top-img"]}`}>
-          <img src={dishes[1]} alt="dish-1" />
-        </div>
-        <div className={`${lunchStyles["img"]} ${lunchStyles["right-img"]}`}>
-          <img src={dishes[2]} alt="dish-1" />
-        </div>
+    <div>
+      <div className={autoSlider["menu-select"]}>
+        <Slider {...settings}>
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[0]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[1]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[2]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[3]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[4]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[5]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[6]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[7]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[8]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[9]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[10]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[11]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[12]} />
+          <AutoSliderItem title={AUTO_SLIDER_TITLES.homeTitles[13]} />
+        </Slider>
       </div>
     </div>
   );

@@ -17,7 +17,6 @@ import Dessert from "./components/menuComponents/Dessert.jsx";
 import menuCategories from "./styles/menuStyles/menuCategories.module.css";
 import CravingLunch from "./pages/CravingLunch.jsx";
 // eslint-disable-next-line no-unused-vars
-import * as $ from "jquery";
 import SignIn from "./components/homeComponents/SignIn.jsx";
 import UserProfile from "./components/homeComponents/UserProfile.jsx";
 import { useAuth } from "./context/AuthContext.jsx";
