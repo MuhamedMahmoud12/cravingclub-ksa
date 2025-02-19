@@ -1,6 +1,6 @@
 .testimonials {
   padding: 100px 0;
-  background: url("../../assets/main-bg/light_bg.png");
+  background: url("/assets/main-bg/light_bg.png");
   background-attachment: fixed;
   font-family: var(--font-bebas);
 }

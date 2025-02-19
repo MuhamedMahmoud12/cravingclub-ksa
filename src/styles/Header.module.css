@@ -4,7 +4,7 @@
 /************** Navbar **************/
 
 header {
-  background: url("../assets/main-bg/header-bg.png") no-repeat center;
+  background: url("/assets/main-bg/header-bg.png") no-repeat center;
   background-size: cover;
   font-family: var(--font-bebas);
   border-bottom: 1px solid var(--grey-color);
