@@ -26,10 +26,10 @@ export default function NavLinksMobile() {
         id="mobile-nav-links"
       >
         <ul className={styles["mobile-nav-links-ul"]}>
-          {NAV_LINKS.map((element, index) => {
+          {NAV_LINKS.map((link, index) => {
             return (
-              <li key={index}>
-                <NavLink href={element.href}>{element.content}</NavLink>
+              <li key={index * 2}>
+                <NavLink to={`${link.href}`}>{link.content}</NavLink>
               </li>
             );
           })}

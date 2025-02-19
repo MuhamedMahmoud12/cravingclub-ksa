@@ -49,7 +49,7 @@ export default function Offers() {
               </div>
             </div>
             <div className={offers["img"]}>
-              <img src={`${OFFERS_PATH}kids-meal_30.jpg`} alt="" />
+              <img src={`${OFFERS_PATH}kids-meal-en.jpeg`} alt="" />
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Offers() {
               </div>
             </div>
             <div className={offers["img"]}>
-              <img src={`${OFFERS_PATH}kids-meal.jpg`} alt="" />
+              <img src={`${OFFERS_PATH}craving-lunch-en.jpeg`} alt="" />
             </div>
           </div>
         </div>

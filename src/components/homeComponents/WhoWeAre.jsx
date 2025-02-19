@@ -78,7 +78,7 @@ export default function WhoWeAre() {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "10px",
+    centerPadding: "240px",
     slidesToShow: 4,
     autoplay: true,
     speed: 3000, // slideTransition
@@ -95,12 +95,14 @@ export default function WhoWeAre() {
         breakpoint: 600,
         settings: {
           slidesToShow: 4,
+          centerPadding: "0px",
         },
       },
       {
         breakpoint: 0,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
+          centerPadding: "0px",
         },
       },
     ],
@@ -113,9 +115,10 @@ export default function WhoWeAre() {
           <img src="../../assets/bull-01.png" alt="bull-Logo" />
           <span>Who We Are</span>
           <h2>
-            A restaurant with Timeless & Traditional taste img We Only Serve
-            Real Steaks, Authentic Tastes & Authentic Atmosphere, The steak you
-            will always remember. Let us change your life with our steaks.
+            A restaurant with flavors that stand the test of time! We serve only
+            real, high-quality food with authentic flavors and a vibrant
+            atmosphere. An experience you’ll never forget. get ready for a
+            life-changing
           </h2>
         </div>
       </div>
@@ -124,64 +127,34 @@ export default function WhoWeAre() {
       >
         <Slider {...settings}>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img1.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img1.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img2.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img2.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img3.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img3.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img1.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img4.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img2.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img5.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img3.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img6.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img1.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img7.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img2.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img8.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img1.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img9.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={whoWeAre["img-container"]}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img3.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img10.jpeg`} alt="who-we-are-img" />
           </div>
         </Slider>
       </div>
@@ -190,58 +163,31 @@ export default function WhoWeAre() {
       >
         <Slider {...settings}>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img3.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img11.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img2.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img12.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img1.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img13.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img3.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img14.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img2.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img15.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img1.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img16.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img3.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img17.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img2.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img18.jpeg`} alt="who-we-are-img" />
           </div>
           <div className={`${whoWeAre.reverse} ${whoWeAre["img-container"]}`}>
-            <img
-              src={`${WHO_WE_ARE_PATH}slider-img1.jpg`}
-              alt="who-we-are-img"
-            />
+            <img src={`${WHO_WE_ARE_PATH}img19.jpeg`} alt="who-we-are-img" />
           </div>
         </Slider>
       </div>
