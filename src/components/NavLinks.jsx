@@ -1,7 +1,7 @@
 import styles from "../styles/Header.module.css";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import NAV_LINKS from "../data/link-routes";
+import { NAV_LINKS } from "../data/link-routes";
 import { useUserData } from "../context/UserContext";
 export default function NavLinks() {
   const { token } = useAuth();

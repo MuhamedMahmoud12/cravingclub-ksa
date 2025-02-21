@@ -1,5 +1,7 @@
 import offers from "../../styles/HomeStyles/offers.module.css";
 import Slider from "react-slick";
+import { NAMED_NAV_LINKS } from "../../data/link-routes";
+import { NavLink } from "react-router-dom";
 export default function Offers() {
   const OFFERS_PATH = "../../assets/offers-imgs/";
   const settings = {
@@ -7,7 +9,7 @@ export default function Offers() {
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    speed: 1000,
+    speed: 1500,
     lazyLoad: "ondemand",
     arrows: false,
     dots: false,
@@ -21,17 +23,21 @@ export default function Offers() {
           <div className={offers["offer-grid"]}>
             <div className={offers["text"]}>
               <div>
-                <h5>Kids Meal</h5>
-                <h6>Free Meal For your Kid on Wednesday</h6>
+                <h5>Craving Lunch</h5>
+                <h6>Main dish + Soup or salad + soft drink</h6>
                 <p>
-                  Let your kid enjoy his free meal on wednesday from our
-                  kidsmeal menu
+                  Make your lunch more craving, craving lunch bring you all your
+                  need in just one offer.
                 </p>
-                <a href="#">Explore More</a>
+                <NavLink to={NAMED_NAV_LINKS[0].lunchLink}>
+                  Explore More
+                </NavLink>
               </div>
             </div>
             <div className={offers["img"]}>
-              <img src={`${OFFERS_PATH}kids-meal.jpg`} alt="" />
+              <NavLink to={NAMED_NAV_LINKS[0].lunchLink}>
+                <img src={`${OFFERS_PATH}craving-lunch-en.jpeg`} alt="" />
+              </NavLink>
             </div>
           </div>
         </div>
@@ -39,35 +45,18 @@ export default function Offers() {
           <div className={offers["offer-grid"]}>
             <div className={offers["text"]}>
               <div>
-                <h5>Kids Meal</h5>
-                <h6>Free Meal For your Kid on Wednesday</h6>
+                <h5>Kids Eat Free!</h5>
+                <h6>Free Meal For your Kid Every Thursday</h6>
                 <p>
-                  Let your kid enjoy his free meal on wednesday from our
-                  kidsmeal menu
+                  Let your kid enjoy an unforgetable weekend at Craving club!
                 </p>
-                <a href="#">Explore More</a>
+                <NavLink>Explore More</NavLink>
               </div>
             </div>
             <div className={offers["img"]}>
-              <img src={`${OFFERS_PATH}kids-meal-en.jpeg`} alt="" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className={offers["offer-grid"]}>
-            <div className={offers["text"]}>
-              <div>
-                <h5>Kids Meal</h5>
-                <h6>Free Meal For your Kid on Wednesday</h6>
-                <p>
-                  Let your kid enjoy his free meal on wednesday from our
-                  kidsmeal menu
-                </p>
-                <a href="#">Explore More</a>
-              </div>
-            </div>
-            <div className={offers["img"]}>
-              <img src={`${OFFERS_PATH}craving-lunch-en.jpeg`} alt="" />
+              <NavLink>
+                <img src={`${OFFERS_PATH}kids-meal-en.jpeg`} alt="" />
+              </NavLink>
             </div>
           </div>
         </div>

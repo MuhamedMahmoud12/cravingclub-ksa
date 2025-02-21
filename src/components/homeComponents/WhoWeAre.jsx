@@ -1,79 +1,8 @@
 import whoWeAre from "../../styles/HomeStyles/whoWeAre.module.css";
-// import OwlCarousel from "react-owl-carousel";
 import Slider from "react-slick";
 export default function WhoWeAre() {
   const WHO_WE_ARE_PATH = "../../assets/who-we-are/";
-  // const options = {
-  //   loop: true,
-  //   margin: 40,
-  //   nav: false,
-  //   dots: false,
-  //   center: true,
-  //   autoplay: true,
-  //   lazyLoad: true,
-  //   slidetransition: "linear",
-  //   autoplayTimeout: 3000,
-  //   autoplaySpeed: 3000,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //       margin: 15,
-  //     },
-  //     600: {
-  //       items: 2,
-  //       margin: 20,
-  //     },
-  //     1000: {
-  //       items: 3,
-  //     },
-  //     1400: {
-  //       items: 4,
-  //     },
-  //   },
-  // };
-  // const settings = {
-  //   infinite: true, // loop
-  //   // centerMode: , // center
-  //   // autoplay: true,
-  //   lazyLoad: "ondemand", // lazyLoad
-  //   speed: 3000, // slideTransition
-  //   autoplaySpeed: 3000, // autoplayTimeout & autoplaySpeed
-  //   cssEase: "linear", // slideTransition
-  //   arrows: false, // nav (false)
-  //   dots: false, // dots (false)
-  //   responsive: [
-  //     {
-  //       breakpoint: 1400,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 1000,
-  //       settings: {
-  //         slidesToShow: 8,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 8,
-  //         slidesToScroll: 1,
-  //         centerPadding: "10px",
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 0,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         centerPadding: "5px",
-  //       },
-  //     },
-  //   ],
-  // };
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -86,23 +15,52 @@ export default function WhoWeAre() {
     cssEase: "linear", // slideTransition
     responsive: [
       {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 4,
+          centerPadding: "20px",
+        },
+      },
+      {
         breakpoint: 1000,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
+          centerPadding: "15px",
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
           slidesToShow: 4,
-          centerPadding: "0px",
+          centerPadding: "100px",
         },
       },
       {
-        breakpoint: 0,
+        breakpoint: 625,
+        settings: {
+          slidesToShow: 4,
+          centerPadding: "60px",
+        },
+      },
+      {
+        breakpoint: 568,
+        settings: {
+          slidesToShow: 4,
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: "10px",
+        },
+      },
+      {
+        breakpoint: 350,
         settings: {
           slidesToShow: 2,
-          centerPadding: "0px",
+          centerPadding: "30px",
         },
       },
     ],

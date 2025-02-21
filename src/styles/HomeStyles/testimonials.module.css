@@ -4,9 +4,7 @@
   background-attachment: fixed;
   font-family: var(--font-bebas);
 }
-.owl-carousel .owl-stage-outer {
-  width: 100%;
-}
+
 .testimonials span.test-span {
   color: var(--primary-color);
   font-size: 30px;
@@ -24,6 +22,7 @@
   width: 100%;
   margin: 40px auto;
   border-radius: 15px;
+  overflow: hidden;
 }
 .testimonials .testimonials-container .testimonial {
   display: flex;

@@ -1,5 +1,5 @@
 import styles from "../styles/Header.module.css";
-import NAV_LINKS from "../data/link-routes";
+import { NAV_LINKS } from "../data/link-routes";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
