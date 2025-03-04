@@ -1,10 +1,10 @@
 export const NAV_LINKS = [
-  { content: "Home", href: "/" },
-  { content: "Menu", href: "menu/appetizers" },
-  { content: "Craving Lunch", href: "craving-lunch" },
-  { content: "Iftar Ramadan", href: "iftar-ramadan" },
-  { content: "Locations", href: "locations" },
-  { content: "Contact Us", href: "contact-us" },
+  { content: "home", href: "/" },
+  { content: "menu", href: "menu/appetizers" },
+  { content: "cravingLunch", href: "craving-lunch/49Category" },
+  { content: "iftarCraving", href: "iftar-craving/iftar-combos" },
+  { content: "locations", href: "locations" },
+  { content: "contactUs", href: "contact-us" },
 ];
 export const NAMED_NAV_LINKS = [
   {

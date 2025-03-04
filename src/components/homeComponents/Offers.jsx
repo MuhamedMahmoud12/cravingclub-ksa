@@ -2,7 +2,9 @@ import offers from "../../styles/HomeStyles/offers.module.css";
 import Slider from "react-slick";
 import { NAMED_NAV_LINKS } from "../../data/link-routes";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 export default function Offers() {
+  const { t } = useTranslation("home");
   const OFFERS_PATH = "../../assets/offers-imgs/";
   const settings = {
     slidesToShow: 1,
@@ -16,21 +18,18 @@ export default function Offers() {
   };
   return (
     <div className="container">
-      <span className="prev-title">Our Offers</span>
-      <h2>Explore Our Exclusive Offers</h2>
+      <span className="prev-title">{t("offers.offersSpan")}</span>
+      <h2>{t("offers.offersTitle")}</h2>
       <Slider {...settings}>
         <div>
           <div className={offers["offer-grid"]}>
             <div className={offers["text"]}>
               <div>
-                <h5>Craving Lunch</h5>
-                <h6>Main dish + Soup or salad + soft drink</h6>
-                <p>
-                  Make your lunch more craving, craving lunch bring you all your
-                  need in just one offer.
-                </p>
+                <h5>{t("offers.lunchTitle")}</h5>
+                <h6>{t("offers.lunchSubTitle")}</h6>
+                <p>{t("offers.lunchDesc")}</p>
                 <NavLink to={NAMED_NAV_LINKS[0].lunchLink}>
-                  Explore More
+                  {t("offers.offerBtn")}
                 </NavLink>
               </div>
             </div>
@@ -45,12 +44,10 @@ export default function Offers() {
           <div className={offers["offer-grid"]}>
             <div className={offers["text"]}>
               <div>
-                <h5>Kids Eat Free!</h5>
-                <h6>Free Meal For your Kid Every Thursday</h6>
-                <p>
-                  Let your kid enjoy an unforgetable weekend at Craving club!
-                </p>
-                <NavLink>Explore More</NavLink>
+                <h5>{t("offers.kidsTitle")}</h5>
+                <h6>{t("offers.kidsSubTitle")}</h6>
+                <p>{t("offers.kidsDesc")}</p>
+                <NavLink>{t("offers.offerBtn")}</NavLink>
               </div>
             </div>
             <div className={offers["img"]}>

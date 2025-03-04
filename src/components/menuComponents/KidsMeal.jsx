@@ -2,20 +2,24 @@
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { kids_meals } from "../../data/menuCategories";
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
 export default function KidsMeal({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/kids-meal/";
+  const { t } = useTranslation("menu");
+  const kids_meals = t("kids_meals", { returnObjects: true });
+  const kidsMealsTitles = t("kidsMealsTitles", { returnObjects: true });
+  const IMG_PATH = "menu/kids-meal/";
   return (
     <>
       <div
         className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.kidsMealsTitles}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {kidsMealsTitles.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
             {kids_meals.map((kids_meal, index) => {

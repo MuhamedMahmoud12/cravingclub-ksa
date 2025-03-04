@@ -2,20 +2,24 @@
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { seafoods } from "../../data/menuCategories";
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
 export default function Seafood({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/Seafood/";
+  const { t } = useTranslation("menu");
+  const seafoods = t("seafoods", { returnObjects: true });
+  const seafoodTitles = t("seafoodTitles", { returnObjects: true });
+  const IMG_PATH = "menu/Seafood/";
   return (
     <>
       <div
         className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.seafoodTitles}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {seafoodTitles.map((title, index) => (
+            <AutoSliderItem key={index} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
             {seafoods.map((seafood, index) => {

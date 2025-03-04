@@ -2,20 +2,24 @@
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { pastas } from "../../data/menuCategories";
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
 export default function Pasta({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/pasta/";
+  const { t } = useTranslation("menu");
+  const pastas = t("pastas", { returnObjects: true });
+  const pastasSlider = t("pastasTitles", { returnObjects: true });
+  const IMG_PATH = "menu/pasta/";
   return (
     <>
       <div
         className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.pastasTitles}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {pastasSlider.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
             {pastas.map((pasta, index) => {

@@ -2,20 +2,26 @@
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { sandwiches } from "../../data/menuCategories";
+
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
 export default function Sandwiches({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/sandwiches/";
+  const { t } = useTranslation("menu");
+  const sandwiches = t("sandwiches", { returnObjects: true });
+  const sandwichesSlider = t("sandwichesTitle", { returnObjects: true });
+  console.log(sandwichesSlider);
+  const IMG_PATH = "menu/sandwiches/";
   return (
     <>
       <div
         className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.sandwichehsTitle}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {sandwichesSlider.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
             {sandwiches.map((sandwich, index) => {

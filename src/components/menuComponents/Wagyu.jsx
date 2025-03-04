@@ -2,20 +2,25 @@
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { wagyus } from "../../data/menuCategories";
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
 export default function Wagyu({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/wagyu/";
+  const { t } = useTranslation("menu");
+  const wagyus = t("wagyus", { returnObjects: true });
+  const wagyusTitles = t("wagyusTitles", { returnObjects: true });
+  const IMG_PATH = "menu/wagyu/";
+  console.log(wagyus);
   return (
     <>
       <div
         className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.wagyusTitles}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {wagyusTitles.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
             {wagyus.map((wagyu, index) => {

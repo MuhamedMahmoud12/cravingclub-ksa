@@ -1,0 +1,48 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("/assets/main-bg/light_bg.png");
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-bebas);
+}
+.popup div {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* background: url("/assets/main-bg/header-bg.png"); */
+}
+.popup div h3 {
+  font-size: 30px;
+  margin: 0;
+}
+.popup div > button {
+  background: var(--primary-color);
+  color: #fff;
+  outline: 0;
+  border: none;
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .popup {
+    background: rgba(0, 0, 0, 0.5);
+    align-items: flex-end;
+  }
+  .popup div {
+    background: url("/assets/main-bg/light_bg.png");
+    border-radius: 20px 20px 0 0;
+  }
+}

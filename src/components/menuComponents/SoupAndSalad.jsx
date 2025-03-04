@@ -2,23 +2,29 @@
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { soups_salads } from "../../data/menuCategories";
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
+import SaudiRiyal from "../sharedComponents/Currency";
 export default function SoupAndSalad({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/soup&salad/";
+  const { t } = useTranslation("menu");
+  const soupsData = t(`soup-salad`, { returnObjects: true });
+  const soupsSlider = t(`soupAndSaladTitles`, { returnObjects: true });
+  console.log(soupsSlider);
+  const IMG_PATH = "menu/soup&salad/";
   return (
     <>
       <div
         className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.soupAndSaladTitles}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {soupsSlider.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {soups_salads.map((soup_salad, index) => {
+            {soupsData.map((soup_salad, index) => {
               return (
                 <>
                   <Category
@@ -32,22 +38,24 @@ export default function SoupAndSalad({ categoryStyle }) {
                   >
                     {soup_salad.addOns && (
                       <>
-                        <p>{soup_salad.addOns[0].option1}</p>
+                        <p>{soup_salad.addOns[0].option}</p>
                         <div className={categoryStyle["price-cal"]}>
                           <span className={categoryStyle.price}>
-                            {soup_salad.addOns[0].price1}
+                            {soup_salad.addOns[0].price}
+                            <SaudiRiyal />
                           </span>
                           <span className={categoryStyle.cal}>
-                            {soup_salad.addOns[0].cal1}
+                            {soup_salad.addOns[0].cal}
                           </span>
                         </div>
-                        <p>{soup_salad.addOns[0].option2}</p>
+                        <p>{soup_salad.addOns[1].option}</p>
                         <div className={categoryStyle["price-cal"]}>
                           <span className={categoryStyle.price}>
-                            {soup_salad.addOns[0].price2}
+                            {soup_salad.addOns[1].price}
+                            <SaudiRiyal />
                           </span>
                           <span className={categoryStyle.cal}>
-                            {soup_salad.addOns[0].cal2}
+                            {soup_salad.addOns[1].cal}
                           </span>
                         </div>
                       </>

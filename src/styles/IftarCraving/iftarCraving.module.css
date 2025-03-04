@@ -1,0 +1,64 @@
+.iftar-slider {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.item1 {
+  background: url("/assets/iftar-craving/family-sampler.webp") no-repeat center
+    center;
+  background-size: contain;
+}
+.item2 {
+  background: url("/assets/iftar-craving/family-sampler.webp") no-repeat center
+    center;
+  background-size: contain;
+}
+.item3 {
+  background: url("/assets/iftar-craving/california-rock.webp") no-repeat center
+    center;
+  background-size: contain;
+}
+.item4 {
+  background: url("/assets/iftar-craving/smoky-platter.webp") no-repeat center
+    center;
+  background-size: contain;
+}
+.item5 {
+  background: url("/assets/iftar-craving/country-platter.webp") no-repeat center
+    center;
+  background-size: contain;
+}
+.item6 {
+  background: url("/assets/iftar-craving/mississippe-platter.webp") no-repeat
+    center center;
+  background-size: contain;
+}
+
+.iftar-aligned-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .iftar-slider {
+    height: 320px;
+  }
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6 {
+    background-size: cover;
+  }
+  .iftar-slider .item {
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .iftar-aligned-list {
+    justify-content: flex-start;
+  }
+}

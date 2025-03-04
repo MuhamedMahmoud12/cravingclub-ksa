@@ -51,7 +51,7 @@
   font-size: 20px;
   font-weight: lighter;
 }
-.main-img-slider .slider-content a.slider-btn {
+a.slider-btn {
   padding: 12px 30px;
   background: var(--primary-color);
   border-radius: var(--main-border-radius);

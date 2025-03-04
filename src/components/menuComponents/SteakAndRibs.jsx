@@ -2,20 +2,25 @@
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { steaks_and_ribs } from "../../data/menuCategories";
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+
+import { useTranslation } from "react-i18next";
 export default function SteakAndRibs({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/steak&ribs/";
+  const { t } = useTranslation("menu");
+  const steaks_and_ribs = t("steaks_and_ribs", { returnObjects: true });
+  const steakAndRibsTitles = t("steakAndRibsTitles", { returnObjects: true });
+  const IMG_PATH = "menu/steak&ribs/";
   return (
     <>
       <div
         className={`${categoryStyle["appetizers-section"]} ${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.steakAndRibsTitles}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {steakAndRibsTitles.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
             {steaks_and_ribs.map((steak_and_rib, index) => {
@@ -30,48 +35,48 @@ export default function SteakAndRibs({ categoryStyle }) {
                     price={steak_and_rib.price}
                     cal={steak_and_rib.calories}
                   >
-                    {steak_and_rib.descriptionArray && (
+                    {/* {steak_and_rib.descriptionArray && (
                       <>
                         <p className={categoryStyle["mt-15"]}>
-                          {steak_and_rib.descriptionArray[0]}
+                          {steak_and_rib.descriptionArray[0] ?? ""}
                         </p>
                         <p className={categoryStyle["mt-15"]}>
-                          {steak_and_rib.descriptionArray[1]}
+                          {steak_and_rib.descriptionArray[1] ?? ""}
                         </p>
                         <div className={categoryStyle["price-cal"]}>
                           <span className={categoryStyle.price}>
-                            {steak_and_rib.price_cal[0]}
+                            {steak_and_rib.price_cal[0] ?? ""}
                           </span>
                           <span className={categoryStyle.cal}>
-                            {steak_and_rib.price_cal[1]}
+                            {steak_and_rib.price_cal[1] ?? ""}
                           </span>
                         </div>
                       </>
-                    )}
+                    )} */}
                     {steak_and_rib.portions_price_cal && (
                       <>
                         <div className={categoryStyle["price-cal"]}>
                           <span className={categoryStyle.price}>
-                            {steak_and_rib.portions_price_cal[0]}
+                            {steak_and_rib.portions_price_cal[0] ?? ""}
                           </span>
                           <span className={categoryStyle.cal}>
-                            {steak_and_rib.portions_price_cal[1]}
+                            {steak_and_rib.portions_price_cal[1] ?? ""}
                           </span>
                         </div>
                         <div className={categoryStyle["price-cal"]}>
                           <span className={categoryStyle.price}>
-                            {steak_and_rib.portions_price_cal[2]}
+                            {steak_and_rib.portions_price_cal[2] ?? ""}
                           </span>
                           <span className={categoryStyle.cal}>
-                            {steak_and_rib.portions_price_cal[3]}
+                            {steak_and_rib.portions_price_cal[3] ?? ""}
                           </span>
                         </div>
                         <div className={categoryStyle["price-cal"]}>
                           <span className={categoryStyle.price}>
-                            {steak_and_rib.portions_price_cal[4]}
+                            {steak_and_rib.portions_price_cal[4] ?? ""}
                           </span>
                           <span className={categoryStyle.cal}>
-                            {steak_and_rib.portions_price_cal[5]}
+                            {steak_and_rib.portions_price_cal[5] ?? ""}
                           </span>
                         </div>
                       </>

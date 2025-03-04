@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import mainSlider from "../../styles/HomeStyles/MainSlider.module.css";
-import SliderItem from "./SldierItem";
 import Slider from "react-slick";
-export default function MainSlider() {
+export default function MainSlider({ children, ...props }) {
   const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -34,27 +34,8 @@ export default function MainSlider() {
   };
   return (
     <>
-      <div className={`${mainSlider["main-img-slider"]}`}>
-        <Slider {...settings}>
-          <SliderItem
-            className={`${mainSlider["item"]} ${mainSlider["item1"]} item`}
-            prevTitle="Welcome to Craving Club"
-            title="American Casual Dinning Restaurant"
-            description="Craving Starts Over Here"
-          />
-          <SliderItem
-            className={`${mainSlider["item"]} ${mainSlider["item2"]} item`}
-            prevTitle="Welcome to Craving Club"
-            title="Unique Dinning Experience"
-            description="We take your dinning experience to the next level"
-          />
-          <SliderItem
-            className={`${mainSlider["item"]} ${mainSlider["item3"]} item`}
-            prevTitle="Welcome to Craving Club"
-            title="Discover our customized offers"
-            description="Whatever you need, you will find it here"
-          />
-        </Slider>
+      <div className={`${mainSlider["main-img-slider"]}`} {...props}>
+        <Slider {...settings}>{children}</Slider>
       </div>
     </>
   );

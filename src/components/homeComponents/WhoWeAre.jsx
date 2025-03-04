@@ -1,6 +1,8 @@
 import whoWeAre from "../../styles/HomeStyles/whoWeAre.module.css";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 export default function WhoWeAre() {
+  const { t } = useTranslation("home");
   const WHO_WE_ARE_PATH = "../../assets/who-we-are/";
 
   const settings = {
@@ -71,13 +73,8 @@ export default function WhoWeAre() {
       <div className="container">
         <div className={whoWeAre["content"]}>
           <img src="../../assets/bull-01.png" alt="bull-Logo" />
-          <span>Who We Are</span>
-          <h2>
-            A restaurant with flavors that stand the test of time! We serve only
-            real, high-quality food with authentic flavors and a vibrant
-            atmosphere. An experience you’ll never forget. get ready for a
-            life-changing
-          </h2>
+          <span>{t("whoWeAre.whoWeAreSpan")}</span>
+          <h2>{t("whoWeAre.whoWeAreDesc")}</h2>
         </div>
       </div>
       <div
@@ -149,7 +146,6 @@ export default function WhoWeAre() {
           </div>
         </Slider>
       </div>
-      <a href="#">Read Our Story</a>
     </section>
   );
 }

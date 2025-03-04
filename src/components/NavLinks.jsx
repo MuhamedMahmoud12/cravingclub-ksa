@@ -3,10 +3,13 @@ import { NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { NAV_LINKS } from "../data/link-routes";
 import { useUserData } from "../context/UserContext";
+import { useTranslation } from "react-i18next";
+
 export default function NavLinks() {
+  const { t } = useTranslation("home");
   const { token } = useAuth();
   const { userData, loading } = useUserData();
-  // console.log(userData);
+
   return (
     <div className={styles["nav-links"]}>
       <ul className={styles["nav-links-ul"]}>
@@ -14,7 +17,7 @@ export default function NavLinks() {
           return (
             <li key={index}>
               <NavLink key={index * 2} to={`${link.href}`}>
-                {link.content}
+                {t(`navbar.${link.content}`)}
               </NavLink>
             </li>
           );
@@ -24,7 +27,9 @@ export default function NavLinks() {
           <NavLink
             className={`${styles["nav-reservation-link"]} ${styles["no-hover"]}`}
           >
-            <span className={styles["nav-reservation-span"]}>Reservation:</span>
+            <span className={styles["nav-reservation-span"]}>
+              {t("navbar.reservation")}:
+            </span>
             +966 54 798 4094
           </NavLink>
         </li>
@@ -35,7 +40,7 @@ export default function NavLinks() {
               id="prime-club-btn"
               to="/sign-in"
             >
-              Prime Club
+              {t("navbar.primeClub")}
             </NavLink>
           ) : (
             <NavLink id="prime-club-btn" to="/profile">
@@ -49,8 +54,11 @@ export default function NavLinks() {
             href="#"
             className={`${styles["nav-lang-link"]} ${styles["no-hover"]}`}
           >
-            <img src="../assets/icons/ar.png" alt="arabic-language-img" />
-            AR
+            <img
+              src={`../assets/icons/${t("navbar.langImg")}`}
+              alt="arabic-language-img"
+            />
+            {t("navbar.lang")}
           </NavLink>
         </li>
       </ul>

@@ -1,4 +1,5 @@
 import menuCategories from "../../styles/menuStyles/menuCategories.module.css";
+import SaudiRiyal from "../sharedComponents/Currency";
 /* eslint-disable react/prop-types */
 export default function Category({
   imgPath,
@@ -9,7 +10,7 @@ export default function Category({
   cal,
   children,
 }) {
-  const IMG_PATH = "../../assets/menu/";
+  const IMG_PATH = "/assets/";
   return (
     <div className={menuCategories["item-grid"]}>
       <div className={menuCategories.img}>
@@ -24,7 +25,10 @@ export default function Category({
         ) : null}
         {price ? (
           <div className={menuCategories["price-cal"]}>
-            <span className={menuCategories.price}>{price}</span>
+            <span className={menuCategories.price}>
+              {price}
+              <SaudiRiyal></SaudiRiyal>
+            </span>
             <span className={menuCategories.cal}>{cal}</span>
           </div>
         ) : null}

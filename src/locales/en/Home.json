@@ -1,0 +1,119 @@
+{
+  "navbar": {
+    "home": "Home",
+    "menu": "Menu",
+    "cravingLunch": "Craving Lunch",
+    "iftarCraving": "Iftar Craving",
+    "locations": "Locations",
+    "contactUs": "Contact us",
+    "reservation": "Reservation",
+    "primeClub": "Prime Club",
+    "lang": "AR",
+    "changeLang": "تغيير اللغه",
+    "langImg": "ar.png"
+  },
+  "mainSlider": {
+    "welcome": "Welcome to Craving Club",
+    "firstMsg": "American Casual Dinning Restaurant",
+    "slogan": "Craving starts over here",
+    "secondMsg": "Unique Dining Experience",
+    "sloganTwo": "We take your dining experience to the next level",
+    "thirdMsg": "Timeless & Traditional Taste",
+    "sloganThree": "Authentic Tastes & Authentic Atmosphere, Change your life with our food.",
+    "sliderBtn": "Explore Our Menu"
+  },
+  "homeAutoSlider": {
+    "Appetizers": "Appetizers",
+    "Soup": "Soup",
+    "Salad": "Salad",
+    "Sandwiches": "Sandwiches",
+    "Burgers": "Burgers",
+    "Pasta": "Pasta",
+    "Pizza": "Pizza",
+    "Steak": "Steak",
+    "Ribs": "Ribs",
+    "Wagyu": "Wagyu",
+    "SeaFood": "Sea Food",
+    "Chicken": "Chicken",
+    "Dessert": "Dessert",
+    "Kids Meals": "Kids Meals"
+  },
+  "aboutUs": {
+    "aboutSpan": "About Craving",
+    "aboutHeading": ["craving", "starts", "over", "here"],
+    "locations": "Locations",
+    "firstBranch": "Abha - Khamis Mushait",
+    "secondBranch": "Jazan - Corniche Road",
+    "openHours": "Open Hours",
+    "openHoursTime": "Sat-Wed : 11AM-1AM",
+    "openHoursTime2": "Thur-Fri: 1PM- 4AM",
+    "reservation": "reservation",
+    "number": "+966 54 798 4094",
+    "plusSpan": "+",
+    "guestDesc": "Happy Monthly Customers",
+    "reviewsDesc": "Great Google Reviews",
+    "branchesDesc": "Branches"
+  },
+  "menuCat": {
+    "menuSpan": "Our Menu",
+    "cat": "Check Our Categories",
+    "food": "Food",
+    "drinks": "Drinks",
+    "appetizers": "Appetizers",
+    "soupSalad": "Soup & Salad",
+    "sandwiches": "Sandwiches",
+    "burger": "Burgers",
+    "pasta": "Pasta",
+    "pizza": "Pizza",
+    "steakRibs": "Steak&Ribs",
+    "wagyu": "Wagyu Choice",
+    "seafood": "Sea Food",
+    "chicken": "Chicken",
+    "kidsMeal": "Kids Meals",
+    "dessert": "Dessert"
+  },
+  "offers": {
+    "offersSpan": "Our Offers",
+    "offersTitle": "Explore Our Exclusive Offers",
+    "lunchTitle": "Craving Lunch",
+    "lunchSubTitle": "Main dish + soup or salad + drink",
+    "lunchDesc": "Make your lunch more craving, craving lunch brings you all your need in just one offer",
+    "kidsTitle": "Kids Eat Free",
+    "kidsSubTitle": "Free meal for your kids every Thursday",
+    "kidsDesc": "Let your kid enjoy unforgetable week end at craving club!",
+    "offerBtn": "Explore Offer"
+  },
+  "whoWeAre": {
+    "whoWeAreSpan": "Who We Are?",
+    "whoWeAreDesc": "A restaurant with flavors that stand the test of time! We serve only real, high-quality food with authentic flavors and a vibrant atmosphere. An experience you’ll never forget. get ready for a life-changing"
+  },
+  "testi": {
+    "testiSpan": "Tasty Words",
+    "testiTitle": "Heard from our guests ?"
+  },
+  "footer": {
+    "firstBranch": "first branch",
+    "firstAddress": "King fahd Rd, Khamis Mushait .62432, Saudi Arabia",
+    "secondBranch": "second branch",
+    "secondAddress": "Corniche Rd, 7730, Jazan 2103 .82725, Saudi Arabia",
+    "getDirection": "get direction",
+    "openingTimes": "Saturday - Wednesday: 11:00AM - 1:00 AM",
+    "openingTimes2": "Thursday & Friday: 1:00 PM - 4:00 AM",
+    "primeClubTitle": "Prime Club & Offers",
+    "primeClubDesc": "Sign up and get up to 15% on each visit!",
+    "primeClubBtn": "Prime Club",
+    "tiktok": "Tiktok",
+    "snapchat": "Snapchat",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "footerLinks": [
+      "Home",
+      "Menu",
+      "Craving Lunch",
+      "Iftar Ramadan",
+      "Location",
+      "Contact Us"
+    ],
+    "copyRight": "© 2024 Restaurant. All Rights Reserved | Crafted by Craving Club"
+  }
+}

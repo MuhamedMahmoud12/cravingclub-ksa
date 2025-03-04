@@ -1,67 +1,72 @@
 /* eslint-disable react/prop-types */
+import SaudiRiyal from "../sharedComponents/Currency";
 import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
-import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { appetizers } from "../../data/menuCategories";
-
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
 export default function Appetizers({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/appetizers/";
+  const { t } = useTranslation("menu");
+  const IMG_PATH = "menu/appetizers/";
+  const appetizersData = t("appetizers", { returnObjects: true });
+  const appetizersSlider = t(`appetizersTitles`, { returnObjects: true });
   return (
     <>
       <div
         className={`${categoryStyle["item-section"]}`}
         id="appetizers-section"
       >
-        <AutoSlider
-          properties={SLIDER_OPTIONS[0].homeAutoSlider}
-          titles={AUTO_SLIDER_TITLES.appetizersTitles}
-        />
+        <AutoSlider properties={SLIDER_OPTIONS[0].homeAutoSlider}>
+          {appetizersSlider.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {appetizers.map((appetizer, index) => {
+            {appetizersData.map((appetizer, index) => {
               return (
                 <Category
                   key={index}
                   imgPath={`${IMG_PATH}${appetizer.img}`}
                   imgAlt={appetizer.title}
                   itemName={appetizer.title}
-                  itemDesription={appetizer.description}
-                  price={appetizer.price}
-                  cal={appetizer.calories}
+                  itemDesription={appetizer.description ?? ""}
+                  price={appetizer.price ?? ""}
+                  cal={appetizer.calories ?? ""}
                 >
                   {appetizer.ingredients && (
                     <>
                       <span className={categoryStyle.cat}>
-                        {appetizer.ingredients[0].ingredient1Name}
+                        {appetizer.ingredients[0].name}
                       </span>
                       <p className={categoryStyle["fs-15"]}>
-                        {appetizer.ingredients[0].ingredient1des}
+                        {appetizer.ingredients[0].description}
                       </p>
                       <span className={categoryStyle.cat}>
-                        {appetizer.ingredients[0].ingredient2Name}
+                        {appetizer.ingredients[1].name}
                       </span>
                       <p className={categoryStyle["fs-15"]}>
-                        {appetizer.ingredients[0].ingredient2des}
+                        {appetizer.ingredients[1].description}
                       </p>
                       <span className={categoryStyle.cat}>
-                        {appetizer.ingredients[0].ingredient3Name}
+                        {appetizer.ingredients[2].name}
                       </span>
                       <p className={categoryStyle["fs-15"]}>
-                        {appetizer.ingredients[0].ingredient3des}
+                        {appetizer.ingredients[2].description}
                       </p>
                       <span className={categoryStyle.cat}>
-                        {appetizer.ingredients[0].ingredient4Name}
+                        {appetizer.ingredients[3].name}
                       </span>
                       <p className={categoryStyle["fs-15"]}>
-                        {appetizer.ingredients[0].ingredient4des}
+                        {appetizer.ingredients[3].description}
                       </p>
                       <div className={categoryStyle["price-cal"]}>
                         <span className={categoryStyle.price}>
-                          {appetizer.itemDetails[0].price}
+                          {appetizer.itemDetails.price}
+                          <SaudiRiyal></SaudiRiyal>
                         </span>
                         <span className={categoryStyle.cal}>
-                          {appetizer.itemDetails[0].calories}
+                          {appetizer.itemDetails.calories}
                         </span>
                       </div>
                     </>
@@ -70,18 +75,20 @@ export default function Appetizers({ categoryStyle }) {
                     <>
                       <div className={categoryStyle["price-cal"]}>
                         <span className={categoryStyle.price}>
-                          {appetizer.addOns[0].add1}
+                          {appetizer.addOns[0].name}
                         </span>
                         <span className={categoryStyle.cal}>
-                          {appetizer.addOns[0].price1}
+                          {appetizer.addOns[0].price}
+                          <SaudiRiyal></SaudiRiyal>
                         </span>
                       </div>
                       <div className={categoryStyle["price-cal"]}>
                         <span className={categoryStyle.price}>
-                          {appetizer.addOns[0].add2}
+                          {appetizer.addOns[1].name}
                         </span>
                         <span className={categoryStyle.cal}>
-                          {appetizer.addOns[0].price2}
+                          {appetizer.addOns[1].price}
+                          <SaudiRiyal></SaudiRiyal>
                         </span>
                       </div>
                     </>

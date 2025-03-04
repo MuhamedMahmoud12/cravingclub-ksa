@@ -15,12 +15,25 @@ import Chicken from "./components/menuComponents/Chicken.jsx";
 import KidsMeal from "./components/menuComponents/KidsMeal.jsx";
 import Dessert from "./components/menuComponents/Dessert.jsx";
 import menuCategories from "./styles/menuStyles/menuCategories.module.css";
-import CravingLunch from "./pages/CravingLunch.jsx";
+import Offer49 from "./components/lunchComponents/Offer49.jsx";
+import Offer59 from "./components/lunchComponents/Offer59.jsx";
+import Offer79 from "./components/lunchComponents/Offer79.jsx";
+import LunchLayout from "./layouts/LunchLayout.jsx";
+// import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
+// import FamilySampler from "./components/iftarCravingComponents/FamilySampler.jsx";
+// import DuoSampler from "./components/iftarCravingComponents/DuoSampler.jsx";
+// import CaliforniaRock from "./components/iftarCravingComponents/CaliforniaRock.jsx";
+// import SmokyPlatter from "./components/iftarCravingComponents/SmokyPlatter.jsx";
+// import MississippiPlatter from "./components/iftarCravingComponents/MississippiPlatter.jsx";
+// import CountryPlatter from "./components/iftarCravingComponents/CountryPlatter.jsx";
 import SignIn from "./components/homeComponents/SignIn.jsx";
 import UserProfile from "./components/homeComponents/UserProfile.jsx";
+import IftarCombos from "./components/iftarCravingComponents/IftarCombos.jsx";
 import { useAuth } from "./context/AuthContext.jsx";
+import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
+
 function App() {
-  const { token } = useAuth();
+  const token = useAuth();
 
   return (
     <BrowserRouter>
@@ -83,7 +96,26 @@ function App() {
             <Route path="/sign-in" element={<SignIn />} />
           )}
           <Route path="/profile" element={<UserProfile />} />
-          <Route index path="/craving-lunch" element={<CravingLunch />} />
+          <Route path="/craving-lunch" element={<LunchLayout />}>
+            <Route
+              path="/craving-lunch/49Category"
+              element={<Offer49 categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/craving-lunch/59Category"
+              element={<Offer59 categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/craving-lunch/79Category"
+              element={<Offer79 categoryStyle={menuCategories} />}
+            />
+          </Route>
+          <Route path="/iftar-craving" element={<IftarCravingLayout />}>
+            <Route
+              path="/iftar-craving/iftar-combos"
+              element={<IftarCombos categoryStyle={menuCategories} />}
+            />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

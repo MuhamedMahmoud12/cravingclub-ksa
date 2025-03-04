@@ -27,3 +27,13 @@ body {
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "Cairo";
+  src: url("../fonts/cairo/Cairo-Regular-BF643384ef31630.ttf")
+      format("truetype"),
+    url("../fonts/Cairo-SemiBold-BF643384ef0a2e7.ttf") format("truetype"),
+    url("../fonts/Cairo-Bold-BF643384ee22aa6.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}

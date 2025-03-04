@@ -1,72 +1,47 @@
+/* eslint-disable react/prop-types */
 import menuItemsNav from "../../styles/menuStyles/menuItemsNav.module.css";
-import MenuNavItem from "./MenuNavItem";
-export default function MenuItemsNav() {
+import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+// import { useState } from "react";
+export default function MenuItemsNav({ children, ...props }) {
+  const { t } = useTranslation("menu");
   return (
     <>
-      <div className={menuItemsNav["menu-ul-padding-div"]}>
+      <div className={menuItemsNav["menu-ul-padding-div"]} {...props}>
         <div className="container" id="menu-div">
-          <ul className={menuItemsNav["menu-ul"]} id="fixed-menu">
-            <MenuNavItem
-              imgName="appetizers.webp"
-              itemName="Appetizers"
-              categoryRoute="appetizers"
-            />
-            <MenuNavItem
-              imgName="soup&salad.jpg"
-              itemName="Soup&Salad"
-              categoryRoute="soup-salad"
-            />
-            <MenuNavItem
-              imgName="sandwiches.jpg"
-              itemName="Sandwiches"
-              categoryRoute="sandwiches"
-            />
-            <MenuNavItem
-              imgName="burgers.jpg"
-              itemName="Burgers"
-              categoryRoute="burgers"
-            />
-            <MenuNavItem
-              imgName="pasta.jpg"
-              itemName="Pasta"
-              categoryRoute="pasta"
-            />
-            <MenuNavItem
-              imgName="pizza.jpg"
-              itemName="Pizza"
-              categoryRoute="pizza"
-            />
-            <MenuNavItem
-              imgName="steak&ribs.jpg"
-              itemName="Steak&Ribs"
-              categoryRoute="steak-ribs"
-            />
-            <MenuNavItem
-              imgName="wagyu.jpg"
-              itemName="Wagyu Choice"
-              categoryRoute="wagyu"
-            />
-            <MenuNavItem
-              imgName="seafood.jpg"
-              itemName="SeaFood"
-              categoryRoute="seafood"
-            />
-            <MenuNavItem
-              imgName="chicken.jpg"
-              itemName="Chicken"
-              categoryRoute="chicken"
-            />
-            <MenuNavItem
-              imgName="kids-meal.jpg"
-              itemName="Kids Meals"
-              categoryRoute="kids-meal"
-            />
-            <MenuNavItem
-              imgName="dessert.jpg"
-              itemName="Dessert"
-              categoryRoute="dessert"
-            />
+          <ul className={menuItemsNav["cat-list"]}>
+            <li>
+              <NavLink
+                to="/menu/appetizers"
+                className={({ isActive }) =>
+                  isActive ? menuItemsNav["my-active-class"] : ""
+                }
+              >
+                {t("menuNavSec.mainMenu")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? menuItemsNav["my-active-class"] : ""
+                }
+                to="/craving-lunch/49Category"
+              >
+                {t("menuNavSec.cravingLunch")}
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? menuItemsNav["my-active-class"] : ""
+                }
+                to="/iftar-craving/iftar-combos"
+              >
+                {t("menuNavSec.iftarCraving")}
+              </NavLink>
+            </li>
           </ul>
+          {children}
         </div>
       </div>
     </>

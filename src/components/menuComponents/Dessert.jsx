@@ -3,9 +3,13 @@ import Category from "./Category";
 import AutoSlider from "../homeComponents/AutoSlider";
 import SLIDER_OPTIONS from "../../data/sliderOptions";
 import AUTO_SLIDER_TITLES from "../../data/autoSliderTitles";
-import { desserts } from "../../data/menuCategories";
+import AutoSliderItem from "../homeComponents/AutoSliderItem";
+import { useTranslation } from "react-i18next";
 export default function Dessert({ categoryStyle }) {
-  const IMG_PATH = "../../assets/menu/Dessert/";
+  const { t } = useTranslation("menu");
+  const desserts = t("desserts", { returnObjects: true });
+  const dessertsTitles = t("dessertsTitles", { returnObjects: true });
+  const IMG_PATH = "menu/Dessert/";
   return (
     <>
       <div
@@ -15,7 +19,11 @@ export default function Dessert({ categoryStyle }) {
         <AutoSlider
           properties={SLIDER_OPTIONS[0].homeAutoSlider}
           titles={AUTO_SLIDER_TITLES.dessertsTitles}
-        />
+        >
+          {dessertsTitles.map((title, index) => (
+            <AutoSliderItem key={index * 2} title={title} />
+          ))}
+        </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
             {desserts.map((dessert, index) => {

@@ -1,6 +1,7 @@
 .visible {
-  height: calc(100vh - 90px) !important;
+  height: 100vh !important;
 }
+
 /************** Navbar **************/
 
 header {
@@ -8,9 +9,10 @@ header {
   background-size: cover;
   font-family: var(--font-bebas);
   border-bottom: 1px solid var(--grey-color);
-  z-index: 999;
+  z-index: 998;
   top: 0;
   width: 100%;
+  position: relative;
 }
 header nav.navbar {
   display: grid;
@@ -134,12 +136,12 @@ header nav.navbar .nav-links ul.nav-links-ul li a.nav-lang-link img {
   width: 25px;
 }
 .mobile-nav .mobile-nav-links {
-  position: fixed;
+  position: absolute;
   z-index: 999;
   width: 100%;
   height: 0;
   left: 0;
-  top: 90px;
+  top: 94px;
   background: url("/assets/main-bg/header-bg.png") no-repeat;
   transition: 200ms;
   overflow: hidden;
@@ -157,6 +159,7 @@ header nav.navbar .nav-links ul.nav-links-ul li a.nav-lang-link img {
   color: #fff;
   font-size: 19px;
   transition: 300ms ease-in-out;
+  display: block;
 }
 
 .mobile-nav

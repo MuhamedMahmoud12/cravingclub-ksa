@@ -137,14 +137,6 @@ export const appetizers = [
     price: "39 SAR",
     calories: "1320 CAL",
   },
-  {
-    img: "smoke-fries.webp",
-    title: "Smoke Fries",
-    description:
-      "Crisp corn tortilla chips topped with melted Colby cheese, jalapeño slices served with the classic trio: pico de gallo, guacamole, and sour cream.",
-    price: "39 SAR",
-    calories: "1320 CAL",
-  },
 ];
 export const soups_salads = [
   {
@@ -204,14 +196,6 @@ export const soups_salads = [
     price: "42 SAR",
     calories: "970 CAL",
   },
-  {
-    img: "strawberry-avocado-salad.webp",
-    title: "Strawberry Avocado Salad",
-    description:
-      "Satay Chicken Strips, Lettuce, Carrots, Rice Noodles, Cucumbers, Bean Sprouts, Cilantro, Peanuts and Sesame Seeds Tossed with Thai Vinaigrette.",
-    price: "42 SAR",
-    calories: "970 CAL",
-  },
 ];
 export const sandwiches = [
   {
@@ -249,22 +233,6 @@ export const sandwiches = [
   {
     img: "caribbean-sandwich.webp",
     title: "Caribbean Sandwich",
-    description:
-      "Cajun grilled chicken sandwich with Caribbean sauce Serve with fries and frizzled onion",
-    price: "41 SAR",
-    calories: "990 CAL",
-  },
-  {
-    img: "crunch-wild-wing.webp",
-    title: "Crunch Wild Wing",
-    description:
-      "Cajun grilled chicken sandwich with Caribbean sauce Serve with fries and frizzled onion",
-    price: "41 SAR",
-    calories: "990 CAL",
-  },
-  {
-    img: "mushroom-chicken-sandwich.webp",
-    title: "Mushroom Chicken Sandwich",
     description:
       "Cajun grilled chicken sandwich with Caribbean sauce Serve with fries and frizzled onion",
     price: "41 SAR",
@@ -312,30 +280,6 @@ export const burgers = [
     price: "54 SAR",
     calories: "1240",
   },
-  {
-    img: "smokehouse-burger.webp",
-    title: "Smokehouse Burger",
-    description:
-      "Char-grilled beef patty seasoned with blackening spice White cheddar, aged all-natural cheddar spread, lettuce, tomato, red onions, pickles, hickory-smoked bacon, Breaded Mozzarella Cheese.",
-    price: "54 SAR",
-    calories: "1240",
-  },
-  {
-    img: "smoky-brisket-burger.webp",
-    title: "Smoky Brisket Burger",
-    description:
-      "Char-grilled beef patty seasoned with blackening spice White cheddar, aged all-natural cheddar spread, lettuce, tomato, red onions, pickles, hickory-smoked bacon, Breaded Mozzarella Cheese.",
-    price: "54 SAR",
-    calories: "1240",
-  },
-  {
-    img: "swiss-mushroom-burger.webp",
-    title: "Swiss Mushroom Burger",
-    description:
-      "Char-grilled beef patty seasoned with blackening spice White cheddar, aged all-natural cheddar spread, lettuce, tomato, red onions, pickles, hickory-smoked bacon, Breaded Mozzarella Cheese.",
-    price: "54 SAR",
-    calories: "1240",
-  },
 ];
 export const pastas = [
   {
@@ -378,27 +322,11 @@ export const pastas = [
     price: "48 SAR",
     calories: "1250 CAL",
   },
-  {
-    img: "DSC_8335.webp",
-    title: "Shrimp Zitti Pasta",
-    description:
-      "Sautéed Shrimp , white base sauce, Parmesan-Romano and Ziti . Served with a warm garlic bread.",
-    price: "48 SAR",
-    calories: "1250 CAL",
-  },
 ];
 export const pizzas = [
   {
     img: "buffalo-chicken-pizza.webp",
     title: "Buffalo Chicken Pizza",
-    description:
-      "This buffalo chicken pizza is full of spicy buffalo sauce, chicken, and drizzled with a creamy ranch dressing",
-    price: "43 SAR",
-    calories: "392 CAL",
-  },
-  {
-    img: "classic-pepperoni.webp",
-    title: "Classic Pepperoni Pizza",
     description:
       "This buffalo chicken pizza is full of spicy buffalo sauce, chicken, and drizzled with a creamy ranch dressing",
     price: "43 SAR",
@@ -420,14 +348,7 @@ export const pizzas = [
     price: "45 SAR",
     calories: "240 CAL",
   },
-  {
-    img: "stackedhouse-pizza.webp",
-    title: "Stackedhouse Pizza",
-    description:
-      "Our traditional pizza dough topping with marinara sauce, alfredo sauce , marinated grilled chicken red and green bell pepper mozzarella cheese",
-    price: "43 SAR",
-    calories: "1065 CAL",
-  },
+
   {
     img: "sundried-pizza.webp",
     title: "Sundried Pizza",
@@ -436,9 +357,10 @@ export const pizzas = [
     price: "42 SAR",
     calories: "250 CAL",
   },
+
   {
-    img: "truffle-creamy-pizza.webp",
-    title: "Truffle Creamy Pizza",
+    img: "la-pizza-de-pollo.webp",
+    title: "La Pizza De Pollo",
     description:
       "Our traditional pizza dough topping with marinara sauce, alfredo sauce , marinated grilled chicken red and green bell pepper mozzarella cheese",
     price: "43 SAR",
@@ -500,55 +422,55 @@ export const steaks_and_ribs = [
     price: "118 SAR",
     calories: "1350 CAL",
   },
-  {
-    img: "free-meganon..webp",
-    title: "Free Meganon",
-    description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
-    price: "118 SAR",
-    calories: "1350 CAL",
-  },
-  {
-    img: "loaded-ribeye-steak.webp",
-    title: "Loaded Ribeye Steak",
-    description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
-    price: "118 SAR",
-    calories: "1350 CAL",
-  },
-  {
-    img: "free-meganon..webp",
-    title: "Free Meganon",
-    description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
-    price: "118 SAR",
-    calories: "1350 CAL",
-  },
-  {
-    img: "steak-dian.webp",
-    title: "Steak Dian",
-    description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
-    price: "118 SAR",
-    calories: "1350 CAL",
-  },
-  {
-    img: "surf-and-turf.webp",
-    title: "Surf and Turf",
-    description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
-    price: "118 SAR",
-    calories: "1350 CAL",
-  },
-  {
-    img: "ONE00668.webp",
-    title: "Surf and Turf",
-    description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
-    price: "118 SAR",
-    calories: "1350 CAL",
-  },
-  {
-    img: "tomahawk-steak.webp",
-    title: "Tomahawk Steak",
-    description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
-    price: "118 SAR",
-    calories: "1350 CAL",
-  },
+  // {
+  //   img: "free-meganon..webp",
+  //   title: "Free Meganon",
+  //   description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
+  //   price: "118 SAR",
+  //   calories: "1350 CAL",
+  // },
+  // {
+  //   img: "loaded-ribeye-steak.webp",
+  //   title: "Loaded Ribeye Steak",
+  //   description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
+  //   price: "118 SAR",
+  //   calories: "1350 CAL",
+  // },
+  // {
+  //   img: "free-meganon..webp",
+  //   title: "Free Meganon",
+  //   description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
+  //   price: "118 SAR",
+  //   calories: "1350 CAL",
+  // },
+  // {
+  //   img: "steak-dian.webp",
+  //   title: "Steak Dian",
+  //   description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
+  //   price: "118 SAR",
+  //   calories: "1350 CAL",
+  // },
+  // {
+  //   img: "surf-and-turf.webp",
+  //   title: "Surf and Turf",
+  //   description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
+  //   price: "118 SAR",
+  //   calories: "1350 CAL",
+  // },
+  // {
+  //   img: "ONE00668.webp",
+  //   title: "Surf and Turf",
+  //   description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
+  //   price: "118 SAR",
+  //   calories: "1350 CAL",
+  // },
+  // {
+  //   img: "tomahawk-steak.webp",
+  //   title: "Tomahawk Steak",
+  //   description: `The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.`,
+  //   price: "118 SAR",
+  //   calories: "1350 CAL",
+  // },
   {
     img: "applewood-backribs.webp",
     title: "Applewood Full BB-BACK RiBS",
@@ -640,20 +562,20 @@ export const chickens = [
     price: "61 SAR",
     calories: "424 CAL",
   },
-  {
-    img: "coutry-craving.webp",
-    title: "Country Craving",
-    description: `Crusted tilapia fish served with mango corn salad and pilaf rice.`,
-    price: "62 SAR",
-    calories: "923 CAL",
-  },
-  {
-    img: "crusted-carbonara-chicken.webp",
-    title: "Crusted Carbonara Chicken",
-    description: `Hand-battered golden crispy fried shrimp served with crispy seasoned fries, cocktail sauce and your choice of side.`,
-    price: "58 SAR",
-    calories: "740 CAL",
-  },
+  // {
+  //   img: "coutry-craving.webp",
+  //   title: "Country Craving",
+  //   description: `Crusted tilapia fish served with mango corn salad and pilaf rice.`,
+  //   price: "62 SAR",
+  //   calories: "923 CAL",
+  // },
+  // {
+  //   img: "crusted-carbonara-chicken.webp",
+  //   title: "Crusted Carbonara Chicken",
+  //   description: `Hand-battered golden crispy fried shrimp served with crispy seasoned fries, cocktail sauce and your choice of side.`,
+  //   price: "58 SAR",
+  //   calories: "740 CAL",
+  // },
   {
     img: "chicken-bella.webp",
     title: "Chicken Bella",
@@ -661,20 +583,20 @@ export const chickens = [
     price: "66 SAR",
     calories: "478 CAL",
   },
-  {
-    img: "chicken-fingers.webp",
-    title: "Chicken Fingers",
-    description: `Marinated Chicken Breast Topping With Creamy Mushroom Artichoke, Serve With Two Side From Your Choice.`,
-    price: "66 SAR",
-    calories: "478 CAL",
-  },
-  {
-    img: "DSC_8441.webp",
-    title: "Chicken Fingers",
-    description: `Marinated Chicken Breast Topping With Creamy Mushroom Artichoke, Serve With Two Side From Your Choice.`,
-    price: "66 SAR",
-    calories: "478 CAL",
-  },
+  // {
+  //   img: "chicken-fingers.webp",
+  //   title: "Chicken Fingers",
+  //   description: `Marinated Chicken Breast Topping With Creamy Mushroom Artichoke, Serve With Two Side From Your Choice.`,
+  //   price: "66 SAR",
+  //   calories: "478 CAL",
+  // },
+  // {
+  //   img: "DSC_8441.webp",
+  //   title: "Chicken Fingers",
+  //   description: `Marinated Chicken Breast Topping With Creamy Mushroom Artichoke, Serve With Two Side From Your Choice.`,
+  //   price: "66 SAR",
+  //   calories: "478 CAL",
+  // },
   {
     img: "d'vills-chicken.webp",
     title: "D’ Vil ‘S Chicken",
@@ -682,13 +604,13 @@ export const chickens = [
     price: "63 SAR",
     calories: "429 CAL",
   },
-  {
-    img: "mederia-chicken.webp",
-    title: "Mederia Chicken",
-    description: `Crispy fried chicken with siracha Cheese and sour cream serve with two side Choice.`,
-    price: "63 SAR",
-    calories: "429 CAL",
-  },
+  // {
+  //   img: "mederia-chicken.webp",
+  //   title: "Mederia Chicken",
+  //   description: `Crispy fried chicken with siracha Cheese and sour cream serve with two side Choice.`,
+  //   price: "63 SAR",
+  //   calories: "429 CAL",
+  // },
   {
     img: "smoky-mountain.webp",
     title: "Smoky Mountain",
@@ -831,5 +753,44 @@ export const desserts = [
     title: "Apple Crostata",
     description: `A european - style tart, you’ll love this cinnamon treat warm from the oven. apple cinnamon, cashew nuts, scoop of vanilla ice cream chocolate drizzled and strawberry slices a homemade dessert made special just for you.`,
     price: "36 SAR",
+  },
+];
+
+export const iftar_craving = [
+  {
+    img: "family-sampler.webp",
+    title: "Family Sampler",
+    description: `TREAT YOUR FAMILY ON THE BEST SAMPLER EVER Fire Crackers, wings , Fried mozzarella served with 4 main dishes of choice ,Two soups,Two salads, ramadan drinks, arabic coffe and dates. `,
+    price: "380 SAR",
+  },
+  {
+    img: "family-sampler.webp",
+    title: "Duo Sampler",
+    description: `Enjoy the best duet ever!, two types of Quesadilla chicken, brisket and pieces of buffalo chicken bites served with 2 main dishes of choice, Two soups, One salad, ramadan drinks, arabic coffe and dates.`,
+    price: "189 SAR",
+  },
+  {
+    img: "california-rock.webp",
+    title: "California Rock",
+    description: `A wonderful assortment of ribeye steak, grilled shrimp with scampi sauce, And Beef short ribs covered with barbecue sauce, served with Two side dishes of choice, two soups, One salad and Two Ramadan drinks, Arabic coffee and Dates.`,
+    price: "198 SAR",
+  },
+  {
+    img: "smoky-platter.webp",
+    title: "Smoky Platter",
+    description: `Choose the best of our smoky Beef back ribs , lamb chops, and brisket slice, with Two side dishes of choice, two soups of choice, One salad, two Ramadan drinks, Arabic coffee and Dates.`,
+    price: "189 SAR",
+  },
+  {
+    img: "mississippi-platter.webp",
+    title: "Mississippe Platter",
+    description: `A premium selection of tender grilled salmon fillet with scampi sauce  and flavorful tilapia, topped with Cajun cream shrimp. Served with crispy coconut-fried shrimp, along with your choice of two side dishes, two soups, and two salads, two ramadan drinks, arabic coffe and dates for a complete and satisfying dining experience.`,
+    price: "179 SAR",
+  },
+  {
+    img: "country-platter.webp",
+    title: "Country Platter",
+    description: `For chicken lovers, this is a rich assortment of Country craving chicken, Smootherd Italian chicken and fried shrimp, Served with linguini marinara pasta, Two soup of choice, One salad, Two ramadan drinks with Arabic coffee and Dates.`,
+    price: "124 SAR",
   },
 ];

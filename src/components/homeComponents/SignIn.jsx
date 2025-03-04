@@ -109,36 +109,7 @@ export default function SignIn() {
                   </button>
                 </div>
                 <div id="recaptcha-container"></div>
-                <div className={primeClub["steps"]}>
-                  <h3>Registeration steps:</h3>
-                  <ol>
-                    <li>
-                      select your{" "}
-                      <span className={primeClub.mark}>country code</span>{" "}
-                      followed by your{" "}
-                      <span className={primeClub.mark}>phone number</span>
-                    </li>
-                    <li>
-                      Click{" "}
-                      <span className={primeClub.mark}>
-                        &quot;Send Verification Code&quot;
-                      </span>
-                    </li>
-                    <li>
-                      You will receive a code via{" "}
-                      <span className={primeClub.mark}>SMS</span>.
-                    </li>
-                    <li>
-                      enter the received code in the{" "}
-                      <span className={primeClub.mark}>designated field</span>
-                    </li>
-                    <li>
-                      Click{" "}
-                      <span className={primeClub.mark}>&quot;Login&quot;</span>{" "}
-                      Button
-                    </li>
-                  </ol>
-                </div>
+                <div className={primeClub["steps"]}></div>
               </form>
             </div>
             <div className={primeClub["contact"]}>

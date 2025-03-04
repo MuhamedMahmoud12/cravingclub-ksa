@@ -223,6 +223,9 @@ section.about-us .about-rate > div span.text {
   font-size: 25px;
   color: var(--secondary-color);
 }
+html[lang="ar"] section.about-us .about-rate > div span.text {
+  font-weight: bold;
+}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   section.about-us .about-rate {
     grid-template-columns: 1fr 1fr;

@@ -1,49 +1,49 @@
 import footer from "../styles/footer.module.css";
+import { useTranslation } from "react-i18next";
 export default function Footer() {
+  const { t } = useTranslation("home");
   return (
     <footer>
       <div className="container">
         <div className={footer["location"]}>
           <div>
             <p>
-              <span className={footer["branch"]}>First Branch: </span>King Fahd
-              Rd, Khamis Mushait 62432, Saudi Arabia. <br />
-              <span className={footer["branch"]}>Second Branch: </span>2103
-              Corniche Rd, 7730, Jazan 82725, Saudi Arabia.
+              <span className={footer["branch"]}>
+                {t("footer.firstBranch")}
+              </span>
+              {t("footer.firstAddress")}
+              <br />
+              <span className={footer["branch"]}>
+                {t("footer.secondBranch")}
+              </span>
+              {t("footer.secondAddress")}
             </p>
-            <a href="#">Get Direction</a>
+            <a href="#">{t("footer.getDirection")}</a>
           </div>
           <div>
-            <span className={footer["times"]}>
-              Saturday - Wednesday: 11:00 AM - 1:00 AM
-            </span>
-            <span className={footer["times"]}>
-              Thursday &amp; Friday: 1:00 PM - 4:00 AM
-            </span>
-            <a href="#" className={footer["reservation"]}>
-              Reservation
-            </a>
+            <span className={footer["times"]}>{t("footer.openingTimes")}</span>
+            <span className={footer["times"]}>{t("footer.openingTimes2")}</span>
           </div>
         </div>
         <div className={footer["prime-links"]}>
           <div className={footer["prime-club-section"]}>
-            <h2>Prime Club &amp; Offers</h2>
-            <p>Sign Up and get up to 20% discount</p>
-            <a href="#">Prime Club</a>
+            <h2>{t("footer.primeClubTitle")}</h2>
+            <p>{t("footer.primeClubDesc")}</p>
+            <a href="#">{t("footer.primeClubBtn")}</a>
           </div>
           <div className={footer["social-links-section"]}>
             <ul>
               <li>
-                <a href="#">Facebook</a>
+                <a href="#">{t("footer.facebook")}</a>
               </li>
               <li>
-                <a href="#">Instagram</a>
+                <a href="#">{t("footer.instagram")}</a>
               </li>
               <li>
-                <a href="#">Snapchat</a>
+                <a href="#">{t("footer.snapchat")}</a>
               </li>
               <li>
-                <a href="#">Tiktok</a>
+                <a href="#">{t("footer.tiktok")}</a>
               </li>
             </ul>
           </div>
@@ -51,28 +51,40 @@ export default function Footer() {
         <div className={footer["footer-nav-links"]}>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#">
+                {t("footer.footerlinks", { returnObjects: true })[0]}
+              </a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#">
+                {t("footer.footerlinks", { returnObjects: true })[1]}
+              </a>
             </li>
             <li>
-              <a href="#">Menu</a>
+              <a href="#">
+                {t("footer.footerlinks", { returnObjects: true })[2]}
+              </a>
             </li>
             <li>
-              <a href="#">Offers</a>
+              <a href="#">
+                {t("footer.footerlinks", { returnObjects: true })[3]}
+              </a>
             </li>
             <li>
-              <a href="#">Locations</a>
+              <a href="#">
+                {t("footer.footerlinks", { returnObjects: true })[4]}
+              </a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#">
+                {t("footer.footerlinks", { returnObjects: true })[5]}
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div className={footer["copyrights"]}>
-        <p>© 2024 Restaurant. All Rights Reserved | Crafted by Craving Club</p>
+        <p>{t("footer.copyRight")}</p>
       </div>
     </footer>
   );
