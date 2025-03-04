@@ -9,7 +9,7 @@ import AutoSliderItem from "../components/homeComponents/AutoSliderItem";
 import MenuNavItem from "../components/menuComponents/MenuNavItem";
 import menuItemsNav from "../styles/menuStyles/menuItemsNav.module.css";
 import lunchStyles from "../styles/LunchStyles/cravingLunch.module.css";
-import iftarStyles from "../styles/iftarCraving/iftarCraving.module.css";
+import iftarStyles from "../styles/IftarCraving/iftarCraving.module.css";
 import { useTranslation } from "react-i18next";
 export default function IftarCravingLayout() {
   const { t } = useTranslation("menu");
