@@ -4,7 +4,7 @@ import AutoSlider from "../components/homeComponents/AutoSlider";
 import MenuItemsNav from "../components/menuComponents/MenuItemsNav";
 import SLIDER_OPTIONS from "../data/sliderOptions";
 import mainSlider from "../styles/HomeStyles/MainSlider.module.css";
-import menuSlider from "../styles/MenuStyles/MenuMainSlider.module.css";
+import menuSlider from "../styles/menuStyles/menuMainSlider.module.css";
 import MenuNavItem from "../components/menuComponents/MenuNavItem";
 import menuItemsNav from "../styles/menuStyles/menuItemsNav.module.css";
 import AutoSliderItem from "../components/homeComponents/AutoSliderItem";
