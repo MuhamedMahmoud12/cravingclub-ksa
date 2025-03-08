@@ -1,8 +1,8 @@
 import iftarStyles from "../../styles/IftarCraving/iftarCraving.module.css";
 import { useTranslation } from "react-i18next";
-export default function SideDishesChoices() {
+export default function Choices() {
   const { t } = useTranslation("menu");
-  const choices = t("choices", { returnObjects: true });
+  const choices = t(`choices`, { returnObjects: true });
   return (
     <div className={iftarStyles["side-choice"]}>
       <h3>{choices[0].title}</h3>

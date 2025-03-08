@@ -1,6 +1,6 @@
 import Category from "../menuComponents/Category";
 import menuCategories from "../../styles/menuStyles/menuCategories.module.css";
-import SideDishesChoices from "./sideDishesChoices";
+import Choices from "./Choices.jsx";
 import { useTranslation } from "react-i18next";
 
 export default function SharingPlatters() {
@@ -10,7 +10,7 @@ export default function SharingPlatters() {
   return (
     <div className={`${menuCategories["item-section"]}`}>
       <div className="container">
-        <SideDishesChoices></SideDishesChoices>
+        <Choices></Choices>
         <div className={menuCategories["items-container"]}>
           <Category
             imgPath={`iftar-craving/${iftar_craving[2].img}`}
