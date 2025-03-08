@@ -24,7 +24,7 @@ import UserProfile from "./components/homeComponents/UserProfile.jsx";
 import IftarCombos from "./components/iftarCravingComponents/IftarCombos.jsx";
 import { useAuth } from "./context/AuthContext.jsx";
 import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
-import FillingDrinks from "./components/menuComponents/fillingDrinks.jsx";
+import FillingDrinks from "./components/menuComponents/FillingDrinks.jsx";
 import Shakers from "./components/menuComponents/Shakers.jsx";
 import Smoothies from "./components/menuComponents/Smoothies.jsx";
 import Mojitos from "./components/menuComponents/Mojitos.jsx";
