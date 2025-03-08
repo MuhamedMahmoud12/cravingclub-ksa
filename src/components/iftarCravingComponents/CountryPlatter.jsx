@@ -1,8 +1,9 @@
-import { iftar_craving } from "../../data/menuCategories";
-
+import { useTranslation } from "react-i18next";
 import Category from "../menuComponents/Category";
 import menuCategories from "../../styles/menuStyles/menuCategories.module.css";
 export default function CountryPlatter() {
+  const { t } = useTranslation("menu");
+  const iftar_craving = t("iftar_craving", { returnObjects: true });
   return (
     <div className={`${menuCategories["item-section"]}`}>
       <div className="container">

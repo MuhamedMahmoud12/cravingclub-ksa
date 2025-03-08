@@ -38,7 +38,7 @@ const SLIDER_OPTIONS = [
       loop: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      // autoplay: true,
+      autoplay: true,
       speed: 4000,
       cssEase: "linear",
       variableWidth: true,

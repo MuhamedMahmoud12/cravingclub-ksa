@@ -1,8 +1,9 @@
-import { iftar_craving } from "../../data/menuCategories";
-
 import Category from "../menuComponents/Category";
 import menuCategories from "../../styles/menuStyles/menuCategories.module.css";
+import { useTranslation } from "react-i18next";
 export default function CaliforniaRock() {
+  const { t } = useTranslation("menu");
+  const iftar_craving = t("iftar_craving", { returnObjects: true });
   return (
     <div className={`${menuCategories["item-section"]}`}>
       <div className="container">

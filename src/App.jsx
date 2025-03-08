@@ -19,19 +19,23 @@ import Offer49 from "./components/lunchComponents/Offer49.jsx";
 import Offer59 from "./components/lunchComponents/Offer59.jsx";
 import Offer79 from "./components/lunchComponents/Offer79.jsx";
 import LunchLayout from "./layouts/LunchLayout.jsx";
-// import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
-// import FamilySampler from "./components/iftarCravingComponents/FamilySampler.jsx";
-// import DuoSampler from "./components/iftarCravingComponents/DuoSampler.jsx";
-// import CaliforniaRock from "./components/iftarCravingComponents/CaliforniaRock.jsx";
-// import SmokyPlatter from "./components/iftarCravingComponents/SmokyPlatter.jsx";
-// import MississippiPlatter from "./components/iftarCravingComponents/MississippiPlatter.jsx";
-// import CountryPlatter from "./components/iftarCravingComponents/CountryPlatter.jsx";
 import SignIn from "./components/homeComponents/SignIn.jsx";
 import UserProfile from "./components/homeComponents/UserProfile.jsx";
 import IftarCombos from "./components/iftarCravingComponents/IftarCombos.jsx";
 import { useAuth } from "./context/AuthContext.jsx";
 import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
-
+import FillingDrinks from "./components/menuComponents/fillingDrinks.jsx";
+import Shakers from "./components/menuComponents/Shakers.jsx";
+import Smoothies from "./components/menuComponents/Smoothies.jsx";
+import Mojitos from "./components/menuComponents/Mojitos.jsx";
+import MilkShakes from "./components/menuComponents/MilkShakes.jsx";
+import Sensations from "./components/menuComponents/Sensations.jsx";
+import Coffe from "./components/menuComponents/Coffe.jsx";
+import OtherDrinks from "./components/menuComponents/OtherDrinks.jsx";
+import RamadanAppetizers from "./components/iftarCravingComponents/RamadanAppetizers.jsx";
+import SharingPlatters from "./components/iftarCravingComponents/SharingPlatters.jsx";
+import IftarTwoPersons from "./components/iftarCravingComponents/IftarTwoPersons.jsx";
+import IftarFourPersons from "./components/iftarCravingComponents/IftarFourPersons.jsx";
 function App() {
   const token = useAuth();
 
@@ -89,7 +93,40 @@ function App() {
               path="/menu/dessert"
               element={<Dessert categoryStyle={menuCategories} />}
             />
+            <Route
+              path="/menu/filling-drinks"
+              element={<FillingDrinks categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/menu/shakers"
+              element={<Shakers categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/menu/smoothies"
+              element={<Smoothies categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/menu/mojitos"
+              element={<Mojitos categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/menu/milk-shakes"
+              element={<MilkShakes categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/menu/sensations"
+              element={<Sensations categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/menu/coffe"
+              element={<Coffe categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/menu/other-drinks"
+              element={<OtherDrinks categoryStyle={menuCategories} />}
+            />
           </Route>
+
           {token ? (
             <Route path="/sign-in" element={<UserProfile />} />
           ) : (
@@ -114,6 +151,22 @@ function App() {
             <Route
               path="/iftar-craving/iftar-combos"
               element={<IftarCombos categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/iftar-craving/ramadan-appetizers"
+              element={<RamadanAppetizers categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/iftar-craving/sharing-platters"
+              element={<SharingPlatters categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/iftar-craving/iftar-two"
+              element={<IftarTwoPersons categoryStyle={menuCategories} />}
+            />
+            <Route
+              path="/iftar-craving/iftar-four"
+              element={<IftarFourPersons categoryStyle={menuCategories} />}
             />
           </Route>
         </Route>

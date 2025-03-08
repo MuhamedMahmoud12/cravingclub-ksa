@@ -33,7 +33,37 @@
     "SeaFood": "Sea Food",
     "Chicken": "Chicken",
     "Dessert": "Dessert",
-    "KidsMeals": "Kids Meals"
+    "KidsMeals": "Kids Meals",
+    "fillingDrinks": "Filling drinks",
+    "shakers": "Shakers",
+    "smoothies": "Smoothies",
+    "mojitos": "Mojitos",
+    "milkShakes": "Milk Shakes",
+    "sensations": "Sensations",
+    "coffe": "Hot&Cold Coffe",
+    "drinks": "Cola & Juices"
+  },
+  "categoriesSections": {
+    "appetizers": "Appetizers",
+    "soupSalad": "Soup&Salad",
+    "sandwiches": "Sandwiches",
+    "burger": "Burgers",
+    "pasta": "Pasta",
+    "pizza": "Pizza",
+    "steakRibs": "Steak&Ribs",
+    "wagyu": "Wagyu Choice",
+    "seaFood": "Sea Food",
+    "chicken": "Chicken",
+    "dessert": "Dessert",
+    "kidsMeals": "Kids Meals",
+    "fillingDrinks": "Filling drinks",
+    "shakers": "Shakers",
+    "smoothies": "Smoothies",
+    "mojitos": "Mojitos",
+    "milkShakes": "Milk Shakes",
+    "sensations": "Sensations",
+    "coffe": "Hot&Cold Coffe",
+    "drinks": "Other Drinks"
   },
   "appetizersTitles": [
     "appetizers",
@@ -966,40 +996,561 @@
   ],
   "iftar_craving": [
     {
-      "img": "family-sampler-cut2.png",
+      "img": "family-sampler-menu.webp",
       "title": "Family Sampler",
       "description": "Treat your family on the best sampler ever! Fire Crackers, wings, shrimp, Fried mozzarella.",
       "price": "69"
     },
     {
-      "img": "duo-sampler.webp",
+      "img": "duo-sampler-menu.webp",
       "title": "Duo Sampler",
       "description": "Enjoy the best duet ever! Two types of Quesadilla chicken, brisket and pieces of buffalo chicken bites.",
       "price": "59"
     },
     {
-      "img": "california-rock.webp",
+      "img": "california-rock-menu.webp",
       "title": "California Rock",
       "description": "A wonderful assortment of ribeye steak, grilled shrimp with scampi sauce, and beef short ribs covered with barbecue sauce, served with Two side dishes of choice, two soups, One salad and Two Ramadan drinks, Arabic coffee and Dates.",
-      "price": "198"
+      "price": "214"
     },
     {
-      "img": "smoky-platter.webp",
+      "img": "smoky-platter-menu.webp",
       "title": "Smoky Platter",
       "description": "Choose the best of our smoky Beef back ribs, lamb chops, and brisket slice, with Two side dishes of choice, two soups of choice, One salad, two Ramadan drinks, Arabic coffee and Dates.",
-      "price": "198"
+      "price": "214"
     },
     {
-      "img": "mississippe-platter.webp",
+      "img": "mississippe-platter-menu.webp",
       "title": "Mississippi Platter",
       "description": "A premium selection of tender grilled salmon fillet with scampi sauce and flavorful tilapia, topped with Cajun cream shrimp. Served with crispy coconut-fried shrimp, along with your choice of two side dishes, two soups, and two salads, two ramadan drinks, arabic coffee and dates for a complete and satisfying dining experience.",
       "price": "179"
     },
     {
-      "img": "country-platter.webp",
+      "img": "country-platter-menu.webp",
       "title": "Country Platter",
       "description": "For chicken lovers, this is a rich assortment of Country craving chicken, Smootherd Italian chicken and fried shrimp. Served with linguini marinara pasta, Two soup of choice, One salad, Two ramadan drinks with Arabic coffee and Dates.",
-      "price": "124"
+      "price": "159"
+    },
+    {
+      "img": "iftar-2.webp",
+      "title": "Make Your Own Iftar",
+      "description": "Duo Sampler served with two main dishes of choice, two soups, one salad, two ramadan drinks, arabic coffe and dates",
+      "price": "189"
+    },
+    {
+      "img": "iftar-2.webp",
+      "title": "Make Your Own Iftar",
+      "description": "One Ramadan Appetizer served with four main dishes of choice, two soups, two salad, four ramadan drinks, arabic coffe and dates",
+      "price": "380"
+    }
+  ],
+  "choices": [
+    {
+      "title": "Salads Choices",
+      "description": "Caesar salad - Chipotle salad"
+    },
+    {
+      "title": "Soups Choices",
+      "description": "Southwestern soup - Gnochi soup"
+    },
+    {
+      "title": "Side dishes Choices",
+      "description": "fries - mashed potato - wedges - vegetables - rice - onion rings - corn"
+    }
+  ],
+
+  "twoPersonsChoices": [
+    {
+      "title": "Salads Choices",
+      "description": "Caesar salad - Chipotle salad"
+    },
+    {
+      "title": "Soups Choices",
+      "description": "Southwestern soup - Gnochi soup"
+    },
+    {
+      "title": "Main Dishes Choices",
+      "choose": "Choose One",
+      "firstChoice": "Choose One: Cowboy Ribeyem, Blackrock Ribeye, Beef Short Ribs,Steak Au Poivre, Outlaw Ribeye, Blackrock Pepper Steak, Salmon Scampi, Blank Salmon Glaze",
+      "secondChoice": "Choose One: Brisket Quesadilla, Southwestern Sandwich, Hand-crafted Cheese Burger, Ultimate Cheese Burger, Cajun Chicken Pasta, Craving Pasta, Buffalo Chicken Pizza, Cowboy Pizza, Skillet Chicken Gravy, Smoothered Italian, Coconut fried shrimp, Brown Tilapia"
+    }
+  ],
+  "fourPersonsChoices": [
+    {
+      "title": "Salads Choices",
+      "description": "Caesar salad - Chipotle salad"
+    },
+    {
+      "title": "Soups Choices",
+      "description": "Southwestern soup - Gnochi soup"
+    },
+    {
+      "title": "Main Dishes Choices",
+      "chooseFirst": "Choose One",
+      "firstChoice": "Cowboy Ribeye, Blackrock Ribeye, Beef Short Ribs",
+      "secondChoice": "Steak Au Poivre, Outlaw Ribeye, Blackrock Pepper Steak, Salmon Scampi, Blank Salmon Glaze",
+      "thirdChoice": " Brisket Quesadilla, Southwestern Sandwich, Hand-crafted Cheese Burger, Ultimate Cheese Burger, Cajun Chicken Pasta, Craving Pasta, Buffalo Chicken Pizza, Cowboy Pizza, Skillet Chicken Gravy, Smoothered Italian, Coconut fried shrimp, Brown Tilapia"
+    }
+  ],
+  "fillingDrinksTitles": [
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks",
+    "Filling Drinks"
+  ],
+  "fillingDrinks": [
+    {
+      "img": "filling-drinks.webp",
+      "title": "Filling drinks"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Electrifying Lemonade",
+          "itemDesc": "Start the party with Lemonade mix with Fresh sour mix, Pineapple juice, Pineapple diced, Blue lagoon syrup Top with lemon lime soda",
+          "regularPrice": "Regular 18",
+          "ultimatePrice": "Ultimate 31"
+        },
+        {
+          "itemTitle": "Lynchburg",
+          "itemDesc": "A popular combination of raspberry, cranberry and lime flavors.",
+          "regularPrice": "Regular 18",
+          "ultimatePrice": "Ultimate 31"
+        },
+        {
+          "itemTitle": "Sassy Margarita",
+          "itemDesc": "Sweet and perhaps a little salty, A blend of Rose syrup, Home made agave nectar and signature fresh sour mix with soda water.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Mango Peach Tea",
+          "itemDesc": "Sweet mango and peach puree mix with our Home made Brewed black tea with cool lemon fresh squeezes.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Craving Refreshing Lemonade",
+          "itemDesc": "A new option you wont find at the local Lemonade stand. Refreshing blend of Wild mint syrup, Our signature fresh sour mix and Home made Agave nectar with fresh Mint leaves Torn and lemon Squeezes.",
+          "regularPrice": "18"
+        }
+      ]
+    }
+  ],
+  "shakersTitles": [
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers",
+    "Shakers"
+  ],
+  "shakers": [
+    {
+      "img": "shakers.webp",
+      "title": "Shakers"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Lynchburg Shaker",
+          "itemDesc": "A popular blend of raspberry, cranberry and lemon flavours.",
+          "regularPrice": "21"
+        },
+        {
+          "itemTitle": "Signature Margarita Shaker",
+          "itemDesc": "A blend of dried oranges, agave nectar, fresh orange juice and fresh lime.",
+          "regularPrice": "21"
+        },
+        {
+          "itemTitle": "Tropical Mojito Shaker",
+          "itemDesc": "Tropical feel with guava puree, passion fruit puree, strawberry puree, blended with fresh sour mix and Caribbean flavored syrup.",
+          "regularPrice": "21"
+        }
+      ]
+    }
+  ],
+  "smoothiesTitles": [
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies",
+    "Smoothies"
+  ],
+  "smoothies": [
+    {
+      "img": "smoothies.webp",
+      "title": "Smoothies"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Strawberry Banana Colada",
+          "itemDesc": "A winner drink! Thick , rich whip of strawberry puree, banana, grenadine and cream of coconut.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Mango Passion smoothie",
+          "itemDesc": "Innocent and delicious. Our mango and passion smoothie is a natural favorite. Mango, Passion fruit puree and ice are blended together into smoot, cool beverage that’s so tasty.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Signature Pina Colada",
+          "itemDesc": "Carribbean flavored syrup, pineapple juice and cream of coconut.",
+          "regularPrice": "18"
+        }
+      ]
+    }
+  ],
+  "mojitosTitles": [
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos",
+    "Mojitos"
+  ],
+  "mojitos": [
+    {
+      "img": "mojitos.webp",
+      "title": "Mojitos"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Tropical Mojito",
+          "itemDesc": "A tropical sensation with guava puree, passion fruit puree, strawberry puree, mixed with fresh sour mix and Caribbean flavored syrup.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Blueberry Mojito",
+          "itemDesc": "Combination of fruits sensation, Juicy blueberries and Pomegranate syrup, mixed Carribbean flavored syrup, with fresh mint leaves and homemade fresh sour mix.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Strawberry Mojito",
+          "itemDesc": "The best mojito in town, Taste strawberry and coolest fresh mint leaves mix with our signature fresh sour mix, strawberry slices and lime fresh squeezes.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Craving Passion Mojito",
+          "itemDesc": "Chill out with coolest Mojito, featuring Carribbean syrup and Sundried orange syrup, Passion fruit puree mix with our signature fresh sour mix and a fresh mint leaves torn.",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Signature Mango Mojito",
+          "itemDesc": "Our signature Mango mojito made with Caribbean and Sundried orange flavored syrup, mango puree, fresh mint leaves torn, fresh sour mix, fresh ripe mango diced.",
+          "regularPrice": "18"
+        }
+      ]
+    }
+  ],
+  "milkShakesTitles": [
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes",
+    "Milk Shakes"
+  ],
+  "milkShakes": [
+    {
+      "img": "milk-shake.webp",
+      "title": "Milk Shakes",
+      "description": "Craving club Bartenders take shakes as seriously. That’s why ours come out rich, thick, smooth and creamy"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Strawberry",
+          "regularPrice": "22"
+        },
+        {
+          "itemTitle": "Chocolate",
+          "regularPrice": "22"
+        },
+        {
+          "itemTitle": "Vanilla",
+          "regularPrice": "22"
+        },
+        {
+          "itemTitle": "Cookies and Cream",
+          "regularPrice": "22"
+        },
+        {
+          "itemTitle": "Blackberry shake",
+          "regularPrice": "22"
+        }
+      ]
+    }
+  ],
+  "sensationsTitles": [
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations",
+    "Sensations"
+  ],
+  "sensations": [
+    {
+      "img": "sensation.webp",
+      "title": "Sensations",
+      "description": "Our new summer drink sensation, Mix with House made agave sour, Fresh sour mix, wild fruits Flavored with Caribbean and Sundried syrup"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Craving Berries Duo",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Tropical Sensation",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Black Berry Sensation",
+          "regularPrice": "18"
+        }
+      ]
+    }
+  ],
+  "coffeTitles": [
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee",
+    "Cold & Hot Coffee"
+  ],
+  "coldCoffe": [
+    {
+      "img": "coffe.webp",
+      "title": "Cold Coffe Flavours"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Chocolate Spanish Latte",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Caramel Macchiato",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "white chocolate Mocha",
+          "regularPrice": "18"
+        },
+        {
+          "itemTitle": "Dark Mocha",
+          "regularPrice": "18"
+        }
+      ]
+    }
+  ],
+  "hotCoffe": [
+    {
+      "img": "mocha.webp",
+      "title": "Hot Coffe Flavours"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Chocolate Spanish Latte",
+          "largePrice": "Large 18",
+          "mediumPrice": "Med 14"
+        },
+        {
+          "itemTitle": "Caramel Macchiato",
+          "largePrice": "Large 18",
+          "mediumPrice": "Med 14"
+        },
+        {
+          "itemTitle": "white chocolate Mocha",
+          "largePrice": "Large 18",
+          "mediumPrice": "Med 14"
+        },
+        {
+          "itemTitle": "Dark Mocha",
+          "largePrice": "Large 18",
+          "mediumPrice": "Med 14"
+        }
+      ]
+    }
+  ],
+  "classico": [
+    {
+      "img": "Cappuccino.webp",
+      "title": "Classico Coffe"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Espresso",
+          "regularPrice": "9"
+        },
+        {
+          "itemTitle": "CAPPUCCINO",
+          "regularPrice": "14"
+        },
+        {
+          "itemTitle": "COFFEE LATTE",
+          "regularPrice": "14"
+        }
+      ]
+    }
+  ],
+  "drinksTitles": [
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water",
+    "Cola | Juice | Water"
+  ],
+  "sodas": [
+    {
+      "img": "cola.webp",
+      "title": "Sodas"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Pepsi",
+          "nonRefill": "Non-Refill",
+          "refill": "One-Time Refill",
+          "nonRefillPrice": "9",
+          "refilPrice": "12"
+        },
+        {
+          "itemTitle": "Mirinda",
+          "nonRefill": "Non-Refill",
+          "refill": "One-Time Refill",
+          "nonRefillPrice": "9",
+          "refilPrice": "12"
+        },
+        {
+          "itemTitle": "7UP",
+          "nonRefill": "Non-Refill",
+          "refill": "One-Time Refill",
+          "nonRefillPrice": "9",
+          "refilPrice": "12"
+        },
+        {
+          "itemTitle": "Pepsi Diet",
+          "nonRefill": "Non-Refill",
+          "refill": "One-Time Refill",
+          "nonRefillPrice": "9",
+          "refilPrice": "12"
+        },
+        {
+          "itemTitle": "Vanilla Pepsi",
+          "itemPrice": "12"
+        },
+        {
+          "itemTitle": "Chery Pepsi",
+          "itemPrice": "12"
+        }
+      ]
+    }
+  ],
+  "orangeJuice": [
+    {
+      "img": "orange.webp",
+      "title": "Juices"
+    },
+    {
+      "items": [{ "itemTitle": "Orange Juice" }, { "itemPrice": "17" }]
+    }
+  ],
+  "water": [
+    {
+      "img": "water.webp",
+      "title": "Water"
+    },
+    {
+      "items": [
+        {
+          "itemTitle": "Imported Sparkling Water",
+          "nonRefill": "small",
+          "refill": "large",
+          "nonRefillPrice": "8",
+          "refillPrice": "12"
+        },
+        {
+          "itemTitle": "Imported Natural Water",
+          "nonRefill": "small",
+          "refill": "large",
+          "nonRefillPrice": "8",
+          "refillPrice": "12"
+        }
+      ]
     }
   ]
 }

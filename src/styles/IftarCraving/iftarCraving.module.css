@@ -3,14 +3,32 @@
   padding: 0;
   margin-bottom: 0;
 }
-
+.cat-li {
+  margin: 0 10px !important;
+}
+.cat-li a:hover {
+  color: var(--primary-color);
+  transition: 400ms;
+}
+.cat-li a:hover img {
+  border: 3px solid var(--primary-color);
+  transition: 400ms;
+}
+.cat-li a img {
+  height: 100px !important;
+  width: 100px !important;
+  border-radius: 50%;
+  border: 3px solid var(--white-color);
+  padding: 0 !important;
+  margin: 5px 0 !important;
+}
 .item1 {
   background: url("/assets/iftar-craving/family-sampler.webp") no-repeat center
     center;
   background-size: contain;
 }
 .item2 {
-  background: url("/assets/iftar-craving/family-sampler.webp") no-repeat center
+  background: url("/assets/iftar-craving/duo-sampler.webp") no-repeat center
     center;
   background-size: contain;
 }
@@ -61,4 +79,21 @@
   .iftar-aligned-list {
     justify-content: flex-start;
   }
+}
+.side-choice {
+  font-family: var(--font-bebas);
+  background: url("/assets/main-bg/header-bg.png");
+  padding: 20px;
+  margin: 30px auto;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+}
+.side-choice h3 {
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+.side-choice p {
+  color: #fff !important;
+  font-family: var(--font-roboto);
 }

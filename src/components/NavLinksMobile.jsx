@@ -51,7 +51,7 @@ export default function NavLinksMobile() {
               <span className={styles["nav-reservation-span"]}>
                 {t("navbar.reservation")}:
               </span>
-              +966 54 798 4094
+              +966 54 210 7964
             </NavLink>
           </li>
           <li className={styles["nav-primeclub-li"]}>
@@ -59,7 +59,7 @@ export default function NavLinksMobile() {
               <NavLink
                 className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
                 id="prime-club-btn"
-                to="/sign-up"
+                // to="/sign-up"
               >
                 {t("navbar.primeClub")}
               </NavLink>
@@ -67,7 +67,7 @@ export default function NavLinksMobile() {
               <NavLink
                 className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
                 id="prime-club-btn"
-                to="/profile"
+                // to="/profile"
               >
                 Profile
               </NavLink>

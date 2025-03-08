@@ -30,7 +30,7 @@ export default function NavLinks() {
             <span className={styles["nav-reservation-span"]}>
               {t("navbar.reservation")}:
             </span>
-            +966 54 798 4094
+            +966 54 210 7964
           </NavLink>
         </li>
         <li className={styles["nav-primeclub-li"]}>
@@ -38,12 +38,15 @@ export default function NavLinks() {
             <NavLink
               className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
               id="prime-club-btn"
-              to="/sign-in"
+              // to="/sign-in"
             >
               {t("navbar.primeClub")}
             </NavLink>
           ) : (
-            <NavLink id="prime-club-btn" to="/profile">
+            <NavLink
+              id="prime-club-btn"
+              // to="/profile"
+            >
               <img src="../assets/user.png" alt="profile-pic" width="26px" />
               <span>{loading ? "Guest" : userData?.name || ""}</span>
             </NavLink>

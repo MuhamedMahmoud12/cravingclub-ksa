@@ -2,7 +2,6 @@
 import menuItemsNav from "../../styles/menuStyles/menuItemsNav.module.css";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-// import { useState } from "react";
 export default function MenuItemsNav({ children, ...props }) {
   const { t } = useTranslation("menu");
   return (

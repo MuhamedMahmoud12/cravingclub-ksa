@@ -1,0 +1,35 @@
+.items-container {
+  grid-template-columns: (1, auto);
+}
+.drinks-container {
+  width: 100%;
+}
+.drinks-container h4 {
+  color: var(--primary-color);
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.price-cal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 80%;
+  margin: 10px auto;
+}
+.price-cal span {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.price-cal span.price {
+  color: var(--secondary-color);
+}
+.price-cal span.cal {
+  color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .price-cal span {
+    font-size: 20px;
+  }
+}

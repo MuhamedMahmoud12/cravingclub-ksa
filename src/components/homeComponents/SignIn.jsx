@@ -99,14 +99,14 @@ export default function SignIn() {
                   />
                 </div>
                 <div className={primeClub["submit-container"]}>
-                  <button
+                  {/* <button
                     onClick={(e) => {
                       e.preventDefault();
                       sendOTP();
                     }}
                   >
                     Send Verification Code
-                  </button>
+                  </button> */}
                 </div>
                 <div id="recaptcha-container"></div>
                 <div className={primeClub["steps"]}></div>

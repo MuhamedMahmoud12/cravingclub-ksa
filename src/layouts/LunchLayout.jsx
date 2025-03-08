@@ -14,6 +14,7 @@ import { useTranslation } from "react-i18next";
 export default function MenuLayout() {
   const { t } = useTranslation("menu");
   const lunchTitles = t("lunchTitles", { returnObjects: true });
+  const IMG_PATH = "/assets/craving-lunch/";
   return (
     <div className="layout">
       <section className={lunchStyles["slider-section"]}>
@@ -44,25 +45,31 @@ export default function MenuLayout() {
         >
           <MenuNavItem
             className={lunchStyles["cat-li"]}
-            imgName="appetizers.webp"
+            imgPath={IMG_PATH}
+            imgName={`49-2.png`}
             itemName="49"
             categoryRoute="49Category"
+            linkClass={"active-link"}
           >
             <SaudiRiyal className={lunchStyles["cls-2"]} />
           </MenuNavItem>
           <MenuNavItem
             className={lunchStyles["cat-li"]}
-            imgName="soup&salad.jpg"
+            imgPath={IMG_PATH}
+            imgName={`59-2.png`}
             itemName="59"
             categoryRoute="59Category"
+            linkClass={"active-link"}
           >
             <SaudiRiyal className={lunchStyles["cls-2"]} />
           </MenuNavItem>
           <MenuNavItem
             className={lunchStyles["cat-li"]}
-            imgName="sandwiches.jpg"
+            imgPath={IMG_PATH}
+            imgName={`79-2.png`}
             itemName="79"
             categoryRoute="79Category"
+            linkClass={"active-link"}
           >
             <SaudiRiyal className={lunchStyles["cls-2"]} />
           </MenuNavItem>

@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next";
 export default function MenuLayout() {
   const { t } = useTranslation("menu");
   const menuSliderTitles = t(`menuAutoSlider`, { returnObjects: true });
+  const categoriesSections = t(`categoriesSections`, { returnObjects: true });
   return (
     <div className="layout">
       <section className={menuSlider["slider-section"]}>
@@ -37,64 +38,124 @@ export default function MenuLayout() {
       <MenuItemsNav>
         <ul className={menuItemsNav["menu-ul"]} id="fixed-menu">
           <MenuNavItem
-            imgName="appetizers.webp"
-            itemName={t("menuNavItems.Appetizers")}
+            imgName="craving-sampler.webp"
+            imgPath="/assets/menu/appetizers/"
+            itemName={categoriesSections.appetizers}
             categoryRoute="appetizers"
           />
           <MenuNavItem
-            imgName="soup&salad.jpg"
-            itemName={t("menuNavItems.Soup")}
+            imgName="southern-soup.webp"
+            imgPath="/assets/menu/soup&salad/"
+            itemName={categoriesSections.soupSalad}
             categoryRoute="soup-salad"
           />
           <MenuNavItem
-            imgName="sandwiches.jpg"
-            itemName={t("menuNavItems.Sandwiches")}
+            imgName="caribbean-sandwich.webp"
+            imgPath="/assets/menu/sandwiches/"
+            itemName={categoriesSections.sandwiches}
             categoryRoute="sandwiches"
           />
           <MenuNavItem
-            imgName="burgers.jpg"
-            itemName={t("menuNavItems.Burgers")}
+            imgName="craving-burger.webp"
+            imgPath="/assets/menu/burger/"
+            itemName={categoriesSections.burger}
             categoryRoute="burgers"
           />
           <MenuNavItem
-            imgName="pasta.jpg"
-            itemName={t("menuNavItems.Pasta")}
+            imgName="cajun-chicken-pasta.webp"
+            imgPath="/assets/menu/pasta/"
+            itemName={categoriesSections.pasta}
             categoryRoute="pasta"
           />
           <MenuNavItem
-            imgName="pizza.jpg"
-            itemName={t("menuNavItems.Pizza")}
+            imgName="cowboy-pizza.webp"
+            imgPath="/assets/menu/pizza/"
+            itemName={categoriesSections.pizza}
             categoryRoute="pizza"
           />
           <MenuNavItem
-            imgName="steak&ribs.jpg"
-            itemName={t("menuNavItems.Steak&Ribs")}
+            imgName="blackrock-ribeye.webp"
+            imgPath="/assets/menu/steak&ribs/"
+            itemName={categoriesSections.steakRibs}
             categoryRoute="steak-ribs"
           />
           <MenuNavItem
-            imgName="wagyu.jpg"
-            itemName={t("menuNavItems.Wagyu")}
+            imgName="wagyu-ribeye-rock.webp"
+            imgPath="/assets/menu/wagyu/"
+            itemName={categoriesSections.wagyu}
             categoryRoute="wagyu"
           />
           <MenuNavItem
-            imgName="seafood.jpg"
-            itemName={t("menuNavItems.SeaFood")}
+            imgName="scampi-salmon.webp"
+            imgPath="/assets/menu/Seafood/"
+            itemName={categoriesSections.seaFood}
             categoryRoute="seafood"
           />
           <MenuNavItem
-            imgName="chicken.jpg"
-            itemName={t("menuNavItems.Chicken")}
+            imgName="skillet-chicken-gravy.webp"
+            imgPath="/assets/menu/Chicken/"
+            itemName={categoriesSections.chicken}
             categoryRoute="chicken"
           />
           <MenuNavItem
-            imgName="kids-meal.jpg"
-            itemName={t("menuNavItems.KidsMeals")}
+            imgName="marinara-sauce-pasta.webp"
+            imgPath="/assets/menu/kids-meal/"
+            itemName={categoriesSections.kidsMeals}
             categoryRoute="kids-meal"
           />
           <MenuNavItem
-            imgName="dessert.jpg"
-            itemName={t("menuNavItems.Dessert")}
+            imgName="rock-slide-brownie.webp"
+            imgPath="/assets/menu/Dessert/"
+            itemName={categoriesSections.dessert}
             categoryRoute="dessert"
+          />
+          <MenuNavItem
+            imgName="filling-drinks.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.fillingDrinks}
+            categoryRoute="filling-drinks"
+          />
+          <MenuNavItem
+            imgName="shakers.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.shakers}
+            categoryRoute="shakers"
+          />
+          <MenuNavItem
+            imgName="smoothies.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.smoothies}
+            categoryRoute="smoothies"
+          />
+          <MenuNavItem
+            imgName="mojitos.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.mojitos}
+            categoryRoute="mojitos"
+          />
+          <MenuNavItem
+            imgName="milk-shake.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.milkShakes}
+            categoryRoute="milk-shakes"
+          />
+          <MenuNavItem
+            imgName="sensation.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.sensations}
+            categoryRoute="sensations"
+          />
+          <MenuNavItem
+            imgName="coffe.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.coffe}
+            categoryRoute="coffe"
+          />
+          <MenuNavItem
+            imgName="water.webp"
+            imgPath="/assets/menu/drinks/"
+            itemName={categoriesSections.drinks}
+            categoryRoute="other-drinks"
           />
         </ul>
       </MenuItemsNav>

@@ -12,6 +12,7 @@ import lunchStyles from "../styles/LunchStyles/cravingLunch.module.css";
 import iftarStyles from "../styles/IftarCraving/iftarCraving.module.css";
 import { useTranslation } from "react-i18next";
 export default function IftarCravingLayout() {
+  const IMG_PATH = "/assets/iftar-craving/";
   const { t } = useTranslation("menu");
   const iftarTitles = t("iftarTitles", { returnObjects: true });
   const iftarSections = t("iftar_sections", { returnObjects: true });
@@ -53,24 +54,32 @@ export default function IftarCravingLayout() {
           id="fixed-menu"
         >
           <MenuNavItem
-            imgName="appetizers.webp"
+            className={iftarStyles["cat-li"]}
+            imgName={`family-sampler.webp`}
+            imgPath={`${IMG_PATH}`}
             itemName={`${iftarSections[0]}`}
-            categoryRoute="family-sampler"
+            categoryRoute="ramadan-appetizers"
           />
           <MenuNavItem
-            imgName="appetizers.webp"
+            className={iftarStyles["cat-li"]}
+            imgName={`smoky-platter.webp`}
+            imgPath={`${IMG_PATH}`}
             itemName={`${iftarSections[1]}`}
-            categoryRoute="family-sampler"
+            categoryRoute="sharing-platters"
           />
           <MenuNavItem
-            imgName="soup&salad.jpg"
+            className={iftarStyles["cat-li"]}
+            imgName={`iftar-2.webp`}
+            imgPath={`${IMG_PATH}`}
             itemName={`${iftarSections[2]}`}
-            categoryRoute="duo-sampler"
+            categoryRoute="iftar-two"
           />
           <MenuNavItem
-            imgName="sandwiches.jpg"
+            className={iftarStyles["cat-li"]}
+            imgName={`iftar-2.webp`}
+            imgPath={`${IMG_PATH}`}
             itemName={`${iftarSections[3]}`}
-            categoryRoute="smoky-platter"
+            categoryRoute="iftar-four"
           />
         </ul>
       </MenuItemsNav>

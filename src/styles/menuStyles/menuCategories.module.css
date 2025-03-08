@@ -62,7 +62,6 @@ section.slider-section {
 .item-section .items-container .item-grid .img > div img {
   max-width: 100%;
   display: block;
-  height: 350px;
 }
 .item-section .items-container .item-grid .text {
   font-family: var(--font-bebas);
@@ -99,6 +98,7 @@ section.slider-section {
 .item-section .items-container .item-grid .text .price-cal {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
   width: 80%;
   margin: 10px auto;
@@ -146,10 +146,19 @@ section.slider-section {
   .item-section .items-container .item-grid .text .price-cal span {
     font-size: 20px;
   }
+  .item-section .items-container .item-grid .img > div img {
+    height: 350px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .item-section .items-container {
     grid-template-columns: 1fr;
+  }
+  .item-section .items-container .item-grid .text .price-cal span.price {
+    font-size: 25px;
+  }
+  .item-section .items-container .item-grid .text .price-cal span {
+    font-size: 20px;
   }
 }
 .item-section .items-container .item-grid {
@@ -162,9 +171,6 @@ section.slider-section {
   .item-section .items-container .item-grid .text h3 {
     font-size: 30px;
     width: 90%;
-  }
-  .item-section .items-container .item-grid .img > div img {
-    height: 300px;
   }
 }
 /************* Appetizers Section **********************/
