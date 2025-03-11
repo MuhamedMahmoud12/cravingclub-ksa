@@ -1,7 +1,7 @@
 {
   "navbarLinks": {
     "home": { "content": "Home", "path": "/" },
-    "menu": { "content": "Menu", "path": "/menu" },
+    "menu": { "content": "Menu", "path": "/menu/appetizers" },
     "cravingLunch": { "content": "Craving Lunch", "path": "/craving-lunch" },
     "iftarCraving": { "content": "Iftar Craving", "path": "/iftar-craving" },
     "contactUs": { "content": "Contact Us", "path": "/contact-us" }
