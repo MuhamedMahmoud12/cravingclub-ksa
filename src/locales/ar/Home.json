@@ -1,16 +1,29 @@
 {
-  "navbar": {
-    "home": "الرئيسية",
-    "menu": "المنيو",
-    "cravingLunch": "غداء كريفنج",
-    "iftarCraving": "افطار كريفنج",
-    "locations": "مواقعنا",
-    "contactUs": "تواصل معنا",
-    "reservation": "الحجز",
-    "primeClub": "برايم كلوب",
-    "lang": "EN",
-    "changeLang": "Change Language",
-    "langImg": "en.png"
+  "navbarLinks": {
+    "home": { "content": "الرئيسية", "path": "/" },
+    "menu": { "content": "المنيو", "path": "/menu" },
+    "cravingLunch": { "content": "غداء كريفنج", "path": "/craving-lunch" },
+    "iftarCraving": { "content": "افطار كريفنج", "path": "/iftar-craving" },
+    "contactUs": { "content": "تواصل معنا", "path": "/contact-us" }
+  },
+  "navbarLinks2": [
+    { "reservation": "الحجز: ", "path": "contact-us" },
+    { "number": "+966 54 210 7964", "path": "" },
+    { "primeClub": "برايم كلوب", "path": "prime-club" },
+    { "arIcon": "en.png", "path": "" },
+    { "lang": "EN", "path": "" }
+  ],
+  "sliderSideLinks": {
+    "socialMedia": {
+      "facebook": "فيس بوك",
+      "instagram": "انستجرام",
+      "snapchat": "سناب شات",
+      "tiktok": "تيك توك"
+    },
+    "times": {
+      "weekDays": "السبت - الاربعاء : 11ص حتي 1ص",
+      "weekEnd": "الخميس والجمعه : 1م حتي 4ص"
+    }
   },
   "mainSlider": {
     "welcome": "مرحبًا بكم في كريفينج كلوب",
@@ -40,7 +53,7 @@
   },
   "aboutUs": {
     "aboutSpan": "عن كريفنج كلوب",
-    "aboutHeading": ["", "", "", ""],
+    "aboutHeading": ["CRAVING ", "STARTS ", "OVER ", "HERE "],
     "locations": "مواقعنا",
     "firstBranch": "ابــها - خميس مشيط",
     "secondBranch": "جــازان - طريق الكورنيش",
@@ -70,7 +83,15 @@
     "seafood": "المأكولات البحريه",
     "chicken": "الدجاج",
     "kidsMeal": "وجبات الاطفال",
-    "dessert": "الحلي"
+    "dessert": "الحلي",
+    "shakers": "شيكرز",
+    "mojitos": "موهيتوس",
+    "shakes": "ميلك تشيك",
+    "sensation": "سنسايشن",
+    "smoothies": "سموزي",
+    "filling": "مشروبات مثلجة",
+    "other-drinks": "مشروبات اخري",
+    "coffe": "قهوة"
   },
   "offers": {
     "offersSpan": "عروضـــنا",
@@ -90,6 +111,25 @@
   "testi": {
     "testiSpan": "رأيك يهمنا",
     "testiTitle": "ماذا قالو عنــا؟"
+  },
+  "primeClub": {
+    "title": { "first": "انضم الان الي ", "second": "برايم كلوب" },
+    "subTitle": "فرصتك لتصبح عضوا مميزا اصبحت متاحه الان!",
+    "announce": "قريبـــــــا...",
+    "contactTitle": "تواصل معنا",
+    "bookingTitle": "احجز طاوله",
+    "bookingNo": "+966 54 210 7964",
+    "locationsTitle": "مواقعنا",
+    "firstBranch": "ابها - خميس مشيط",
+    "secondBranch": "جازان - طريق الكورنيش",
+    "lunch": "غداء كريفنج",
+    "lunchTitle": "الاحد للأربعاء",
+    "lunchTime": "11:00 AM - 6:00 PM",
+    "openingHoursTitle": "مواعيد العمل",
+    "openingHours": "السبت للأربعاء",
+    "regularTimes": "11:00 AM - 1:00 AM",
+    "weekEnd": "الخميس والجمعه",
+    "weekEndTimes": "1:00 PM - 4:00 AM"
   },
   "footer": {
     "firstBranch": "الفرع الاول ",

@@ -1,79 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import primeClub from "../../styles/HomeStyles/signIn.module.css";
-import { auth, RecaptchaVerifier, signInWithPhoneNumber } from "../../firebase";
 
+import { useTranslation } from "react-i18next";
 export default function SignIn() {
-  const [phone, setPhone] = useState("");
-
-  const [confirmationResult, setConfirmationResult] = useState(null);
-  const setupRecaptcha = () => {
-    console.log("Auth object:", auth); // دي عشان تتأكد إن `auth` متعرف
-
-    if (!window.recaptchaVerifier) {
-      window.recaptchaVerifier = new RecaptchaVerifier(
-        auth, // لازم يتم تمرير `auth` بشكل صحيح
-        "recaptcha-container",
-        {
-          size: "invisible",
-          callback: (response) => {
-            console.log("Recaptcha solved:", response);
-          },
-        }
-      );
-    }
-  };
-  // const handleChange = (e) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-  const sendOTP = async () => {
-    try {
-      setupRecaptcha(); // ضروري جدًا قبل أي طلب لـ OTP
-      const appVerifier = window.recaptchaVerifier; // تأكد إنه متعرف
-      console.log("appVerifier:", appVerifier); // للتأكد من إن الـ Recaptcha شغال
-
-      if (!appVerifier) {
-        throw new Error("RecaptchaVerifier is not initialized.");
-      }
-
-      console.log("Sending OTP to:", phone);
-      const confirmation = await signInWithPhoneNumber(
-        auth,
-        phone,
-        appVerifier
-      );
-
-      setConfirmationResult(confirmation);
-      alert("OTP تم إرساله!");
-    } catch (error) {
-      console.error("خطأ في إرسال OTP:", error);
-      alert("فشل إرسال OTP! السبب: " + error.message);
-    }
-  };
-  // const verifyOTP = async () => {
-  //   try {
-  //     const result = await confirmationResult.confirm(otp);
-  //     alert(`تم تسجيل الدخول بنجاح! المستخدم: ${result.user.phoneNumber}`);
-  //   } catch (error) {
-  //     console.error("خطأ في التحقق من OTP:", error);
-  //     alert("OTP غير صحيح!");
-  //   }
-  // };
-  // const handleLogin = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const response = await axiosInstance.post("auth/login", { ...formData });
-  //     if (response.data.token) {
-  //       login(response.data.token);
-  //       navigate("/profile");
-  //     }
-  //   } catch (error) {
-  //     alert(error.response?.data?.message || "Login failed");
-  //   }
-  // };
+  const { t } = useTranslation("home");
+  const primeClubTitles = t(`primeClub`, { returnObjects: true });
+  console.log(primeClub);
 
   return (
     <section className={primeClub["prime-club"]}>
@@ -82,60 +15,40 @@ export default function SignIn() {
           <div className={primeClub["prime-club-container"]}>
             <div className={primeClub["form"]}>
               <h2>
-                Be a <span>Prime Member</span>
+                {primeClubTitles.title.first}
+                <span>{primeClubTitles.title.second}</span>
               </h2>
-              <p>your chance to become prime member is now available</p>
+              <p>{primeClubTitles.subTitle}</p>
               <form>
-                <label htmlFor="email">Enter Your Phone Number</label>
-                <div className={primeClub["inputs-container"]}>
-                  <input
-                    id="text"
-                    type="text"
-                    name="phone"
-                    value={phone}
-                    onChange={(e) => {
-                      setPhone(e.target.value);
-                    }}
-                  />
-                </div>
-                <div className={primeClub["submit-container"]}>
-                  {/* <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      sendOTP();
-                    }}
-                  >
-                    Send Verification Code
-                  </button> */}
-                </div>
-                <div id="recaptcha-container"></div>
-                <div className={primeClub["steps"]}></div>
+                <h2 className={primeClub["announce"]}>
+                  {primeClubTitles.announce}
+                </h2>
               </form>
             </div>
             <div className={primeClub["contact"]}>
               <div className={primeClub["contact-container"]}>
-                <h2>Contact Us</h2>
+                <h2>{primeClubTitles.contactTitle}</h2>
                 <div className={primeClub["booking-details-grid"]}>
                   <div>
-                    <h3>Book a table</h3>
-                    <span>+966 54 798 4094</span>
+                    <h3>{primeClubTitles.bookingTitle}</h3>
+                    <span>{primeClubTitles.bookingNo}</span>
                   </div>
                   <div>
-                    <h3>Locations</h3>
-                    <span>Abha - Khamis Mushait</span>
-                    <span>Jazan - Corniche Road</span>
+                    <h3>{primeClubTitles.locationsTitle}</h3>
+                    <span>{primeClubTitles.firstBranch}</span>
+                    <span>{primeClubTitles.secondBranch}</span>
                   </div>
                   <div>
-                    <h3>Lunch Time</h3>
-                    <span>Sunday to Wednesday</span>
-                    <span>11:00 AM - 6:00 PM</span>
+                    <h3>{primeClubTitles.lunch}</h3>
+                    <span>{primeClubTitles.lunchTitle}</span>
+                    <span>{primeClubTitles.lunchTime}</span>
                   </div>
                   <div>
-                    <h3>Opening Hours</h3>
-                    <span>Saturday to Wednesday</span>
-                    <span>11:00 AM - 1:00 AM</span>
-                    <span>Thursday & Friday</span>
-                    <span>1:00 PM - 4:00 AM</span>
+                    <h3>{primeClubTitles.openingHoursTitles}</h3>
+                    <span>{primeClubTitles.openingHours}</span>
+                    <span>{primeClubTitles.regularTimes}</span>
+                    <span>{primeClubTitles.weekEnd}</span>
+                    <span>{primeClubTitles.weekEndTimes}</span>
                   </div>
                 </div>
               </div>

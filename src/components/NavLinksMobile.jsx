@@ -1,5 +1,4 @@
 import styles from "../styles/Header.module.css";
-import { NAV_LINKS } from "../data/link-routes";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -7,6 +6,8 @@ import { useAuth } from "../context/AuthContext";
 import { useTranslation } from "react-i18next";
 export default function NavLinksMobile() {
   const { t } = useTranslation("home");
+  const navLinks = Object.entries(t(`navbarLinks`, { returnObjects: true }));
+  const navLinks2 = t(`navbarLinks2`, { returnObjects: true });
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
   const { token } = useAuth();
@@ -14,9 +15,6 @@ export default function NavLinksMobile() {
     setIsVisible(false);
   }, [location.pathname]);
 
-  const handleLinkClick = () => {
-    setIsVisible(false);
-  };
   return (
     <div className={`${styles["mobile-nav"]}`}>
       <div
@@ -37,21 +35,22 @@ export default function NavLinksMobile() {
         id="mobile-nav-links"
       >
         <ul className={styles["mobile-nav-links-ul"]}>
-          {NAV_LINKS.map((link, index) => {
+          {navLinks.map(([key, value]) => {
             return (
-              <li key={index * 2}>
-                <NavLink to={`${link.href}`} onClick={handleLinkClick}>
-                  {t(`navbar.${link.content}`)}
-                </NavLink>
+              <li key={key}>
+                <NavLink to={value.path}>{value.content}</NavLink>
               </li>
             );
           })}
           <li className={styles["nav-reservation-li"]}>
-            <NavLink className={styles["nav-reservation-link"]}>
+            <NavLink
+              className={styles["nav-reservation-link"]}
+              to={navLinks2[0].path}
+            >
               <span className={styles["nav-reservation-span"]}>
-                {t("navbar.reservation")}:
+                {navLinks2[0].reservation}
               </span>
-              +966 54 210 7964
+              {navLinks2[1].number}
             </NavLink>
           </li>
           <li className={styles["nav-primeclub-li"]}>
@@ -59,9 +58,9 @@ export default function NavLinksMobile() {
               <NavLink
                 className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
                 id="prime-club-btn"
-                // to="/sign-up"
+                // to={navLinks2[2].path}
               >
-                {t("navbar.primeClub")}
+                {navLinks2[2].primeClub}
               </NavLink>
             ) : (
               <NavLink
@@ -77,10 +76,10 @@ export default function NavLinksMobile() {
             <NavLink href="#" className={styles["nav-lang-link"]}>
               {t("navbar.changeLang")} : &nbsp;
               <img
-                src={`../assets/icons/${t("navbar.langImg")}`}
+                src={`../assets/icons/${navLinks2[3].arIcon}`}
                 alt="arabic-language-img"
               />
-              {t("navbar.lang")}
+              {navLinks2[4].lang}
             </NavLink>
           </li>
         </ul>

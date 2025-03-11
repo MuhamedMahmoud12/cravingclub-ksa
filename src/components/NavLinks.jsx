@@ -1,24 +1,23 @@
 import styles from "../styles/Header.module.css";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import { NAV_LINKS } from "../data/link-routes";
 import { useUserData } from "../context/UserContext";
 import { useTranslation } from "react-i18next";
 
 export default function NavLinks() {
   const { t } = useTranslation("home");
+  const navLinks = Object.entries(t(`navbarLinks`, { returnObjects: true }));
+  const navLinks2 = t(`navbarLinks2`, { returnObjects: true });
+
   const { token } = useAuth();
   const { userData, loading } = useUserData();
-
   return (
     <div className={styles["nav-links"]}>
       <ul className={styles["nav-links-ul"]}>
-        {NAV_LINKS.map((link, index) => {
+        {navLinks.map(([key, value]) => {
           return (
-            <li key={index}>
-              <NavLink key={index * 2} to={`${link.href}`}>
-                {t(`navbar.${link.content}`)}
-              </NavLink>
+            <li key={key}>
+              <NavLink to={value.path}>{value.content}</NavLink>
             </li>
           );
         })}
@@ -26,11 +25,12 @@ export default function NavLinks() {
         <li className={styles["nav-reservation-li"]}>
           <NavLink
             className={`${styles["nav-reservation-link"]} ${styles["no-hover"]}`}
+            to={navLinks2[0].path}
           >
             <span className={styles["nav-reservation-span"]}>
-              {t("navbar.reservation")}:
+              {navLinks2[0].reservation}
             </span>
-            +966 54 210 7964
+            {navLinks2[1].number}
           </NavLink>
         </li>
         <li className={styles["nav-primeclub-li"]}>
@@ -38,9 +38,9 @@ export default function NavLinks() {
             <NavLink
               className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
               id="prime-club-btn"
-              // to="/sign-in"
+              // to={navLinks2[2].path}
             >
-              {t("navbar.primeClub")}
+              {navLinks2[2].primeClub}
             </NavLink>
           ) : (
             <NavLink
@@ -58,10 +58,10 @@ export default function NavLinks() {
             className={`${styles["nav-lang-link"]} ${styles["no-hover"]}`}
           >
             <img
-              src={`../assets/icons/${t("navbar.langImg")}`}
+              src={`../assets/icons/${navLinks2[3].arIcon}`}
               alt="arabic-language-img"
             />
-            {t("navbar.lang")}
+            {navLinks2[4].lang}
           </NavLink>
         </li>
       </ul>

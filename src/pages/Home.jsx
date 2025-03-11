@@ -1,18 +1,20 @@
+// Importing Components
 import MainSlider from "../components/homeComponents/MainSlider";
 import AutoSlider from "../components/homeComponents/AutoSlider";
+import AutoSliderItem from "../components/homeComponents/AutoSliderItem.jsx";
 import AboutUs from "../components/homeComponents/AboutUs";
-import MenuCategories from "../components/homeComponents/MenuCategories";
 import Offers from "../components/homeComponents/Offers";
 import WhoWeAre from "../components/homeComponents/WhoWeAre";
 import Testimonials from "../components/homeComponents/Testimonials";
 import SignIn from "../components/homeComponents/SignIn.jsx";
+import MenuCategories from "../components/homeComponents/MenuCategories";
+// Importing Styles
 import home from "../styles/HomeStyles/Home.module.css";
 import aboutUs from "../styles/HomeStyles/aboutUs.module.css";
 import menuCategories from "../styles/HomeStyles/menuCategories.module.css";
 import offers from "../styles/HomeStyles/offers.module.css";
 import mainSlider from "../styles/HomeStyles/MainSlider.module.css";
 import styles from "../styles/HomeStyles/MainSlider.module.css";
-import AutoSliderItem from "../components/homeComponents/AutoSliderItem.jsx";
 // Auto Slider Options
 import SLIDER_OPTIONS from "../data/sliderOptions";
 import AUTO_SLIDER_TITLES from "../data/autoSliderTitles";
@@ -20,31 +22,34 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 export default function Home() {
   const { t } = useTranslation("home");
+  const sliderSideLinks = t(`sliderSideLinks`, { returnObjects: true });
+  console.log(sliderSideLinks);
+
   return (
     <>
       <section className={home["slider-section"]}>
         <div className={home["left-side-div"]}>
           <ul>
             <li>
-              <a href="#">Facebook</a>
+              <a href="#">{sliderSideLinks.socialMedia.facebook}</a>
             </li>
             <li>
-              <a href="#">Instagram</a>
+              <a href="#">{sliderSideLinks.socialMedia.instagram}</a>
             </li>
             <li>
-              <a href="#">Snapchat</a>
+              <a href="#">{sliderSideLinks.socialMedia.snapchat}</a>
             </li>
             <li>
               <a href="#" className={home["last-link"]}>
-                Tiktok
+                {sliderSideLinks.socialMedia.tiktok}
               </a>
             </li>
           </ul>
         </div>
         <div className={home["right-side-div"]}>
           <ul>
-            <li>Sat - Wed: 11AM - 1AM</li>
-            <li>Thur - Fri: 1PM - 4AM</li>
+            <li>{sliderSideLinks.times.weekDays}</li>
+            <li>{sliderSideLinks.times.weekEnd}</li>
           </ul>
         </div>
         <MainSlider>

@@ -20,7 +20,9 @@ section.prime-club .prime-club-container {
   padding: 40px;
   border-radius: 15px;
 }
-
+/* .announce {
+  font-size: 80px !important;
+} */
 section.prime-club .prime-club-container .form h2 {
   font-size: 50px;
   color: var(--white-color);

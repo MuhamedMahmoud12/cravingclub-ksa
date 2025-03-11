@@ -1,16 +1,29 @@
 {
-  "navbar": {
-    "home": "Home",
-    "menu": "Menu",
-    "cravingLunch": "Craving Lunch",
-    "iftarCraving": "Iftar Craving",
-    "locations": "Locations",
-    "contactUs": "Contact us",
-    "reservation": "Reservation",
-    "primeClub": "Prime Club",
-    "lang": "AR",
-    "changeLang": "تغيير اللغه",
-    "langImg": "ar.png"
+  "navbarLinks": {
+    "home": { "content": "Home", "path": "/" },
+    "menu": { "content": "Menu", "path": "/menu" },
+    "cravingLunch": { "content": "Craving Lunch", "path": "/craving-lunch" },
+    "iftarCraving": { "content": "Iftar Craving", "path": "/iftar-craving" },
+    "contactUs": { "content": "Contact Us", "path": "/contact-us" }
+  },
+  "navbarLinks2": [
+    { "reservation": "Reservation:", "path": "contact-us" },
+    { "number": "+966 54 210 7964", "path": "" },
+    { "primeClub": "Prime Club", "path": "prime-club" },
+    { "arIcon": "ar.png", "path": "" },
+    { "lang": "AR", "path": "" }
+  ],
+  "sliderSideLinks": {
+    "socialMedia": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "snapchat": "Snapchat",
+      "tiktok": "Tiktok"
+    },
+    "times": {
+      "weekDays": "Sat - Wed: 11AM - 1AM",
+      "weekEnd": "Thur - Fri: 1PM - 4AM"
+    }
   },
   "mainSlider": {
     "welcome": "Welcome to Craving Club",
@@ -40,7 +53,7 @@
   },
   "aboutUs": {
     "aboutSpan": "About Craving",
-    "aboutHeading": ["craving", "starts", "over", "here"],
+    "aboutHeading": ["craving ", "starts ", "over ", "here "],
     "locations": "Locations",
     "firstBranch": "Abha - Khamis Mushait",
     "secondBranch": "Jazan - Corniche Road",
@@ -70,7 +83,15 @@
     "seafood": "Sea Food",
     "chicken": "Chicken",
     "kidsMeal": "Kids Meals",
-    "dessert": "Dessert"
+    "dessert": "Dessert",
+    "shakers": "Shakers",
+    "mojitos": "Mojitos",
+    "shakes": "Milk Shakes",
+    "sensation": "Sensations",
+    "smoothies": "Smoothies",
+    "filling": "Filling drinks",
+    "other-drinks": "Other drinks",
+    "coffe": "Coffe"
   },
   "offers": {
     "offersSpan": "Our Offers",
@@ -90,6 +111,25 @@
   "testi": {
     "testiSpan": "Tasty Words",
     "testiTitle": "Heard from our guests ?"
+  },
+  "primeClub": {
+    "title": { "first": "Be a ", "second": "Prime Member" },
+    "subTitle": "your chance to become prime member is now available",
+    "announce": "Cooming Soon...",
+    "contactTitle": "Contact us",
+    "bookingTitle": "Book a table",
+    "bookingNo": "+966 54 210 7964",
+    "locationsTitle": "Locations",
+    "firstBranch": "Abha - Khamis Mushait",
+    "secondBranch": "Jazan - Corniche Road",
+    "lunch": "Craving Lunch",
+    "lunchTitle": "Sunday to Wednesday",
+    "lunchTime": "11:00 AM - 6:00 PM",
+    "openingHoursTitles": "11:00 AM - 6:00 PM",
+    "openingHours": "Saturday to Wednesday",
+    "regularTimes": "11:00 AM - 1:00 AM",
+    "weekEnd": "Thursday & Friday",
+    "weekEndTimes": "1:00 PM - 4:00 AM"
   },
   "footer": {
     "firstBranch": "first branch",

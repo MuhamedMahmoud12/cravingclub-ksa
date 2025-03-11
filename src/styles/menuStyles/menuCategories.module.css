@@ -72,12 +72,14 @@ section.slider-section {
 .item-section .items-container .item-grid .text h3 {
   font-size: 40px;
   color: var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   margin-bottom: 10px;
-  width: 70%;
+  width: auto;
   margin: 10px auto;
   font-weight: normal;
   letter-spacing: 1px;
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 .item-section .items-container .item-grid .text span.cat {
   display: block;
@@ -170,7 +172,6 @@ section.slider-section {
   }
   .item-section .items-container .item-grid .text h3 {
     font-size: 30px;
-    width: 90%;
   }
 }
 /************* Appetizers Section **********************/

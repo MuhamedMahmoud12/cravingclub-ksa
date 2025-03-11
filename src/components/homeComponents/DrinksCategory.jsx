@@ -1,19 +1,42 @@
 import MenuItem from "./MenuItem";
+import { useTranslation } from "react-i18next";
 export default function DrinksCategory() {
+  const { t } = useTranslation("home");
+  const drinks = t("menuCat", { returnObjects: true });
   return (
     <>
-      <MenuItem img="apetizers-img.png" itemName="drinks" />
-      <MenuItem img="soup&salad.png" itemName="drinks" />
-      <MenuItem img="sandwiches.png" itemName="Sandwiches" />
-      <MenuItem img="burger.png" itemName="Burgers" />
-      <MenuItem img="pasta.png" itemName="Pasta" />
-      <MenuItem img="pizza.png" itemName="Pizza" />
-      <MenuItem img="steak&ribs.png" itemName="Steak&Ribs" />
-      <MenuItem img="wagyu.png" itemName="Wagyu Choice" />
-      <MenuItem img="seafood.png" itemName="Sea Food" />
-      <MenuItem img="chicken.png" itemName="Chicken" />
-      <MenuItem img="kids-meal.png" itemName="Kids Meals" />
-      <MenuItem img="dessert.png" itemName="Dessert" />
+      <MenuItem img="shakers.png" itemName={drinks.shakers} forward="shakers" />
+      <MenuItem
+        img="mojitos.png"
+        itemName={drinks.mojitos}
+        forward="appetizers"
+      />
+      <MenuItem
+        img="shakes.png"
+        itemName={drinks.shakes}
+        forward="milk-shakes"
+      />
+      <MenuItem
+        img="sensation.png"
+        itemName={drinks.sensation}
+        forward="sensations"
+      />
+      <MenuItem
+        img="smoothies.png"
+        itemName={drinks.smoothies}
+        forward="smoothies"
+      />
+      <MenuItem
+        img="filling.png"
+        itemName={drinks.filling}
+        forward="filling-drinks"
+      />
+      <MenuItem
+        img="other-drinks.png"
+        itemName={drinks["other-drinks"]}
+        forward="other-drinks"
+      />
+      <MenuItem img="coffe.webp" itemName={drinks.coffe} forward="coffe" />
     </>
   );
 }

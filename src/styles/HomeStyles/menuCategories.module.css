@@ -58,7 +58,7 @@ section.categories .category .item {
   background-image: url("/assets/main-bg/light_bg.png");
   border-radius: 20px;
   border: 3px solid var(--primary-color);
-  height: 200px;
+  height: 220px;
   overflow: hidden;
 }
 section.categories .category .item > a {
@@ -68,10 +68,11 @@ section.categories .category .item > a {
   flex-direction: row-reverse;
   height: 100%;
   color: var(--secondary-color);
+  width: 100%;
 }
 section.categories .category .item .img {
   width: 40%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +86,7 @@ section.categories .category .item .img img {
 }
 html[lang="ar"] section.categories .category .item .img img {
   transform: scaleX(-1);
-  right: 40px !important;
+  right: 30px !important;
 }
 section.categories .category .item .text {
   width: 60%;
@@ -135,7 +136,7 @@ section.categories .category .item .text p {
   section.categories .category .item {
     width: 98%;
     margin: auto;
-    height: 170px;
+    height: 150px;
   }
 
   section.categories .category .item .text h3 {
