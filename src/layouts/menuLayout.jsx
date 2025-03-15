@@ -20,14 +20,36 @@ export default function MenuLayout() {
         <MainSlider
           className={`${menuSlider["menu-slider"]} ${mainSlider["main-img-slider"]}`}
         >
-          <NavLink to="/craving-lunch">
+          <NavLink to="/iftar-craving">
             <div
               className={`${mainSlider["item"]} ${menuSlider["item1"]} item`}
             ></div>
           </NavLink>
-          <div
-            className={`${mainSlider["item"]} ${menuSlider["item2"]} item`}
-          ></div>
+          <NavLink to="/iftar-craving">
+            <div
+              className={`${mainSlider["item"]} ${menuSlider["item2"]} item`}
+            ></div>
+          </NavLink>
+          <NavLink to="/iftar-craving">
+            <div
+              className={`${mainSlider["item"]} ${menuSlider["item3"]} item`}
+            ></div>
+          </NavLink>
+          <NavLink to="/iftar-craving">
+            <div
+              className={`${mainSlider["item"]} ${menuSlider["item4"]} item`}
+            ></div>
+          </NavLink>
+          <NavLink to="/iftar-craving">
+            <div
+              className={`${mainSlider["item"]} ${menuSlider["item5"]} item`}
+            ></div>
+          </NavLink>
+          <NavLink to="/iftar-craving">
+            <div
+              className={`${mainSlider["item"]} ${menuSlider["item6"]} item`}
+            ></div>
+          </NavLink>
         </MainSlider>
         <AutoSlider properties={SLIDER_OPTIONS[0].menuAutoSlider}>
           {menuSliderTitles.map((title, index) => (

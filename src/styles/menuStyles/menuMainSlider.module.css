@@ -20,13 +20,33 @@
   color: var(--white-color);
 }
 .item1 {
-  background: url("/assets/craving-lunch/craving-lunch-en.jpeg") no-repeat
+  background: url("/assets/iftar-craving/california-rock-menu.webp") no-repeat
     center center;
   background-size: contain;
 }
 .item2 {
-  background: url("/assets/offers-imgs/kids-meal-en.jpeg") no-repeat center
-    center;
+  background: url("/assets/iftar-craving/country-platter-menu.webp") no-repeat
+    center center;
+  background-size: contain;
+}
+.item3 {
+  background: url("/assets/iftar-craving/mississippe-platter-menu.webp")
+    no-repeat center center;
+  background-size: contain;
+}
+.item4 {
+  background: url("/assets/iftar-craving/smoky-platter-menu.webp") no-repeat
+    center center;
+  background-size: contain;
+}
+.item5 {
+  background: url("/assets/iftar-craving/duo-sampler-menu.webp") no-repeat
+    center center;
+  background-size: contain;
+}
+.item6 {
+  background: url("/assets/iftar-craving/family-sampler-menu.webp") no-repeat
+    center center;
   background-size: contain;
 }
 
