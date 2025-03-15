@@ -12,7 +12,7 @@ export default function Offer49() {
             return (
               <Category
                 key={index}
-                imgPath={item.img}
+                imgPath={`${item.imgPath}${item.img}`}
                 imgAlt={item.title}
                 itemName={item.title}
                 itemDesription={item.description}

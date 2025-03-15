@@ -873,25 +873,29 @@
   ],
   "craving_lunch49": [
     {
-      "img": "menu/burger/hand-crafted-cheese-burger.webp",
+      "img": "hand-crafted-cheese-burger.webp",
+      "imgPath": "menu/burger/",
       "title": "هاندكرافتد تشيز برجر",
       "description": "برجر مشوي بعناية مغطى بالجبن الأمريكي الذائب مع مايونيز بيكون. تقدم على خبز محمص مع جانب الصلصة المميزة وبطاطا مقلية مقرمشة.",
       "calories": "780 سعر حراري"
     },
     {
-      "img": "menu/sandwiches/southern-sandwich.webp",
+      "img": "southern-sandwich.webp",
+      "imgPath": "menu/sandwiches/",
       "title": "ساوثوسترن ساندوتش",
       "description": "صدر دجاج مقلي ، خس ، طماطم ، مخلل ، مايونيز حار محضر من صلصة شيبوتلي بيبر على خبزالبريوش",
       "calories": "990 سعر حراري"
     },
     {
-      "img": "menu/pizza/buffalo-chicken-pizza.webp",
+      "img": "buffalo-chicken-pizza.webp",
+      "imgPath": "menu/pizza/",
       "title": "بيتزا بافلو الدجاج",
       "description": "بيتزا دجاج البافلو مليئة بصلصة البافلو الحارة والدجاج مع صوص الرانش الكريمي.",
       "calories": "392 سعر حراري"
     },
     {
-      "img": "menu/pizza/la-pizza-de-pollo.webp",
+      "img": "la-pizza-de-pollo.webp",
+      "imgPath": "menu/pizza/",
       "title": "لا بيتزا دي بولو",
       "description": "عجينة البيتزا التقليدية مع صلصة المارينارا وصلصة ألفريدو، دجاج مشوي متبل، فلفل أحمر وأخضر، جبنة موزاريلا.",
       "calories": "1065 سعر حراري"
@@ -899,25 +903,29 @@
   ],
   "craving_lunch59": [
     {
-      "img": "menu/Seafood/coconut-fried-shrimp.webp",
+      "img": "coconut-fried-shrimp.webp",
+      "imgPath": "menu/Seafood/",
       "title": "روبيان مقلي بجوز الهند",
       "description": "روبيان مقلي ومقرمش ذهبي ومقرمش يقدم مع بطاطا مقلية مقرمشة، صوص كوكتيل واختيارك من جانب.",
       "calories": "740 سعر حراري"
     },
     {
-      "img": "menu/Seafood/brown-shrimp-tilapia.webp",
+      "img": "brown-shrimp-tilapia.webp",
+      "imgPath": "menu/Seafood/",
       "title": "براون تيلابيا والروبيان",
       "description": "سمك التلابيا المشوي بالجمبري الكريمي الحمضي، والخضار المشوية والأرز.",
       "calories": "990 سعر حراري"
     },
     {
-      "img": "menu/pasta/cajun-chicken-pasta.webp",
+      "img": "cajun-chicken-pasta.webp",
+      "imgPath": "menu/pasta/",
       "title": "كاجن تشيكن باستا",
       "description": "دجاج سوتيه، فلفل أحمر حلو في صلصة كاجون ألفريدو الحارة، بارميزان رومانو وفيتوتشيني. يقدم مع خبز بالثوم.",
       "calories": "1450 سعر حراري"
     },
     {
-      "img": "menu/Chicken/skillet-chicken-gravy.webp",
+      "img": "skillet-chicken-gravy.webp",
+      "imgPath": "menu/Chicken/",
       "title": "سكلت جريفي تشيكن",
       "description": "صدور الدجاج المتبلة والمطهيه بعنايه تقدم مع صلصة الجريفي والباطاطا المهروسة والجبنز",
       "calories": "470 سعر حراري"
@@ -925,19 +933,22 @@
   ],
   "craving_lunch79": [
     {
-      "img": "menu/steak&ribs/steak-au-poivre.webp",
+      "img": "steak-au-poivre.webp",
+      "imgPath": "menu/steak&ribs/",
       "title": "ستيك او بويفر",
       "description": "شريحة لحم مشويه رخامية لذيذة لحم بقري صافي مغموسة بصوص الاوجوس تقدم مع بطاطا مهروسة ، بصل مقلي",
       "calories": "1130 سعر حراري"
     },
     {
-      "img": "menu/Seafood/scampi-salmon.webp",
-      "title": "بلانك سالمون جلاس",
+      "img": "scampi-salmon.webp",
+      "imgPath": "menu/Seafood/",
+      "title": "سالمون سكامبي",
       "description": "فيليه السلمون المشوي مع صلصة السكامبي وزيت الزيتون الممتاز وشريحة الطماطم المشوية ويقدم مع سلطة ذرة المانجو.",
       "calories": "580 سعر حراري"
     },
     {
-      "img": "menu/steak&ribs/blackrock-pepper-steak.webp",
+      "img": "blackrock-pepper-steak.webp",
+      "imgPath": "menu/steak&ribs/",
       "title": "بلاك روك بيبير ستيك",
       "description": "قطعة الاستربلوين ستيك مع الفلفل الأسود يقدم علي حجر البلاك روك والبطاطا المهروسة وقطع البصل المقرمشة.",
       "calories": "1350 سعر حراري"

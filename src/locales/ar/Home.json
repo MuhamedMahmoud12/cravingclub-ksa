@@ -2,7 +2,6 @@
   "navbarLinks": {
     "home": { "content": "الرئيسية", "path": "/" },
     "menu": { "content": "المنيو", "path": "/menu/appetizers" },
-    "cravingLunch": { "content": "غداء كريفنج", "path": "/craving-lunch" },
     "iftarCraving": { "content": "افطار كريفنج", "path": "/iftar-craving" },
     "contactUs": { "content": "تواصل معنا", "path": "/contact-us" }
   },

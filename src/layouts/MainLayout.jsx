@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -7,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import "../locales/i18n.jsx";
 export default function Layout() {
-  const { t, i18n } = useTranslation("home");
+  const { i18n } = useTranslation("home");
   const [lang, setLang] = useState(localStorage.getItem("language") || "en");
   const [showPopup, setShowPopup] = useState(!localStorage.getItem("language")); // ✅ يظهر بس أول مرة
 
@@ -28,6 +27,7 @@ export default function Layout() {
     document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     document.documentElement.lang = i18n.language;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang]); // ✅ التحديث يحصل فورًا لما اللغة تتغير
   const changeLanguage = (newLang) => {
     localStorage.setItem("language", newLang);

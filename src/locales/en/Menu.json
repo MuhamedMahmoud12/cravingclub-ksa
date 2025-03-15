@@ -872,36 +872,6 @@
       "price": "36"
     }
   ],
-  "craving_lunch49": [
-    {
-      "img": "hand-crafted-cheese-burger.webp",
-      "title": "Hand-Crafted Cheese Burger",
-      "description": "Our char-grilled burger is topped with, melted American cheese and finished with bacon mayonnaise. Served on a toasted bun with a side of our Signature Glaze and crispy seasoned fries",
-      "price": "43",
-      "calories": "780"
-    },
-    {
-      "img": "southern-sandwich.webp",
-      "title": "Southern Sandwich",
-      "description": "Battered chicken breast, lettuce, tomato, pickles, spicy mayo made with Chipotle Pepper Sauce on a soft bun.",
-      "price": "43",
-      "calories": "970 CAL"
-    },
-    {
-      "img": "buffalo-chicken-pizza.webp",
-      "title": "Buffalo Chicken Pizza",
-      "description": "This buffalo chicken pizza is full of spicy buffalo sauce, chicken, and drizzled with a creamy ranch dressing",
-      "price": "43",
-      "calories": "392 سعر حراري"
-    },
-    {
-      "img": "la-pizza-de-pollo.webp",
-      "title": "La Pizza De Pollo",
-      "description": "Our traditional pizza dough topping with marinara sauce, alfredo sauce, marinated grilled chicken, red and green bell pepper, mozzarella cheese",
-      "price": "43",
-      "calories": "1065 سعر حراري"
-    }
-  ],
   "lunchTitles": [
     "Lunch Offer starts from Sunday to Wednesday from 11:00 AM till 6:00 PM",
     "Lunch Offer starts from Sunday to Wednesday from 11:00 AM till 6:00 PM",
@@ -918,9 +888,45 @@
     "Lunch Offer starts from Sunday to Wednesday from 11:00 AM till 6:00 PM",
     "Lunch Offer starts from Sunday to Wednesday from 11:00 AM till 6:00 PM"
   ],
+  "craving_lunch49": [
+    {
+      "img": "hand-crafted-cheese-burger.webp",
+      "imgPath": "/menu/burger/",
+      "title": "Hand-Crafted Cheese Burger",
+      "description": "Our char-grilled burger is topped with, melted American cheese and finished with bacon mayonnaise. Served on a toasted bun with a side of our Signature Glaze and crispy seasoned fries",
+      "price": "43",
+      "calories": "780"
+    },
+    {
+      "img": "southern-sandwich.webp",
+      "imgPath": "/menu/sandwiches/",
+      "title": "Southern Sandwich",
+      "description": "Battered chicken breast, lettuce, tomato, pickles, spicy mayo made with Chipotle Pepper Sauce on a soft bun.",
+      "price": "43",
+      "calories": "970 CAL"
+    },
+    {
+      "img": "buffalo-chicken-pizza.webp",
+      "imgPath": "/menu/pizza/",
+      "title": "Buffalo Chicken Pizza",
+      "description": "This buffalo chicken pizza is full of spicy buffalo sauce, chicken, and drizzled with a creamy ranch dressing",
+      "price": "43",
+      "calories": "392 سعر حراري"
+    },
+    {
+      "img": "la-pizza-de-pollo.webp",
+      "imgPath": "/menu/pizza/",
+      "title": "La Pizza De Pollo",
+      "description": "Our traditional pizza dough topping with marinara sauce, alfredo sauce, marinated grilled chicken, red and green bell pepper, mozzarella cheese",
+      "price": "43",
+      "calories": "1065 سعر حراري"
+    }
+  ],
+
   "craving_lunch59": [
     {
       "img": "coconut-fried-shrimp.webp",
+      "imgPath": "/menu/Seafood/",
       "title": "Coconut Fried Shrimp",
       "description": "Hand-battered golden crispy fried shrimp served with crispy seasoned fries, cocktail sauce and your choice of side.",
       "price": "58",
@@ -928,6 +934,7 @@
     },
     {
       "img": "brown-shrimp-tilapia.webp",
+      "imgPath": "/menu/Seafood/",
       "title": "Brown Shrimp Tilapia",
       "description": "Grilled Tilapia fish with citrus creamy shrimp, and roasted veggies, citrus rice.",
       "price": "66",
@@ -935,6 +942,7 @@
     },
     {
       "img": "cajun-chicken-pasta.webp",
+      "imgPath": "/menu/pasta/",
       "title": "Cajun Chicken Pasta",
       "description": "Sautéed chicken, red bell peppers in a spicy Cajun Alfredo sauce, Parmesan-Romano and fettuccine. Served with a warm garlic bread",
       "price": "48",
@@ -942,6 +950,7 @@
     },
     {
       "img": "skillet-chicken-gravy.webp",
+      "imgPath": "/menu/Chicken/",
       "title": "Skillet Chicken Gravy",
       "description": "Marinated chicken mash potato Gravy sauce and mix cheese.",
       "price": "64",
@@ -951,6 +960,7 @@
   "craving_lunch79": [
     {
       "img": "steak-au-poivre.webp",
+      "imgPath": "/menu/steak&ribs/",
       "title": "Steak Au Poivre",
       "description": "Well-marbled, savory steak with pure beef flavor, seasoned with black pepper. Served with mashed potatoes and frizzled onion.",
       "price": "98",
@@ -958,7 +968,8 @@
     },
     {
       "img": "scampi-salmon.webp",
-      "title": "Brown Shrimp Tilapia",
+      "title": "Scampi Salmon",
+      "imgPath": "/menu/Seafood/",
       "description": "Grilled Tilapia fish with citrus creamy shrimp, and roasted veggies, citrus rice.",
       "price": "66",
       "calories": "990 CAL"
@@ -966,6 +977,7 @@
 
     {
       "img": "blackrock-pepper-steak.webp",
+      "imgPath": "/menu/steak&ribs/",
       "title": "Black Rock Pepper Steak",
       "description": "The peppercorn Striploin crust itself is made by placing the steak in a bed of cracked black peppercorns.",
       "price": "118",
