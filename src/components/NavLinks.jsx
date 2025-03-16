@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useUserData } from "../context/UserContext";
 import { useTranslation } from "react-i18next";
-
+import { useLanguage } from "../context/LanguageContext";
 export default function NavLinks() {
   const { t } = useTranslation("home");
   const navLinks = Object.entries(t(`navbarLinks`, { returnObjects: true }));
   const navLinks2 = t(`navbarLinks2`, { returnObjects: true });
-
+  const { language, setLanguageSettings } = useLanguage();
   const { token } = useAuth();
   const { userData, loading } = useUserData();
   return (
@@ -52,17 +52,21 @@ export default function NavLinks() {
             </NavLink>
           )}
         </li>
-        <li className="nav-lang-li">
-          <NavLink
-            href="#"
-            className={`${styles["nav-lang-link"]} ${styles["no-hover"]}`}
-          >
-            <img
-              src={`../assets/icons/${navLinks2[3].arIcon}`}
-              alt="arabic-language-img"
-            />
-            {navLinks2[4].lang}
-          </NavLink>
+        <li
+          className={styles["nav-lang-li"]}
+          onClick={() => {
+            {
+              language === "en"
+                ? setLanguageSettings("ar")
+                : setLanguageSettings("en");
+            }
+          }}
+        >
+          <img
+            src={`../assets/icons/${navLinks2[3].langIcon}`}
+            alt="arabic-language-img"
+          />
+          {navLinks2[4].lang}
         </li>
       </ul>
     </div>

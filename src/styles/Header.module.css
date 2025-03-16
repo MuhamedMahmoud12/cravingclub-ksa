@@ -42,6 +42,18 @@ header nav.navbar .nav-links ul.nav-links-ul li {
   display: inline-block;
   padding: 0 12px;
 }
+header nav.navbar .nav-links ul.nav-links-ul li.nav-lang-li {
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+header nav.navbar .nav-links ul.nav-links-ul li.nav-lang-li img {
+  margin: 0 5px;
+  width: 20px;
+}
 header nav.navbar .nav-links ul.nav-links-ul li a {
   color: var(--white-color);
   font-size: 18px;
@@ -84,15 +96,10 @@ header ul li .nav-primeclub-link {
   font-size: 18px;
   font-family: var(--font-bebas);
   cursor: pointer;
+  display: inline !important;
 }
-header nav.navbar .nav-links ul.nav-links-ul li a.nav-lang-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header nav.navbar .nav-links ul.nav-links-ul li a.nav-lang-link img {
-  margin-right: 5px;
-  width: 20px;
+html[lang="ar"] header ul li .nav-primeclub-link {
+  padding: 8px 18px;
 }
 @media only screen and (max-width: 991px) {
   header nav.navbar .nav-links {
@@ -151,6 +158,21 @@ header nav.navbar .nav-links ul.nav-links-ul li a.nav-lang-link img {
 }
 .mobile-nav .mobile-nav-links ul li {
   padding: 15px 0;
+}
+header nav.navbar .mobile-nav-links ul li.nav-lang-li {
+  color: var(--white-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  direction: rtl;
+}
+html[lang="ar"] nav.navbar .mobile-nav-links ul li.nav-lang-li {
+  direction: ltr;
+}
+header nav.navbar .mobile-nav-links ul li.nav-lang-li img {
+  margin: 0 5px;
+  width: 20px;
 }
 .mobile-nav .mobile-nav-links ul.mobile-nav-links-ul li.nav-primeclub-li {
   margin: 20px 0;

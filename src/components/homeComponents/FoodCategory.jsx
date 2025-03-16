@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 export default function FoodCategory() {
   const { t } = useTranslation("home");
   const food = t("menuCat", { returnObjects: true });
-  console.log(food.appetizers);
   return (
     <>
       <MenuItem

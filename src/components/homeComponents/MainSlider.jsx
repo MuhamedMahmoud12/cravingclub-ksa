@@ -8,7 +8,6 @@ export default function MainSlider({ children, ...props }) {
     infinite: true,
     autoplay: true,
     speed: 1000,
-    lazyLoad: "ondemand",
     arrows: false,
     dots: false,
     responsive: [

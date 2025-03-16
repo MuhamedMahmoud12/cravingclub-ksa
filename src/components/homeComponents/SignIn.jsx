@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 export default function SignIn() {
   const { t } = useTranslation("home");
   const primeClubTitles = t(`primeClub`, { returnObjects: true });
-  console.log(primeClub);
 
   return (
     <section className={primeClub["prime-club"]}>

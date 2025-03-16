@@ -2,14 +2,17 @@
   "navbarLinks": {
     "home": { "content": "Home", "path": "/" },
     "menu": { "content": "Menu", "path": "/menu/appetizers" },
-    "iftarCraving": { "content": "Iftar Craving", "path": "/iftar-craving" },
+    "iftarCraving": {
+      "content": "Iftar Craving",
+      "path": "/iftar-craving/iftar-combos"
+    },
     "contactUs": { "content": "Contact Us", "path": "/contact-us" }
   },
   "navbarLinks2": [
     { "reservation": "Reservation:", "path": "contact-us" },
     { "number": "+966 54 210 7964", "path": "" },
     { "primeClub": "Prime Club", "path": "prime-club" },
-    { "arIcon": "ar.png", "path": "" },
+    { "langIcon": "ar.png", "path": "" },
     { "lang": "AR", "path": "" }
   ],
   "sliderSideLinks": {

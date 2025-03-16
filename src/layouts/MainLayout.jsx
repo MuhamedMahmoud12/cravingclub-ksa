@@ -1,51 +1,44 @@
 import { Outlet } from "react-router-dom";
+import { LanguageProiver } from "../context/LanguageContext.jsx";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LanguagePopup from "../components/sharedComponents/LanguagePopup.jsx";
-import { useTranslation } from "react-i18next";
-import { useState, useEffect } from "react";
-import "../locales/i18n.jsx";
+// import "../locales/i18n.jsx";
+// import { useTranslation } from "react-i18next";
+// import { useEffect } from "react";
 export default function Layout() {
-  const { i18n } = useTranslation("home");
-  const [lang, setLang] = useState(localStorage.getItem("language") || "en");
-  const [showPopup, setShowPopup] = useState(!localStorage.getItem("language")); // ✅ يظهر بس أول مرة
+  // const { i18n } = useTranslation();
+  // useEffect(() => {
+  //   const savedLanguage = localStorage.getItem("language") || "en";
+  //   i18n.changeLanguage(savedLanguage);
 
-  useEffect(() => {
-    i18n.changeLanguage(lang); // ✅ تغيير لغة الترجمة
-    document.documentElement.style.setProperty(
-      "--font-bebas",
-      lang === "ar" ? "Cairo, sans-serif" : "Bebas Neue, serif"
-    );
-    document.documentElement.style.setProperty(
-      "--font-roboto",
-      lang === "ar" ? "Cairo, sans-serif" : "Roboto, serif"
-    );
-    document.documentElement.style.setProperty(
-      "--font-playball",
-      lang === "ar" ? "Cairo, sans-serif" : "Playball, serif"
-    );
-    document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
-    document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
-    document.documentElement.lang = i18n.language;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lang]); // ✅ التحديث يحصل فورًا لما اللغة تتغير
-  const changeLanguage = (newLang) => {
-    localStorage.setItem("language", newLang);
-    setLang(newLang); // ✅ تحديث اللغة فورًا من غير ريفرش
-  };
+  //   document.documentElement.lang = savedLanguage;
+  //   document.documentElement.dir = savedLanguage === "ar" ? "rtl" : "ltr";
+  //   document.documentElement.style.setProperty(
+  //     "--font-bebas",
+  //     savedLanguage === "ar" ? "Cairo, sans-serif" : "Bebas Neue, serif"
+  //   );
+  //   document.documentElement.style.setProperty(
+  //     "--font-roboto",
+  //     savedLanguage === "ar" ? "Cairo, sans-serif" : "Roboto, serif"
+  //   );
+  //   document.documentElement.style.setProperty(
+  //     "--font-playball",
+  //     savedLanguage === "ar" ? "Cairo, sans-serif" : "Playball, serif"
+  //   );
+  //   document.documentElement.setAttribute(
+  //     "dir",
+  //     i18n.language === "ar" ? "rtl" : "ltr"
+  //   );
+  // }, []);
   return (
-    <div className="layout">
-      {showPopup && (
-        <LanguagePopup
-          changeLanguage={changeLanguage}
-          onClose={() => {
-            setShowPopup(false);
-          }}
-        />
-      )}
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
+    <LanguageProiver>
+      <div className="layout">
+        <LanguagePopup />
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </LanguageProiver>
   );
 }

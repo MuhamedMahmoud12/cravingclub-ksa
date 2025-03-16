@@ -56,6 +56,9 @@
     "fillingDrinks": "المشروبات المثلجة",
     "shakers": "شيكرز",
     "smoothies": "سموزي",
+    "mojitos": "موهيتوس",
+    "milkShakes": "ميلك تشيك",
+    "sensations": "سنسايشن",
     "coffe": "قهوة بارده وساخنة",
     "drinks": "مشروبات اخري"
   },
@@ -256,7 +259,7 @@
         },
         {
           "option": "إضافة روبيان مشوي 180 جرام",
-          "price": "17",
+          "price": "16",
           "calories": "790 سعر حراري"
         }
       ]
@@ -286,6 +289,13 @@
     "سندوتش"
   ],
   "sandwiches": [
+    {
+      "img": "brisket-quesadilla.webp",
+      "title": "بريسكت كيساديلا",
+      "description": "Tortilla bread slices stuffed with angus brisket, melted cheese, pickled onions, pico de gallo, BBQ sauce and ranch served with seasoning French fries.",
+      "price": "45",
+      "calories": "990 CAL"
+    },
     {
       "img": "bordelaise-steak-sandwiches.webp",
       "title": "ساندوتش ستيك البورداليس",
@@ -388,7 +398,7 @@
     {
       "img": "cajun-chicken-pasta.webp",
       "title": "كاجن تشيكن باستا",
-      "description": "دجاج سوتيه، فلفل أحمر حلو في صلصة كاجون ألفريدو الحارة، بارميزان رومانو وفيتوتشيني. يقدم مع خبز بالثوم.",
+      "description": "دجاج سوتيه، فلفل أحمر حلو في صلصة كاجون ألفريدو الحارة، بارميزان رومانو وفيتوتشيني. يقدم مع خبز بالعسل.",
       "price": "48",
       "calories": "1450 سعر حراري"
     },
@@ -416,7 +426,7 @@
     {
       "img": "shrimp-zitti-pasta.webp",
       "title": "روبيان زيتي باستا",
-      "description": "روبيان سوتيه، صلصة الوايت صوص، بارميزان رومانو وزيتي باستا. يقدم مع خبز بالثوم.",
+      "description": "روبيان سوتيه، صلصة الوايت صوص، بارميزان رومانو وزيتي باستا. يقدم مع خبز بالعسل.",
       "price": "48",
       "calories": "1250 سعر حراري"
     }
@@ -784,7 +794,7 @@
     {
       "img": "alfredo-pasta.webp",
       "title": "صلصة ألفريدو مع اختيارك من الباستا",
-      "description": "صدر دجاج متبل مغطى بصلصة الكريمة والفطر والأرتيشوك، يقدم مع اختيارك من طبقين جانبيين.",
+      "description": "اختر المعكرونة المفضلة لديك مع صلصة الفريدو! أضف البروتين مقابل تكلفة إضافية.",
       "price": "19",
       "calories": "570 سعر حراري",
       "pasta": [

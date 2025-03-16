@@ -9,6 +9,7 @@ export default function KidsMeal({ categoryStyle }) {
   const kids_meals = t("kids_meals", { returnObjects: true });
   const kidsMealsTitles = t("kidsMealsTitles", { returnObjects: true });
   const IMG_PATH = "menu/kids-meal/";
+  console.log(kids_meals);
   return (
     <>
       <div
@@ -52,7 +53,7 @@ export default function KidsMeal({ categoryStyle }) {
                         </div>
                       </>
                     )}
-                    {kids_meal.protien && (
+                    {kids_meal.protein && (
                       <>
                         <div
                           className={`${categoryStyle["price-cal"]} ${categoryStyle["addOne-container"]}`}
@@ -60,12 +61,12 @@ export default function KidsMeal({ categoryStyle }) {
                           <span
                             className={`${categoryStyle.price} ${categoryStyle["addOne-span"]}`}
                           >
-                            {kids_meal.protien[0]}
+                            {kids_meal.protein[0]}
                           </span>
                           <span
                             className={`${categoryStyle.cal} ${categoryStyle["addOne-span"]}`}
                           >
-                            {kids_meal.protien[1]}
+                            {kids_meal.protein[1]}
                           </span>
                         </div>
                       </>

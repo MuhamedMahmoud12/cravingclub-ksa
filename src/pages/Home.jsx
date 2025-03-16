@@ -23,7 +23,6 @@ import { useTranslation } from "react-i18next";
 export default function Home() {
   const { t } = useTranslation("home");
   const sliderSideLinks = t(`sliderSideLinks`, { returnObjects: true });
-  console.log(sliderSideLinks);
 
   return (
     <>

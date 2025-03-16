@@ -1,19 +1,16 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import { useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import styles from "../../styles/SharedComponentsStyles/popup.module.css";
-export default function LanguagePopup({ onClose, changeLanguage }) {
-  const [selectedLang, setSelectedLang] = useState(
-    localStorage.getItem("language") || "en"
-  );
+export default function LanguagePopup() {
+  const { setLanguageSettings } = useLanguage();
+  const [showPopup, setShowPopup] = useState(!localStorage.getItem("language"));
 
   const handleSelectLanguage = (lang) => {
-    setSelectedLang(lang);
-    localStorage.setItem("language", lang); // ✅ نحفظ اللغة في LocalStorage
-    changeLanguage(lang); // ✅ نبعت التحديث للـ Layout
-    onClose(); // ✅ نقفل البوب أب
+    setLanguageSettings(lang);
+    setShowPopup(false);
   };
 
+  if (!showPopup) return null;
   return (
     <div className={styles["popup"]}>
       <div>

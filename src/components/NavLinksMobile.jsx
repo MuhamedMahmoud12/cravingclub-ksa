@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "../context/LanguageContext";
 export default function NavLinksMobile() {
   const { t } = useTranslation("home");
   const navLinks = Object.entries(t(`navbarLinks`, { returnObjects: true }));
   const navLinks2 = t(`navbarLinks2`, { returnObjects: true });
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
+  const { language, setLanguageSettings } = useLanguage();
   const { token } = useAuth();
   useEffect(() => {
     setIsVisible(false);
@@ -72,15 +74,29 @@ export default function NavLinksMobile() {
               </NavLink>
             )}
           </li>
-          <li className={styles["nav-lang-li"]}>
-            <NavLink href="#" className={styles["nav-lang-link"]}>
-              {t("navbar.changeLang")} : &nbsp;
-              <img
-                src={`../assets/icons/${navLinks2[3].arIcon}`}
-                alt="arabic-language-img"
-              />
-              {navLinks2[4].lang}
-            </NavLink>
+          <li
+            className={styles["nav-lang-li"]}
+            onClick={() => {
+              {
+                language === "en"
+                  ? setLanguageSettings("ar")
+                  : setLanguageSettings("en");
+              }
+            }}
+          >
+            {language === "ar" ? (
+              <span style={{ fontFamily: "Bebas Neue, serif" }}>
+                Change Language:{" "}
+              </span>
+            ) : (
+              <span style={{ fontFamily: "Cairo, serif" }}>تغيير اللغه: </span>
+            )}
+            <img
+              src={`../assets/icons/${navLinks2[3].langIcon}`}
+              alt="lang-btn"
+            />
+
+            {navLinks2[4].lang}
           </li>
         </ul>
       </div>
