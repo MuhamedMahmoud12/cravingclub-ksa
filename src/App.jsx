@@ -36,6 +36,7 @@ import RamadanAppetizers from "./components/iftarCravingComponents/RamadanAppeti
 import SharingPlatters from "./components/iftarCravingComponents/SharingPlatters.jsx";
 import IftarTwoPersons from "./components/iftarCravingComponents/IftarTwoPersons.jsx";
 import IftarFourPersons from "./components/iftarCravingComponents/IftarFourPersons.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 function App() {
   const token = useAuth();
 
@@ -169,6 +170,10 @@ function App() {
               element={<IftarFourPersons categoryStyle={menuCategories} />}
             />
           </Route>
+          <Route
+            path="/contact-us"
+            element={<ContactUs categoryStyle={menuCategories} />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -130,6 +130,20 @@
       "calories": "320 CAL"
     },
     {
+      "img": "italian-cheese-bread.webp",
+      "title": "Italian Cheese Bread",
+      "description": "Slice bread coating with mozzarella cheese And marinara sauce, basil.",
+      "price": "28",
+      "calories": "350 CAL"
+    },
+    {
+      "img": "buffalo-chicken-quesadilla.webp",
+      "title": "Buffalo Chicken Quesadilla",
+      "description": "Griddled flour tortilla /buffalo pulled chicken cheddar-jack cheese blend house-made pico de gallo , drizzled with ranch sauce",
+      "price": "43",
+      "calories": "477 CAL"
+    },
+    {
       "img": "fried-shrimp-scampi.webp",
       "title": "Fried Shrimp Scampi",
       "description": "Lightly breaded, fried and tossed in our signature scampi sauce.",

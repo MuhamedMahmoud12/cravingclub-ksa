@@ -1,0 +1,13 @@
+{
+  "titles": ["Contact Us", "Get in touch with us"],
+  "callUs": {
+    "callUsTitle": "Call Us",
+    "firstBranch": "Abha Branch",
+    "secondBranch": "Jazan Branch"
+  },
+  "findUs": {
+    "findUsTitle": "Find Us",
+    "firstBranch": "King Fahd Rd, Khamis Mushait .62432, Saudi Arabia",
+    "secondBranch": "Corniche Rd, 7730, Jazan 2103 .82725, Saudi Arabia"
+  }
+}

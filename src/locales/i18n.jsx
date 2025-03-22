@@ -4,14 +4,18 @@ import HomeEn from "./en/Home.json";
 import HomeAr from "./ar/Home.json";
 import MenuAr from "./ar/Menu.json";
 import MenuEn from "./en/Menu.json";
+import ContactEn from "./en/Contact.json";
+import ContactAr from "./ar/Contact.json";
 const resources = {
   en: {
     home: HomeEn,
     menu: MenuEn,
+    contact: ContactEn,
   },
   ar: {
     home: HomeAr,
     menu: MenuAr,
+    contact: ContactAr,
   },
 };
 
