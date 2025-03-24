@@ -32,7 +32,10 @@ export default function MenuLayout() {
             className={`${mainSlider["item"]} ${lunchStyles["item3"]}`}
           ></div>
         </MainSlider>
-        <AutoSlider properties={SLIDER_OPTIONS[0].menuAutoSlider}>
+        <AutoSlider
+          properties={SLIDER_OPTIONS[0].menuAutoSlider}
+          name={lunchStyles["lunch-menu-select"]}
+        >
           {lunchTitles.map((title, index) => (
             <AutoSliderItem key={index} title={title} />
           ))}
@@ -46,7 +49,7 @@ export default function MenuLayout() {
           <MenuNavItem
             className={lunchStyles["cat-li"]}
             imgPath={IMG_PATH}
-            imgName={`49-2.png`}
+            imgName={`49-2.webp`}
             itemName="49"
             categoryRoute="49Category"
             linkClass={"active-link"}
@@ -56,7 +59,7 @@ export default function MenuLayout() {
           <MenuNavItem
             className={lunchStyles["cat-li"]}
             imgPath={IMG_PATH}
-            imgName={`59-2.png`}
+            imgName={`59-2.webp`}
             itemName="59"
             categoryRoute="59Category"
             linkClass={"active-link"}
@@ -66,7 +69,7 @@ export default function MenuLayout() {
           <MenuNavItem
             className={lunchStyles["cat-li"]}
             imgPath={IMG_PATH}
-            imgName={`79-2.png`}
+            imgName={`79-2.webp`}
             itemName="79"
             categoryRoute="79Category"
             linkClass={"active-link"}

@@ -71,6 +71,21 @@
     center center;
   background-size: contain;
 }
+html[lang="ar"] .item1 {
+  background: url("/assets/craving-lunch/craving-lunch-ar.JPG") no-repeat center
+    center;
+  background-size: contain;
+}
+html[lang="ar"] .item2 {
+  background: url("/assets/craving-lunch/craving-lunch-2-ar.JPG") no-repeat
+    center center;
+  background-size: contain;
+}
+html[lang="ar"] .item3 {
+  background: url("/assets/craving-lunch/craving-lunch-3-ar.JPG") no-repeat
+    center center;
+  background-size: contain;
+}
 
 .lunch-choices {
   background: url("/assets/main-bg/light_bg.png") no-repeat fixed center center;
@@ -95,6 +110,11 @@
   .item3 {
     background-size: cover;
   }
+  html[lang="ar"] .item1,
+  html[lang="ar"] .item2,
+  html[lang="ar"] .item3 {
+    background-size: cover;
+  }
   .lunch-slider-item {
     height: 40px;
     display: flex;
@@ -108,6 +128,7 @@
     font-size: 15px !important;
     padding-top: 8px;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .lunch-menu-select span:first-of-type {
+    font-size: 11px !important;
+  }
 }

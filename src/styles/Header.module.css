@@ -148,10 +148,13 @@ html[lang="ar"] header ul li .nav-primeclub-link {
   width: 100%;
   height: 0;
   left: 0;
-  top: 94px;
+  top: 90px;
   background: url("/assets/main-bg/header-bg.png") no-repeat;
   transition: 200ms;
   overflow: hidden;
+}
+html[lang="ar"] .mobile-nav .mobile-nav-links {
+  top: 93.5px;
 }
 .mobile-nav .mobile-nav-links ul.mobile-nav-links-ul {
   padding: 30px;

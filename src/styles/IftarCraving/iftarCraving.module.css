@@ -15,8 +15,8 @@
   transition: 400ms;
 }
 .cat-li a img {
-  height: 100px !important;
-  width: 100px !important;
+  height: 110px !important;
+  width: 110px !important;
   border-radius: 50%;
   border: 3px solid var(--white-color);
   padding: 0 !important;
@@ -73,6 +73,9 @@
   }
   .iftar-slider .item {
     height: 320px;
+  }
+  .iftar-menu-select span:first-of-type {
+    font-size: 11px;
   }
 }
 @media only screen and (max-width: 991px) {

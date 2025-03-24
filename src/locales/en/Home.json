@@ -96,6 +96,8 @@
     "coffe": "Coffe"
   },
   "offers": {
+    "lunchImage": "craving-lunch-en.jpeg",
+    "kidsImage": "kids-meal-en.jpeg",
     "offersSpan": "Our Offers",
     "offersTitle": "Explore Our Exclusive Offers",
     "lunchTitle": "Craving Lunch",
@@ -112,7 +114,11 @@
   },
   "testi": {
     "testiSpan": "Tasty Words",
-    "testiTitle": "Heard from our guests ?"
+    "testiTitle": "Heard from our guests ?",
+    "testiImgOne": "testi1-en.jpeg",
+    "testiImgTwo": "testi2-en.jpeg",
+    "testiImgThree": "testi3-en.jpeg",
+    "testiImgFour": "testi4-en.jpeg"
   },
   "primeClub": {
     "title": { "first": "Be a ", "second": "Prime Member" },

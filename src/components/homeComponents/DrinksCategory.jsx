@@ -5,34 +5,38 @@ export default function DrinksCategory() {
   const drinks = t("menuCat", { returnObjects: true });
   return (
     <>
-      <MenuItem img="shakers.png" itemName={drinks.shakers} forward="shakers" />
       <MenuItem
-        img="mojitos.png"
-        itemName={drinks.mojitos}
-        forward="appetizers"
+        img="shakers.webp"
+        itemName={drinks.shakers}
+        forward="shakers"
       />
       <MenuItem
-        img="shakes.png"
+        img="mojitos.webp"
+        itemName={drinks.mojitos}
+        forward="mojitos"
+      />
+      <MenuItem
+        img="shakes.webp"
         itemName={drinks.shakes}
         forward="milk-shakes"
       />
       <MenuItem
-        img="sensation.png"
+        img="sensation.webp"
         itemName={drinks.sensation}
         forward="sensations"
       />
       <MenuItem
-        img="smoothies.png"
+        img="smoothies.webp"
         itemName={drinks.smoothies}
         forward="smoothies"
       />
       <MenuItem
-        img="filling.png"
+        img="filling.webp"
         itemName={drinks.filling}
         forward="filling-drinks"
       />
       <MenuItem
-        img="other-drinks.png"
+        img="other-drinks.webp"
         itemName={drinks["other-drinks"]}
         forward="other-drinks"
       />

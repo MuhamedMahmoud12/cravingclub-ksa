@@ -42,7 +42,10 @@ export default function IftarCravingLayout() {
             className={`${mainSlider["item"]} ${iftarStyles["item6"]} ${iftarStyles["item"]}`}
           ></div>
         </MainSlider>
-        <AutoSlider properties={SLIDER_OPTIONS[0].menuAutoSlider}>
+        <AutoSlider
+          properties={SLIDER_OPTIONS[0].menuAutoSlider}
+          name={iftarStyles["iftar-menu-select"]}
+        >
           {iftarTitles.map((title, index) => (
             <AutoSliderItem key={index} title={title} />
           ))}
@@ -69,7 +72,7 @@ export default function IftarCravingLayout() {
           />
           <MenuNavItem
             className={iftarStyles["cat-li"]}
-            imgName={`iftar-2.webp`}
+            imgName={`iftar-two-persons.jpeg`}
             imgPath={`${IMG_PATH}`}
             itemName={`${iftarSections[2]}`}
             categoryRoute="iftar-two"

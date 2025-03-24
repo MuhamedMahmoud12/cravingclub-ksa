@@ -96,6 +96,8 @@
     "coffe": "قهوة"
   },
   "offers": {
+    "lunchImage": "craving-lunch-ar.JPG",
+    "kidsImage": "kids-meal-ar.jpeg",
     "offersSpan": "عروضـــنا",
     "offersTitle": "اعرف اكثر عن عروضنا",
     "lunchTitle": "غــداء كريفنج",
@@ -112,7 +114,11 @@
   },
   "testi": {
     "testiSpan": "رأيك يهمنا",
-    "testiTitle": "ماذا قالو عنــا؟"
+    "testiTitle": "ماذا قالو عنــا؟",
+    "testiImgOne": "testi1-ar.jpeg",
+    "testiImgTwo": "testi2-ar.jpeg",
+    "testiImgThree": "testi3-ar.jpeg",
+    "testiImgFour": "testi4-ar.jpeg"
   },
   "primeClub": {
     "title": { "first": "انضم الان الي ", "second": "برايم كلوب" },

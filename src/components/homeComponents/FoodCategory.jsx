@@ -11,7 +11,7 @@ export default function FoodCategory() {
         forward="appetizers"
       />
       <MenuItem
-        img="salad.png"
+        img="salad.webp"
         itemName={food.soupSalad}
         forward="soup-salad"
       />

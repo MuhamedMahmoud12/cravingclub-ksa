@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
 export default function Testimonials() {
   const { t } = useTranslation("home");
+  const testiTitles = t("testi", { returnObjects: true });
+  const TESTI_PATH = "/assets/testimonials/";
   const settings = {
     infinite: true,
     slidesToShow: 4,
@@ -50,22 +52,18 @@ export default function Testimonials() {
   return (
     <section className={testimonials["testimonials"]}>
       <div className="container">
-        <span className="prev-title">{t("testi.testiSpan")}</span>
-        <h2>{t("testi.testiTitle")}</h2>
+        <span className="prev-title">{testiTitles.testiSpan}</span>
+        <h2>{testiTitles.testiTitle}</h2>
       </div>
       <div className={testimonials["testimonials-container"]}>
         <Slider {...settings}>
+          <TestimonialItem imgSrc={`${TESTI_PATH}${testiTitles.testiImgOne}`} />
+          <TestimonialItem imgSrc={`${TESTI_PATH}${testiTitles.testiImgTwo}`} />
           <TestimonialItem
-            imgSrc={"../../assets/testimonials/testi1-en.jpeg"}
+            imgSrc={`${TESTI_PATH}${testiTitles.testiImgThree}`}
           />
           <TestimonialItem
-            imgSrc={"../../assets/testimonials/testi2-en.jpeg"}
-          />
-          <TestimonialItem
-            imgSrc={"../../assets/testimonials/testi3-en.jpeg"}
-          />
-          <TestimonialItem
-            imgSrc={"../../assets/testimonials/testi4-en.jpeg"}
+            imgSrc={`${TESTI_PATH}${testiTitles.testiImgFour}`}
           />
         </Slider>
       </div>
