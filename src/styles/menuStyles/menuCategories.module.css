@@ -158,9 +158,6 @@ section.slider-section {
   .item-section .items-container .item-grid .text .price-cal span {
     font-size: 20px;
   }
-  .item-section .items-container .item-grid .img > div img {
-    height: auto;
-  }
 }
 @media only screen and (max-width: 767px) {
   .item-section .items-container {
