@@ -62,6 +62,7 @@ section.slider-section {
 .item-section .items-container .item-grid .img > div img {
   max-width: 100%;
   display: block;
+  height: 400px;
 }
 .item-section .items-container .item-grid .text {
   font-family: var(--font-bebas);
@@ -115,6 +116,15 @@ section.slider-section {
 .item-section .items-container .item-grid .text .price-cal span.cal {
   color: var(--primary-color);
 }
+
+.soup-salad-section .items-container .item-grid .text,
+.burger-section .items-container .item-grid .text,
+.pizza-section .items-container .item-grid .text,
+.wagyu-section .items-container .item-grid .text,
+.chicken-section .items-container .item-grid .text,
+.dessert-section .items-container .item-grid .text {
+  color: var(--secondary-color);
+}
 /* Additional Changes */
 .item-section
   .items-container
@@ -149,7 +159,7 @@ section.slider-section {
     font-size: 20px;
   }
   .item-section .items-container .item-grid .img > div img {
-    height: 350px;
+    height: auto;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -166,6 +176,9 @@ section.slider-section {
 .item-section .items-container .item-grid {
   margin: 10px 0;
 }
+.item-section .items-container .item-grid .img > div img {
+  height: auto;
+}
 @media only screen and (max-width: 575px) {
   .item-section .items-container .item-grid {
     padding: 15px;
@@ -174,17 +187,3 @@ section.slider-section {
     font-size: 30px;
   }
 }
-/************* Appetizers Section **********************/
-
-/************* soup&salad Section **********************/
-
-.soup-salad-section .items-container .item-grid .text,
-.burger-section .items-container .item-grid .text,
-.pizza-section .items-container .item-grid .text,
-.wagyu-section .items-container .item-grid .text,
-.chicken-section .items-container .item-grid .text,
-.dessert-section .items-container .item-grid .text {
-  color: var(--secondary-color);
-}
-
-/************* soup&salad  Section **********************/
