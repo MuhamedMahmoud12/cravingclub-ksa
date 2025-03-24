@@ -19,10 +19,10 @@ import Offer49 from "./components/lunchComponents/Offer49.jsx";
 import Offer59 from "./components/lunchComponents/Offer59.jsx";
 import Offer79 from "./components/lunchComponents/Offer79.jsx";
 import LunchLayout from "./layouts/LunchLayout.jsx";
-import SignIn from "./components/homeComponents/SignIn.jsx";
-import UserProfile from "./components/homeComponents/UserProfile.jsx";
+// import SignIn from "./components/homeComponents/SignIn.jsx";
+// import UserProfile from "./components/homeComponents/UserProfile.jsx";
 import IftarCombos from "./components/iftarCravingComponents/IftarCombos.jsx";
-import { useAuth } from "./context/AuthContext.jsx";
+
 import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
 import FillingDrinks from "./components/menuComponents/FillingDrinks.jsx";
 import Shakers from "./components/menuComponents/Shakers.jsx";
@@ -38,8 +38,6 @@ import IftarTwoPersons from "./components/iftarCravingComponents/IftarTwoPersons
 import IftarFourPersons from "./components/iftarCravingComponents/IftarFourPersons.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 function App() {
-  const token = useAuth();
-
   return (
     <BrowserRouter>
       <Routes>
@@ -128,12 +126,12 @@ function App() {
             />
           </Route>
 
-          {token ? (
+          {/* {token ? (
             <Route path="/sign-in" element={<UserProfile />} />
           ) : (
             <Route path="/sign-in" element={<SignIn />} />
           )}
-          <Route path="/profile" element={<UserProfile />} />
+          <Route path="/profile" element={<UserProfile />} /> */}
           <Route path="/craving-lunch" element={<LunchLayout />}>
             <Route
               path="/craving-lunch/49Category"

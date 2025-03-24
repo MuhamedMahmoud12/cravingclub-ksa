@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 export default function Offers() {
   const { t } = useTranslation("home");
   const offersTittles = t("offers", { returnObjects: true });
-  console.log(offersTittles);
   const LUNCH_PATH = "assets/craving-lunch/";
   const KIDS_PATH = "assets/kids-images/";
   const settings = {

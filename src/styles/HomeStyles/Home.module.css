@@ -28,6 +28,9 @@ section.slider-section .left-side-div {
 section.slider-section .right-side-div {
   right: -130px;
 }
+html[lang="ar"] section.slider-section .right-side-div {
+  right: -190px;
+}
 section.slider-section .left-side-div ul li {
   display: inline-block;
 }

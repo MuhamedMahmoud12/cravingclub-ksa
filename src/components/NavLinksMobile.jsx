@@ -2,7 +2,7 @@ import styles from "../styles/Header.module.css";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../context/LanguageContext";
 export default function NavLinksMobile() {
@@ -12,7 +12,7 @@ export default function NavLinksMobile() {
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
   const { language, setLanguageSettings } = useLanguage();
-  const { token } = useAuth();
+
   useEffect(() => {
     setIsVisible(false);
   }, [location.pathname]);
@@ -56,23 +56,13 @@ export default function NavLinksMobile() {
             </NavLink>
           </li>
           <li className={styles["nav-primeclub-li"]}>
-            {!token ? (
-              <NavLink
-                className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
-                id="prime-club-btn"
-                // to={navLinks2[2].path}
-              >
-                {navLinks2[2].primeClub}
-              </NavLink>
-            ) : (
-              <NavLink
-                className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
-                id="prime-club-btn"
-                // to="/profile"
-              >
-                Profile
-              </NavLink>
-            )}
+            <NavLink
+              className={`${styles["nav-primeclub-link"]} ${styles["no-hover"]}`}
+              id="prime-club-btn"
+              // to={navLinks2[2].path}
+            >
+              {navLinks2[2].primeClub}
+            </NavLink>
           </li>
           <li
             className={styles["nav-lang-li"]}

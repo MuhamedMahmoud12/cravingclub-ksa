@@ -172,13 +172,14 @@ section.slider-section {
   .item-section .items-container .item-grid .text .price-cal span {
     font-size: 20px;
   }
+  .item-section .items-container .item-grid {
+    margin: 10px 0;
+  }
+  .item-section .items-container .item-grid .img > div img {
+    height: auto;
+  }
 }
-.item-section .items-container .item-grid {
-  margin: 10px 0;
-}
-.item-section .items-container .item-grid .img > div img {
-  height: auto;
-}
+
 @media only screen and (max-width: 575px) {
   .item-section .items-container .item-grid {
     padding: 15px;
