@@ -10,6 +10,7 @@ export default function VideoPopup({ closePopup, video }) {
         <div className={styles["video-popup-video"]}>
           <video width="380" height="300" controls autoPlay muted>
             <source src={video[0]} type="video/mp4" />
+            your browser does not support video
           </video>
         </div>
       </div>
