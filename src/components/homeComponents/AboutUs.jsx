@@ -1,6 +1,6 @@
 import aboutUs from "../../styles/HomeStyles/aboutUs.module.css";
 import ScrollCounter from "../sharedComponents/Counter";
-import VideoPopup from "./videoPopup";
+import VideoPopup from "./introPopup";
 import { useState } from "react";
 const VIDEO_PATH = "../../assets/video-imgs/";
 const ICONS_PATH = "../../assets/icons/";
