@@ -37,6 +37,7 @@ import SharingPlatters from "./components/iftarCravingComponents/SharingPlatters
 import IftarTwoPersons from "./components/iftarCravingComponents/IftarTwoPersons.jsx";
 import IftarFourPersons from "./components/iftarCravingComponents/IftarFourPersons.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import SpinningWheel from "./components/spinningWheel/SpinningWheel.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -172,6 +173,7 @@ function App() {
             path="/contact-us"
             element={<ContactUs categoryStyle={menuCategories} />}
           />
+          <Route path="/spinning-wheel" element={<SpinningWheel />} />
         </Route>
       </Routes>
     </BrowserRouter>

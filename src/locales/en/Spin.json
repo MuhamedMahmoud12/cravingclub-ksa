@@ -1,0 +1,21 @@
+{
+  "winners": {
+    "freeBurger": "Free Burger / Sandwich",
+    "discount10": "10% Discount",
+    "discount15": "15% Discount",
+    "off50": "50 Riyal Off",
+    "freeDessert": "Free Dessert"
+  },
+  "titles": {
+    "title": "Happy Eid",
+    "subTitle": "Spin Now & Get your Eidiya!"
+  },
+  "winCase": {
+    "winMsg": "Congratulations! You Won a",
+    "steps": [
+      "Take a screen shot of the winning voucher.",
+      "Send this screenshot to us through any social media DMs.",
+      "We will send you soon a specified voucher."
+    ]
+  }
+}

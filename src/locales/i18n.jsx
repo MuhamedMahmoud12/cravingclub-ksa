@@ -6,16 +6,20 @@ import MenuAr from "./ar/Menu.json";
 import MenuEn from "./en/Menu.json";
 import ContactEn from "./en/Contact.json";
 import ContactAr from "./ar/Contact.json";
+import SpinAr from "./ar/Spin.json";
+import SpinEn from "./en/Spin.json";
 const resources = {
   en: {
     home: HomeEn,
     menu: MenuEn,
     contact: ContactEn,
+    spin: SpinEn,
   },
   ar: {
     home: HomeAr,
     menu: MenuAr,
     contact: ContactAr,
+    spin: SpinAr,
   },
 };
 
