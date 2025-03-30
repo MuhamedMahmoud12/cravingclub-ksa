@@ -2,10 +2,6 @@
   "navbarLinks": {
     "home": { "content": "Home", "path": "/" },
     "menu": { "content": "Menu", "path": "/menu/appetizers" },
-    "iftarCraving": {
-      "content": "Iftar Craving",
-      "path": "/iftar-craving/iftar-combos"
-    },
     "Ediya": { "content": "Craving Ediya", "path": "/spinning-wheel" },
     "contactUs": { "content": "Contact Us", "path": "/contact-us" }
   },

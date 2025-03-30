@@ -29,7 +29,7 @@ export default function MenuItemsNav({ children, ...props }) {
                 {t("menuNavSec.cravingLunch")}
               </NavLink>
             </li> */}
-            <li>
+            {/* <li>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? menuItemsNav["my-active-class"] : ""
@@ -38,7 +38,7 @@ export default function MenuItemsNav({ children, ...props }) {
               >
                 {t("menuNavSec.iftarCraving")}
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           {children}
         </div>

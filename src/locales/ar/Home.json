@@ -2,10 +2,6 @@
   "navbarLinks": {
     "home": { "content": "الرئيسية", "path": "/" },
     "menu": { "content": "المنيو", "path": "/menu/appetizers" },
-    "iftarCraving": {
-      "content": "افطار كريفنج",
-      "path": "/iftar-craving/iftar-combos"
-    },
     "Ediya": { "content": "عيديه كريفنج", "path": "/spinning-wheel" },
     "contactUs": { "content": "تواصل معنا", "path": "/contact-us" }
   },

@@ -7,6 +7,11 @@
   overflow: hidden;
 }
 .wheel-grid img {
+  display: none;
+  width: 200px;
+  margin: 0 auto;
+}
+html[lang="ar"] .wheel-grid img {
   display: block;
   width: 200px;
   margin: 0 auto;

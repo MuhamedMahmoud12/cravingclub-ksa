@@ -37,16 +37,16 @@ export default function SpinningWheel() {
   };
 
   const segments = [
-    spinWinners.discount10,
-    spinWinners.freeBurger,
     spinWinners.discount15,
-    spinWinners.freeDessert,
-    spinWinners.off50,
-    spinWinners.discount10,
     spinWinners.freeBurger,
-    spinWinners.discount15,
-    spinWinners.freeDessert,
+    spinWinners.discount10,
     spinWinners.off50,
+    spinWinners.freeDessert,
+    spinWinners.discount15,
+    spinWinners.freeBurger,
+    spinWinners.discount10,
+    spinWinners.off50,
+    spinWinners.freeDessert,
   ];
   const segColors = [
     "#ff9f00",

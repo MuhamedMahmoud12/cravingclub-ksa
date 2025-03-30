@@ -21,9 +21,7 @@ import Offer79 from "./components/lunchComponents/Offer79.jsx";
 import LunchLayout from "./layouts/LunchLayout.jsx";
 // import SignIn from "./components/homeComponents/SignIn.jsx";
 // import UserProfile from "./components/homeComponents/UserProfile.jsx";
-import IftarCombos from "./components/iftarCravingComponents/IftarCombos.jsx";
 
-import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
 import FillingDrinks from "./components/menuComponents/FillingDrinks.jsx";
 import Shakers from "./components/menuComponents/Shakers.jsx";
 import Smoothies from "./components/menuComponents/Smoothies.jsx";
@@ -32,10 +30,12 @@ import MilkShakes from "./components/menuComponents/MilkShakes.jsx";
 import Sensations from "./components/menuComponents/Sensations.jsx";
 import Coffe from "./components/menuComponents/Coffe.jsx";
 import OtherDrinks from "./components/menuComponents/OtherDrinks.jsx";
-import RamadanAppetizers from "./components/iftarCravingComponents/RamadanAppetizers.jsx";
-import SharingPlatters from "./components/iftarCravingComponents/SharingPlatters.jsx";
-import IftarTwoPersons from "./components/iftarCravingComponents/IftarTwoPersons.jsx";
-import IftarFourPersons from "./components/iftarCravingComponents/IftarFourPersons.jsx";
+// import IftarCombos from "./components/iftarCravingComponents/IftarCombos.jsx";
+// import IftarCravingLayout from "./layouts/IftarCravingLayout.jsx";
+// import RamadanAppetizers from "./components/iftarCravingComponents/RamadanAppetizers.jsx";
+// import SharingPlatters from "./components/iftarCravingComponents/SharingPlatters.jsx";
+// import IftarTwoPersons from "./components/iftarCravingComponents/IftarTwoPersons.jsx";
+// import IftarFourPersons from "./components/iftarCravingComponents/IftarFourPersons.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import SpinningWheel from "./components/spinningWheel/SpinningWheel.jsx";
 function App() {
@@ -147,7 +147,7 @@ function App() {
               element={<Offer79 categoryStyle={menuCategories} />}
             />
           </Route>
-          <Route path="/iftar-craving" element={<IftarCravingLayout />}>
+          {/* <Route path="/iftar-craving" element={<IftarCravingLayout />}>
             <Route
               path="/iftar-craving/iftar-combos"
               element={<IftarCombos categoryStyle={menuCategories} />}
@@ -168,7 +168,7 @@ function App() {
               path="/iftar-craving/iftar-four"
               element={<IftarFourPersons categoryStyle={menuCategories} />}
             />
-          </Route>
+          </Route> */}
           <Route
             path="/contact-us"
             element={<ContactUs categoryStyle={menuCategories} />}
