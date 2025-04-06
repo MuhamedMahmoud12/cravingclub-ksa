@@ -71,6 +71,7 @@ export default function NavLinksMobile() {
                 language === "en"
                   ? setLanguageSettings("ar")
                   : setLanguageSettings("en");
+                setIsVisible(false);
               }
             }}
           >

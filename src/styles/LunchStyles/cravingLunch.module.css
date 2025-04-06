@@ -101,6 +101,18 @@ html[lang="ar"] .item3 {
 .lunch-choices .choices-grid div > img {
   width: 100%;
 }
+.terms {
+  text-align: center;
+}
+.terms h3 {
+  color: var(--primary-color);
+  font-weight: lighter;
+  margin: 10px 0;
+}
+.terms p {
+  width: 90%;
+  margin: auto;
+}
 @media only screen and (max-width: 767px) {
   .lunch-slider {
     height: 400px;

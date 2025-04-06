@@ -5,11 +5,11 @@ import SLIDER_OPTIONS from "../../data/sliderOptions";
 import AutoSliderItem from "../homeComponents/AutoSliderItem";
 import { useTranslation } from "react-i18next";
 import SaudiRiyal from "../sharedComponents/Currency";
+
 export default function SoupAndSalad({ categoryStyle }) {
   const { t } = useTranslation("menu");
   const soupsData = t(`soup-salad`, { returnObjects: true });
   const soupsSlider = t(`soupAndSaladTitles`, { returnObjects: true });
-  console.log(soupsSlider);
   const IMG_PATH = "menu/soup&salad/";
   return (
     <>
@@ -24,44 +24,42 @@ export default function SoupAndSalad({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {soupsData.map((soup_salad, index) => {
+            {soupsData.map((soup_salad) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${soup_salad.img}`}
-                    imgAlt={soup_salad.title}
-                    itemName={soup_salad.title}
-                    itemDesription={soup_salad.description}
-                    price={soup_salad.price}
-                    cal={soup_salad.calories}
-                  >
-                    {soup_salad.addOns && (
-                      <>
-                        <p>{soup_salad.addOns[0].option}</p>
-                        <div className={categoryStyle["price-cal"]}>
-                          <span className={categoryStyle.price}>
-                            {soup_salad.addOns[0].price}
-                            <SaudiRiyal />
-                          </span>
-                          <span className={categoryStyle.cal}>
-                            {soup_salad.addOns[0].cal}
-                          </span>
-                        </div>
-                        <p>{soup_salad.addOns[1].option}</p>
-                        <div className={categoryStyle["price-cal"]}>
-                          <span className={categoryStyle.price}>
-                            {soup_salad.addOns[1].price}
-                            <SaudiRiyal />
-                          </span>
-                          <span className={categoryStyle.cal}>
-                            {soup_salad.addOns[1].cal}
-                          </span>
-                        </div>
-                      </>
-                    )}
-                  </Category>
-                </>
+                <Category
+                  key={soup_salad.title}
+                  imgPath={`${IMG_PATH}${soup_salad.img}`}
+                  imgAlt={soup_salad.title}
+                  itemName={soup_salad.title}
+                  itemDesription={soup_salad.description}
+                  price={soup_salad.price}
+                  cal={soup_salad.calories}
+                >
+                  {soup_salad.addOns && (
+                    <>
+                      <p>{soup_salad.addOns[0].option}</p>
+                      <div className={categoryStyle["price-cal"]}>
+                        <span className={categoryStyle.price}>
+                          {soup_salad.addOns[0].price}
+                          <SaudiRiyal />
+                        </span>
+                        <span className={categoryStyle.cal}>
+                          {soup_salad.addOns[0].cal}
+                        </span>
+                      </div>
+                      <p>{soup_salad.addOns[1].option}</p>
+                      <div className={categoryStyle["price-cal"]}>
+                        <span className={categoryStyle.price}>
+                          {soup_salad.addOns[1].price}
+                          <SaudiRiyal />
+                        </span>
+                        <span className={categoryStyle.cal}>
+                          {soup_salad.addOns[1].cal}
+                        </span>
+                      </div>
+                    </>
+                  )}
+                </Category>
               );
             })}
           </div>

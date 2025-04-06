@@ -26,19 +26,17 @@ export default function Burgers({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {burgers.map((burger, index) => {
+            {burgers.map((burger) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${burger.img}`}
-                    imgAlt={burger.title}
-                    itemName={burger.title}
-                    itemDesription={burger.description}
-                    price={burger.price}
-                    cal={burger.calories}
-                  ></Category>
-                </>
+                <Category
+                  key={burger.title}
+                  imgPath={`${IMG_PATH}${burger.img}`}
+                  imgAlt={burger.title}
+                  itemName={burger.title}
+                  itemDesription={burger.description}
+                  price={burger.price}
+                  cal={burger.calories}
+                ></Category>
               );
             })}
           </div>

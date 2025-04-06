@@ -2,7 +2,7 @@
   "navbarLinks": {
     "home": { "content": "Home", "path": "/" },
     "menu": { "content": "Menu", "path": "/menu/appetizers" },
-    "Ediya": { "content": "Craving Ediya", "path": "/spinning-wheel" },
+    "cravingLunch": { "content": "Craving Lunch", "path": "/craving-lunch" },
     "contactUs": { "content": "Contact Us", "path": "/contact-us" }
   },
   "navbarLinks2": [

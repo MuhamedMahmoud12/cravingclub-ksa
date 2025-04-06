@@ -21,8 +21,6 @@
     "react-i18next": "^15.4.1",
     "react-router-dom": "^7.1.1",
     "react-slick": "^0.30.3",
-    "react-spinning-wheel": "2.1.0",
-    "react-wheel-of-prizes": "^1.0.9",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

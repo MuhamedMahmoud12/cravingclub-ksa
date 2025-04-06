@@ -20,16 +20,26 @@
   color: var(--white-color);
 }
 .item1 {
-  background: url("/assets/iftar-craving/california-rock-menu.webp") no-repeat
+  background: url("/assets/craving-lunch/craving-lunch-en.jpeg") no-repeat
     center center;
   background-size: contain;
 }
 .item2 {
-  background: url("/assets/iftar-craving/country-platter-menu.webp") no-repeat
-    center center;
+  background: url("/assets/kids-images/kids-meal-en.jpeg") no-repeat center
+    center;
   background-size: contain;
 }
-.item3 {
+html[lang="ar"] .item1 {
+  background: url("/assets/craving-lunch/craving-lunch-ar.JPG") no-repeat center
+    center;
+  background-size: contain;
+}
+html[lang="ar"] .item2 {
+  background: url("/assets/kids-images/kids-meal-ar.jpeg") no-repeat center
+    center;
+  background-size: contain;
+}
+/* .item3 {
   background: url("/assets/iftar-craving/mississippe-platter-menu.webp")
     no-repeat center center;
   background-size: contain;
@@ -38,8 +48,8 @@
   background: url("/assets/iftar-craving/smoky-platter-menu.webp") no-repeat
     center center;
   background-size: contain;
-}
-.item5 {
+} */
+/* .item5 {
   background: url("/assets/iftar-craving/duo-sampler-menu.webp") no-repeat
     center center;
   background-size: contain;
@@ -48,18 +58,18 @@
   background: url("/assets/iftar-craving/family-sampler-menu.webp") no-repeat
     center center;
   background-size: contain;
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .menu-slider {
     height: 400px;
   }
   .item1,
-  .item2,
-  .item3,
-  .item4,
-  .item5,
-  .item6 {
+  .item2 {
+    background-size: cover;
+  }
+  html[lang="ar"] .item1,
+  html[lang="ar"] .item2 {
     background-size: cover;
   }
 }

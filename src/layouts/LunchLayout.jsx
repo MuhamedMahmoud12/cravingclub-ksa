@@ -14,6 +14,9 @@ import { useTranslation } from "react-i18next";
 export default function MenuLayout() {
   const { t } = useTranslation("menu");
   const lunchTitles = t("lunchTitles", { returnObjects: true });
+  const termsAndConditions = t("terms", {
+    returnObjects: true,
+  });
   const IMG_PATH = "/assets/craving-lunch/";
   return (
     <div className="layout">
@@ -90,6 +93,10 @@ export default function MenuLayout() {
           </div>
         </div>
         <Outlet />
+        <div className={lunchStyles["terms"]}>
+          <h3>{termsAndConditions.termsTitle}</h3>
+          <p>{termsAndConditions.description}</p>
+        </div>
       </div>
     </div>
   );

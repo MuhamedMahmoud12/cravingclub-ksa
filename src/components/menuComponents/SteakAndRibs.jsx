@@ -23,19 +23,18 @@ export default function SteakAndRibs({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {steaks_and_ribs.map((steak_and_rib, index) => {
+            {steaks_and_ribs.map((steak_and_rib) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${steak_and_rib.img}`}
-                    imgAlt={steak_and_rib.title}
-                    itemName={steak_and_rib.title}
-                    itemDesription={steak_and_rib.description}
-                    price={steak_and_rib.price}
-                    cal={steak_and_rib.calories}
-                  >
-                    {/* {steak_and_rib.descriptionArray && (
+                <Category
+                  key={steak_and_rib.title}
+                  imgPath={`${IMG_PATH}${steak_and_rib.img}`}
+                  imgAlt={steak_and_rib.title}
+                  itemName={steak_and_rib.title}
+                  itemDesription={steak_and_rib.description}
+                  price={steak_and_rib.price}
+                  cal={steak_and_rib.calories}
+                >
+                  {/* {steak_and_rib.descriptionArray && (
                       <>
                         <p className={categoryStyle["mt-15"]}>
                           {steak_and_rib.descriptionArray[0] ?? ""}
@@ -53,36 +52,35 @@ export default function SteakAndRibs({ categoryStyle }) {
                         </div>
                       </>
                     )} */}
-                    {steak_and_rib.portions_price_cal && (
-                      <>
-                        <div className={categoryStyle["price-cal"]}>
-                          <span className={categoryStyle.price}>
-                            {steak_and_rib.portions_price_cal[0] ?? ""}
-                          </span>
-                          <span className={categoryStyle.cal}>
-                            {steak_and_rib.portions_price_cal[1] ?? ""}
-                          </span>
-                        </div>
-                        <div className={categoryStyle["price-cal"]}>
-                          <span className={categoryStyle.price}>
-                            {steak_and_rib.portions_price_cal[2] ?? ""}
-                          </span>
-                          <span className={categoryStyle.cal}>
-                            {steak_and_rib.portions_price_cal[3] ?? ""}
-                          </span>
-                        </div>
-                        <div className={categoryStyle["price-cal"]}>
-                          <span className={categoryStyle.price}>
-                            {steak_and_rib.portions_price_cal[4] ?? ""}
-                          </span>
-                          <span className={categoryStyle.cal}>
-                            {steak_and_rib.portions_price_cal[5] ?? ""}
-                          </span>
-                        </div>
-                      </>
-                    )}
-                  </Category>
-                </>
+                  {steak_and_rib.portions_price_cal && (
+                    <>
+                      <div className={categoryStyle["price-cal"]}>
+                        <span className={categoryStyle.price}>
+                          {steak_and_rib.portions_price_cal[0] ?? ""}
+                        </span>
+                        <span className={categoryStyle.cal}>
+                          {steak_and_rib.portions_price_cal[1] ?? ""}
+                        </span>
+                      </div>
+                      <div className={categoryStyle["price-cal"]}>
+                        <span className={categoryStyle.price}>
+                          {steak_and_rib.portions_price_cal[2] ?? ""}
+                        </span>
+                        <span className={categoryStyle.cal}>
+                          {steak_and_rib.portions_price_cal[3] ?? ""}
+                        </span>
+                      </div>
+                      <div className={categoryStyle["price-cal"]}>
+                        <span className={categoryStyle.price}>
+                          {steak_and_rib.portions_price_cal[4] ?? ""}
+                        </span>
+                        <span className={categoryStyle.cal}>
+                          {steak_and_rib.portions_price_cal[5] ?? ""}
+                        </span>
+                      </div>
+                    </>
+                  )}
+                </Category>
               );
             })}
           </div>

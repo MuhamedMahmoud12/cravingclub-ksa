@@ -22,19 +22,17 @@ export default function Pasta({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {pastas.map((pasta, index) => {
+            {pastas.map((pasta) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${pasta.img}`}
-                    imgAlt={pasta.title}
-                    itemName={pasta.title}
-                    itemDesription={pasta.description}
-                    price={pasta.price}
-                    cal={pasta.calories}
-                  ></Category>
-                </>
+                <Category
+                  key={pasta.title}
+                  imgPath={`${IMG_PATH}${pasta.img}`}
+                  imgAlt={pasta.title}
+                  itemName={pasta.title}
+                  itemDesription={pasta.description}
+                  price={pasta.price}
+                  cal={pasta.calories}
+                ></Category>
               );
             })}
           </div>

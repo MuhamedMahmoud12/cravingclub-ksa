@@ -26,19 +26,17 @@ export default function Dessert({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {desserts.map((dessert, index) => {
+            {desserts.map((dessert) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${dessert.img}`}
-                    imgAlt={dessert.title}
-                    itemName={dessert.title}
-                    itemDesription={dessert.description}
-                    price={dessert.price}
-                    cal={dessert.calories}
-                  ></Category>
-                </>
+                <Category
+                  key={dessert.title}
+                  imgPath={`${IMG_PATH}${dessert.img}`}
+                  imgAlt={dessert.title}
+                  itemName={dessert.title}
+                  itemDesription={dessert.description}
+                  price={dessert.price}
+                  cal={dessert.calories}
+                ></Category>
               );
             })}
           </div>

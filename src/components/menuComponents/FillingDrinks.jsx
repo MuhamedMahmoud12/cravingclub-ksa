@@ -11,7 +11,6 @@ export default function FillingDrinks({ categoryStyle }) {
   const { t } = useTranslation("menu");
   const fillingDrinksTitles = t("fillingDrinksTitles", { returnObjects: true });
   const fillingDrinks = t(`fillingDrinks`, { returnObjects: true });
-  console.log(fillingDrinks[1].items);
   return (
     <>
       <div className={`${categoryStyle["item-section"]}`}>

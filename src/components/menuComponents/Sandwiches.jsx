@@ -9,7 +9,6 @@ export default function Sandwiches({ categoryStyle }) {
   const { t } = useTranslation("menu");
   const sandwiches = t("sandwiches", { returnObjects: true });
   const sandwichesSlider = t("sandwichesTitle", { returnObjects: true });
-  console.log(sandwichesSlider);
   const IMG_PATH = "menu/sandwiches/";
   return (
     <>
@@ -24,19 +23,17 @@ export default function Sandwiches({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {sandwiches.map((sandwich, index) => {
+            {sandwiches.map((sandwich) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${sandwich.img}`}
-                    imgAlt={sandwich.title}
-                    itemName={sandwich.title}
-                    itemDesription={sandwich.description}
-                    price={sandwich.price}
-                    cal={sandwich.calories}
-                  ></Category>
-                </>
+                <Category
+                  key={sandwich.title}
+                  imgPath={`${IMG_PATH}${sandwich.img}`}
+                  imgAlt={sandwich.title}
+                  itemName={sandwich.title}
+                  itemDesription={sandwich.description}
+                  price={sandwich.price}
+                  cal={sandwich.calories}
+                ></Category>
               );
             })}
           </div>

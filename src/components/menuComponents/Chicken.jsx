@@ -22,19 +22,17 @@ export default function Chicken({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {chickens.map((chicken, index) => {
+            {chickens.map((chicken) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${chicken.img}`}
-                    imgAlt={chicken.title}
-                    itemName={chicken.title}
-                    itemDesription={chicken.description}
-                    price={chicken.price}
-                    cal={chicken.calories}
-                  />
-                </>
+                <Category
+                  key={chicken.title}
+                  imgPath={`${IMG_PATH}${chicken.img}`}
+                  imgAlt={chicken.title}
+                  itemName={chicken.title}
+                  itemDesription={chicken.description}
+                  price={chicken.price}
+                  cal={chicken.calories}
+                />
               );
             })}
           </div>

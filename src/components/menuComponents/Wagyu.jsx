@@ -9,7 +9,6 @@ export default function Wagyu({ categoryStyle }) {
   const wagyus = t("wagyus", { returnObjects: true });
   const wagyusTitles = t("wagyusTitles", { returnObjects: true });
   const IMG_PATH = "menu/wagyu/";
-  console.log(wagyus);
   return (
     <>
       <div
@@ -23,19 +22,17 @@ export default function Wagyu({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {wagyus.map((wagyu, index) => {
+            {wagyus.map((wagyu) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${wagyu.img}`}
-                    imgAlt={wagyu.title}
-                    itemName={wagyu.title}
-                    itemDesription={wagyu.description}
-                    price={wagyu.price}
-                    cal={wagyu.calories}
-                  />
-                </>
+                <Category
+                  key={wagyu.title}
+                  imgPath={`${IMG_PATH}${wagyu.img}`}
+                  imgAlt={wagyu.title}
+                  itemName={wagyu.title}
+                  itemDesription={wagyu.description}
+                  price={wagyu.price}
+                  cal={wagyu.calories}
+                />
               );
             })}
           </div>

@@ -22,19 +22,17 @@ export default function Seafood({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {seafoods.map((seafood, index) => {
+            {seafoods.map((seafood) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${seafood.img}`}
-                    imgAlt={seafood.title}
-                    itemName={seafood.title}
-                    itemDesription={seafood.description}
-                    price={seafood.price}
-                    cal={seafood.calories}
-                  />
-                </>
+                <Category
+                  key={seafood.title}
+                  imgPath={`${IMG_PATH}${seafood.img}`}
+                  imgAlt={seafood.title}
+                  itemName={seafood.title}
+                  itemDesription={seafood.description}
+                  price={seafood.price}
+                  cal={seafood.calories}
+                />
               );
             })}
           </div>

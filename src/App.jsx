@@ -37,7 +37,7 @@ import OtherDrinks from "./components/menuComponents/OtherDrinks.jsx";
 // import IftarTwoPersons from "./components/iftarCravingComponents/IftarTwoPersons.jsx";
 // import IftarFourPersons from "./components/iftarCravingComponents/IftarFourPersons.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
-import SpinningWheel from "./components/spinningWheel/SpinningWheel.jsx";
+// import SpinningWheel from "./components/spinningWheel/SpinningWheel.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -173,7 +173,7 @@ function App() {
             path="/contact-us"
             element={<ContactUs categoryStyle={menuCategories} />}
           />
-          <Route path="/spinning-wheel" element={<SpinningWheel />} />
+          {/* <Route path="/spinning-wheel" element={<SpinningWheel />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

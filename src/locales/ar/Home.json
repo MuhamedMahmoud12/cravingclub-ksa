@@ -2,7 +2,7 @@
   "navbarLinks": {
     "home": { "content": "الرئيسية", "path": "/" },
     "menu": { "content": "المنيو", "path": "/menu/appetizers" },
-    "Ediya": { "content": "عيديه كريفنج", "path": "/spinning-wheel" },
+    "cravingLunch": { "content": "غداء كريفنج", "path": "/craving-lunch" },
     "contactUs": { "content": "تواصل معنا", "path": "/contact-us" }
   },
   "navbarLinks2": [

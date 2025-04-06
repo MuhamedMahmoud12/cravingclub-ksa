@@ -1,4 +1,4 @@
-.wheel-grid {
+/* .wheel-grid {
   height: 100vh;
   position: relative;
   background: url(/assets/main-bg/light_bg.png);
@@ -154,7 +154,7 @@ html[lang="ar"] .popup-container ol li {
     left: 220px;
   }
 }
-/* Celebrations code */
+
 .confetti {
   display: flex;
   justify-content: center;
@@ -294,4 +294,4 @@ html[lang="ar"] .popup-container ol li {
   to {
     -webkit-transform: translateY(350px);
   }
-}
+}  */

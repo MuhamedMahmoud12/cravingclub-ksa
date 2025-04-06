@@ -23,10 +23,10 @@ export default function Appetizers({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {appetizersData.map((appetizer, index) => {
+            {appetizersData.map((appetizer) => {
               return (
                 <Category
-                  key={index}
+                  key={appetizer.title}
                   imgPath={`${IMG_PATH}${appetizer.img}`}
                   imgAlt={appetizer.title}
                   itemName={appetizer.title}

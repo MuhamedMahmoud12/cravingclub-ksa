@@ -22,19 +22,17 @@ export default function Pizza({ categoryStyle }) {
         </AutoSlider>
         <div className="container">
           <div className={categoryStyle["items-container"]}>
-            {pizzas.map((pizza, index) => {
+            {pizzas.map((pizza) => {
               return (
-                <>
-                  <Category
-                    key={index}
-                    imgPath={`${IMG_PATH}${pizza.img}`}
-                    imgAlt={pizza.title}
-                    itemName={pizza.title}
-                    itemDesription={pizza.description}
-                    price={pizza.price}
-                    cal={pizza.calories}
-                  ></Category>
-                </>
+                <Category
+                  key={pizza.title}
+                  imgPath={`${IMG_PATH}${pizza.img}`}
+                  imgAlt={pizza.title}
+                  itemName={pizza.title}
+                  itemDesription={pizza.description}
+                  price={pizza.price}
+                  cal={pizza.calories}
+                ></Category>
               );
             })}
             {/* <Category
