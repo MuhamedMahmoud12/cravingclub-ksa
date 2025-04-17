@@ -264,8 +264,8 @@
     },
     {
       "img": "caesar-salad.webp",
-      "title": "Chicken Caesar Salad",
-      "description": "Slices of marinated charbroiled chicken breast heaped atop our Caesar salad.",
+      "title": "Caesar Salad",
+      "description": "Parmesan, Romano lettuce, Caesar dressing, Asiago croutons and Parmesan flakes",
       "price": "29",
       "calories": "670 CAL",
       "addOns": [
@@ -521,7 +521,7 @@
     {
       "img": "blackrock-ribeye.webp",
       "title": "Blackrock Ribeye",
-      "descriptionArray": "Ribeye is one of the cuts that comes from the front part of what’s called the longissimus. A steak house classic, our boneless Ribeye is a hearty cut on its own. Expertly aged and each hand-selected to order, all three of our ribeye steak sauces are excellent examples of what makes this prized, Prime cut so popular. Serve on stone rock which is always hot and cook as you like. Comes with mashed potatoes, garlic broccoli, and mashed potatoes.",
+      "description": "Ribeye is one of the cuts that comes from the front part of what’s called the longissimus. A steak house classic, our boneless Ribeye is a hearty cut on its own. Expertly aged and each hand-selected to order, all three of our ribeye steak sauces are excellent examples of what makes this prized, Prime cut so popular. Serve on stone rock which is always hot and cook as you like. Comes with mashed potatoes, garlic broccoli, and mashed potatoes.",
       "price": "128",
       "calories": "1350 CAL"
     },
@@ -849,12 +849,6 @@
       "title": "Rock Slide Brownie",
       "description": "It’s a mouth-watering hot rock slide brownie, drizzled with hot white chocolate and chocolate fudge top with vanilla ice cream and roasted pecan nuts.",
       "price": "33"
-    },
-    {
-      "img": "dulce-de-leche.webp",
-      "title": "Dulce De Leche",
-      "description": "American style dulce de leche, a sliced layer caramel and cream cheese cake drizzled with hot caramel fudge a scoop of vanilla ice cream dusted with cinnamon.",
-      "price": "34"
     },
     {
       "img": "chocolate-lovin-spoon-cake.webp",
